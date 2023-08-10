@@ -22,6 +22,7 @@ class Company extends Model
     protected $fillable = [
         'address',
         'user_id',
+        'created_in',
     ];
 
     /**
@@ -32,6 +33,7 @@ class Company extends Model
     protected $casts = [
         'id' => 'integer',
         'user_id' => 'integer',
+        'created_in' => 'date',
     ];
 
     public function categories(): BelongsToMany

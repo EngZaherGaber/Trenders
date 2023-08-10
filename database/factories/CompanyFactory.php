@@ -23,7 +23,7 @@ class CompanyFactory extends Factory
     {
         return [
             'address' => $this->faker->word,
-            'created_at' => now(),
+            'created_in' => now(),
             'user_id' => User::factory(),
         ];
     }

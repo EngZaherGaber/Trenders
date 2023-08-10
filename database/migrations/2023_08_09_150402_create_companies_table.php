@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('address');
             $table->foreignId('user_id')->constrained();
-            $table->date('created_at');
+            $table->date('created_in');
         });
 
         Schema::enableForeignKeyConstraints();

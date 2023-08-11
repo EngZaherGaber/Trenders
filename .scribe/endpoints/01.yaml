@@ -1,0 +1,171 @@
+name: Authentication
+description: ''
+endpoints:
+  -
+    httpMethods:
+      - POST
+    uri: api/login
+    metadata:
+      groupName: Authentication
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      email:
+        name: email
+        description: djasoijdsaio.
+        required: false
+        example: test@test.com
+        type: string
+        custom: []
+      password:
+        name: password
+        description: djasoijdsaio.
+        required: false
+        example: Test
+        type: string
+        custom: []
+    cleanBodyParameters:
+      email: test@test.com
+      password: Test
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"token":"9|vE4VtXbONdu7Mj7AZpOvtOe7B7yMqxMn6P1INpeV"}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '52'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/register
+    metadata:
+      groupName: Authentication
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: ''
+        required: true
+        example: voluptatem
+        type: string
+        custom: []
+      email:
+        name: email
+        description: 'Must be a valid email address.'
+        required: true
+        example: peggie.tremblay@example.com
+        type: string
+        custom: []
+      password:
+        name: password
+        description: djasoijdsaio.
+        required: false
+        example: password
+        type: string
+        custom: []
+      type:
+        name: type
+        description: 'Must be one of <code>instute</code> or <code>company</code>.'
+        required: true
+        example: company
+        type: string
+        custom: []
+      category_ids:
+        name: category_ids
+        description: djasoijdsaio.
+        required: false
+        example:
+          - 1
+          - 2
+          - 3
+        type: 'string[]'
+        custom: []
+      created_in:
+        name: created_in
+        description: 'Must be a valid date.'
+        required: true
+        example: '2023-08-11T18:58:51'
+        type: string
+        custom: []
+      address:
+        name: address
+        description: ''
+        required: true
+        example: temporibus
+        type: string
+        custom: []
+      password_confirmation:
+        name: password_confirmation
+        description: djasoijdsaio.
+        required: false
+        example: password
+        type: string
+        custom: []
+    cleanBodyParameters:
+      name: voluptatem
+      email: peggie.tremblay@example.com
+      password: password
+      type: company
+      category_ids:
+        - 1
+        - 2
+        - 3
+      created_in: '2023-08-11T18:58:51'
+      address: temporibus
+      password_confirmation: password
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"token":"10|glHKk4d0xTnu8DHpr4q5DK2YZfEfSG4zmEe4invY"}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '51'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []

@@ -8,8 +8,15 @@ use App\Models\User;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Support\Facades\Hash;
 
+/**
+ * @group Authentication
+ */
 class AuthController extends Controller
 {
+    /**
+     * @bodyParam password string djasoijdsaio. Example: Test 
+     * @bodyParam email string djasoijdsaio. Example: test@test.com
+     */
     public function login(LoginRequest $request)
     {
         $user = User::where('email', $request->email)->first();
@@ -23,6 +30,11 @@ class AuthController extends Controller
         ]);
     }
 
+    /**
+     * @bodyParam password string djasoijdsaio. Example: password 
+     * @bodyParam password_confirmation string djasoijdsaio. Example: password 
+     * @bodyParam category_ids array djasoijdsaio. Example: [1, 2, 3]
+     */
     public function register(RegisterRequest $request)
     {
         $user = User::create([

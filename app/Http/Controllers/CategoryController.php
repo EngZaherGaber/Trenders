@@ -6,6 +6,11 @@ use App\Http\Resources\CategoryResource;
 use App\Models\Category;
 use Illuminate\Http\Request;
 
+/**
+ * 
+ * @group Category
+ */
+
 class CategoryController extends Controller
 {
     /**

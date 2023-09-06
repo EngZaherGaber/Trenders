@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->string('description');
+            $table->timestamp('ended_at')->nullable();
             $table->foreignId('institution_id')->constrained();
             $table->timestamps();
         });

@@ -23,6 +23,7 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name',
+        'image',
         'email',
         'password',
     ];
@@ -52,6 +53,13 @@ class User extends Authenticatable
     {
         return Attribute::make(
             set: fn (string $value) => Hash::make($value),
+        );
+    }
+
+    protected function image(): Attribute
+    {
+        return Attribute::make(
+            get: fn (string $value) => asset('images/' . $value),
         );
     }
 

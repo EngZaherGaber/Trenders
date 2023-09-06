@@ -39,6 +39,7 @@ class AuthController extends Controller
     {
         $user = User::create([
             'name' => $request->name,
+            'image' => str_replace('public/', '', $request->file('image')->store('public/images/')),
             'email' => $request->email,
             'password' => $request->password,
         ]);

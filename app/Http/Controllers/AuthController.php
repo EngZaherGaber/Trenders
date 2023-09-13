@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Hash;
 class AuthController extends Controller
 {
     /**
-     * @bodyParam password string djasoijdsaio. Example: Test 
+     * @bodyParam password string djasoijdsaio. Example: password
      * @bodyParam email string djasoijdsaio. Example: test@test.com
      */
     public function login(LoginRequest $request)
@@ -63,5 +63,20 @@ class AuthController extends Controller
         return response([
             'token' => $token,
         ]);
+    }
+
+    public function userProfile()
+    {
+        return auth()->user();
+    }
+
+    public function companyProfile()
+    {
+        return auth()->user()->company;
+    }
+
+    public function institutionProfile()
+    {
+        return auth()->user()->institution;
     }
 }

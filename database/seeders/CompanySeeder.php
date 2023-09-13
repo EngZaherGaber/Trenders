@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Company;
+use App\Models\User;
 use Illuminate\Database\Seeder;
 
 class CompanySeeder extends Seeder
@@ -12,6 +13,8 @@ class CompanySeeder extends Seeder
      */
     public function run(): void
     {
+        $user = User::factory()->create(['email' => 'test@test.com']);
+        Company::factory()->create(['user_id' => $user->id]);
         Company::factory()->count(5)->create();
     }
 }

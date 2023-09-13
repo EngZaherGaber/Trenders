@@ -1,16 +1,16 @@
-name: Authentication
+name: Trender
 description: ''
 endpoints:
   -
     httpMethods:
-      - POST
-    uri: api/login
+      - GET
+    uri: api/trender
     metadata:
-      groupName: Authentication
+      groupName: Trender
       groupDescription: ''
       subgroup: ''
       subgroupDescription: ''
-      title: ''
+      title: 'Display a listing of the resource.'
       description: ''
       authenticated: false
       custom: []
@@ -22,28 +22,20 @@ endpoints:
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters:
-      email:
-        name: email
-        description: djasoijdsaio.
+      q:
+        name: q
+        description: ''
         required: false
-        example: test@test.com
-        type: string
-        custom: []
-      password:
-        name: password
-        description: djasoijdsaio.
-        required: false
-        example: Test
+        example: saepe
         type: string
         custom: []
     cleanBodyParameters:
-      email: test@test.com
-      password: Test
+      q: saepe
     fileParameters: []
     responses:
       -
         status: 200
-        content: '{"token":"9|vE4VtXbONdu7Mj7AZpOvtOe7B7yMqxMn6P1INpeV"}'
+        content: '[{"id":11,"title":"Magnam possimus saepe esse.","description":"Qui non blanditiis temporibus quia. Neque magni quae sit id impedit officiis autem. Aliquam temporibus et expedita sed unde ut. Voluptatem dolores recusandae et architecto est earum.","ended_at":null,"institution_id":16,"created_at":"2023-09-13T07:12:53.000000Z","updated_at":"2023-09-13T07:12:53.000000Z"},{"id":19,"title":"Sunt pariatur eligendi et.","description":"Voluptatem assumenda et architecto occaecati qui sunt ut. Assumenda natus ullam laboriosam ut deleniti ut. Veniam id ad sed qui inventore est ea. Et natus saepe et adipisci nesciunt debitis.","ended_at":null,"institution_id":24,"created_at":"2023-09-13T07:12:54.000000Z","updated_at":"2023-09-13T07:12:54.000000Z"},{"id":24,"title":"Exercitationem voluptatem voluptates consectetur reiciendis.","description":"Expedita vero et sint sit. Soluta cupiditate consequatur distinctio saepe voluptatem. Enim quas saepe consequuntur commodi eaque autem non iusto.","ended_at":null,"institution_id":29,"created_at":"2023-09-13T07:12:55.000000Z","updated_at":"2023-09-13T07:12:55.000000Z"},{"id":25,"title":"Occaecati tempora dignissimos.","description":"Amet et debitis consequatur numquam sint aut. Quidem illo id non saepe perferendis corporis magni.","ended_at":null,"institution_id":30,"created_at":"2023-09-13T07:12:55.000000Z","updated_at":"2023-09-13T07:12:55.000000Z"}]'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -61,13 +53,13 @@ endpoints:
   -
     httpMethods:
       - POST
-    uri: api/register
+    uri: api/trender
     metadata:
-      groupName: Authentication
+      groupName: Trender
       groupDescription: ''
       subgroup: ''
       subgroupDescription: ''
-      title: ''
+      title: 'Store a newly created resource in storage.'
       description: ''
       authenticated: false
       custom: []
@@ -79,87 +71,188 @@ endpoints:
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters:
-      name:
-        name: name
+      title:
+        name: title
         description: ''
         required: true
-        example: voluptatem
+        example: doloremque
         type: string
         custom: []
-      email:
-        name: email
-        description: 'Must be a valid email address.'
-        required: true
-        example: peggie.tremblay@example.com
-        type: string
-        custom: []
-      password:
-        name: password
-        description: djasoijdsaio.
-        required: false
-        example: password
-        type: string
-        custom: []
-      type:
-        name: type
-        description: 'Must be one of <code>instute</code> or <code>company</code>.'
-        required: true
-        example: company
-        type: string
-        custom: []
-      category_ids:
-        name: category_ids
-        description: djasoijdsaio.
-        required: false
-        example:
-          - 1
-          - 2
-          - 3
-        type: 'string[]'
-        custom: []
-      created_in:
-        name: created_in
-        description: 'Must be a valid date.'
-        required: true
-        example: '2023-08-11T18:58:51'
-        type: string
-        custom: []
-      address:
-        name: address
+      description:
+        name: description
         description: ''
         required: true
-        example: temporibus
+        example: 'Eligendi maiores perspiciatis id impedit reprehenderit consequuntur voluptas.'
         type: string
         custom: []
-      password_confirmation:
-        name: password_confirmation
-        description: djasoijdsaio.
-        required: false
-        example: password
-        type: string
+      details:
+        name: details
+        description: ''
+        required: true
+        example: []
+        type: object
         custom: []
     cleanBodyParameters:
-      name: voluptatem
-      email: peggie.tremblay@example.com
-      password: password
-      type: company
-      category_ids:
-        - 1
-        - 2
-        - 3
-      created_in: '2023-08-11T18:58:51'
-      address: temporibus
-      password_confirmation: password
+      title: doloremque
+      description: 'Eligendi maiores perspiciatis id impedit reprehenderit consequuntur voluptas.'
+      details: []
     fileParameters: []
     responses:
       -
-        status: 200
-        content: '{"token":"10|glHKk4d0xTnu8DHpr4q5DK2YZfEfSG4zmEe4invY"}'
+        status: 422
+        content: '{"message":"The details field is required.","errors":{"details":["The details field is required."]}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
           x-ratelimit-remaining: '51'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/trender/{id}'
+    metadata:
+      groupName: Trender
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Display the specified resource.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the trender.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    cleanUrlParameters:
+      id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: ''
+        headers:
+          content-type: 'text/html; charset=UTF-8'
+          cache-control: 'no-cache, private'
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '50'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'api/trender/{id}'
+    metadata:
+      groupName: Trender
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Update the specified resource in storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the trender.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    cleanUrlParameters:
+      id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: ''
+        headers:
+          content-type: 'text/html; charset=UTF-8'
+          cache-control: 'no-cache, private'
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '49'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/trender/{id}'
+    metadata:
+      groupName: Trender
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Remove the specified resource from storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the trender.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    cleanUrlParameters:
+      id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 204
+        content: ''
+        headers:
+          cache-control: 'no-cache, private'
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '48'
           access-control-allow-origin: '*'
         description: null
         custom: []

@@ -8,6 +8,10 @@ use App\Http\Requests\UpdateTenderRequest;
 use App\Models\Tender;
 use Illuminate\Support\Facades\Validator;
 
+/**
+ * 
+ * @group Trender
+ */
 class TenderController extends Controller
 {
     /**
@@ -43,7 +47,7 @@ class TenderController extends Controller
                 'data' => ['present'],
             ]);
 
-            $tender->tenderDetails()->create($tenderDetails);
+            $tender->tenderDetails()->create($vaildator->validated());
         }
 
         return $tender;
@@ -70,6 +74,8 @@ class TenderController extends Controller
      */
     public function destroy(Tender $tender)
     {
-        //
+        $tender->delete();
+
+        return response()->noContent();
     }
 }

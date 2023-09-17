@@ -28,21 +28,21 @@ endpoints:
         name: q
         description: ''
         required: false
-        example: saepe
+        example: asperiores
         type: string
         custom: []
     cleanBodyParameters:
-      q: saepe
+      q: asperiores
     fileParameters: []
     responses:
       -
         status: 200
-        content: '[{"id":11,"title":"Magnam possimus saepe esse.","description":"Qui non blanditiis temporibus quia. Neque magni quae sit id impedit officiis autem. Aliquam temporibus et expedita sed unde ut. Voluptatem dolores recusandae et architecto est earum.","ended_at":null,"institution_id":16,"created_at":"2023-09-13T07:12:53.000000Z","updated_at":"2023-09-13T07:12:53.000000Z"},{"id":19,"title":"Sunt pariatur eligendi et.","description":"Voluptatem assumenda et architecto occaecati qui sunt ut. Assumenda natus ullam laboriosam ut deleniti ut. Veniam id ad sed qui inventore est ea. Et natus saepe et adipisci nesciunt debitis.","ended_at":null,"institution_id":24,"created_at":"2023-09-13T07:12:54.000000Z","updated_at":"2023-09-13T07:12:54.000000Z"},{"id":24,"title":"Exercitationem voluptatem voluptates consectetur reiciendis.","description":"Expedita vero et sint sit. Soluta cupiditate consequatur distinctio saepe voluptatem. Enim quas saepe consequuntur commodi eaque autem non iusto.","ended_at":null,"institution_id":29,"created_at":"2023-09-13T07:12:55.000000Z","updated_at":"2023-09-13T07:12:55.000000Z"},{"id":25,"title":"Occaecati tempora dignissimos.","description":"Amet et debitis consequatur numquam sint aut. Quidem illo id non saepe perferendis corporis magni.","ended_at":null,"institution_id":30,"created_at":"2023-09-13T07:12:55.000000Z","updated_at":"2023-09-13T07:12:55.000000Z"}]'
+        content: '[{"id":3,"title":"Earum autem ducimus illo similique.","description":"Qui tenetur est sunt eum. Quo nisi voluptatem nisi at asperiores eos magni blanditiis. Non nemo deleniti enim enim dolores. Adipisci non dicta in nulla fugit magni commodi.","ended_at":null,"institution_id":8,"created_at":"2023-09-17T08:12:56.000000Z","updated_at":"2023-09-17T08:12:56.000000Z"}]'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '52'
+          x-ratelimit-remaining: '58'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -77,14 +77,14 @@ endpoints:
         name: title
         description: ''
         required: true
-        example: doloremque
+        example: placeat
         type: string
         custom: []
       description:
         name: description
         description: ''
         required: true
-        example: 'Eligendi maiores perspiciatis id impedit reprehenderit consequuntur voluptas.'
+        example: 'In provident doloribus voluptatibus eveniet quia eligendi tenetur.'
         type: string
         custom: []
       details:
@@ -95,8 +95,8 @@ endpoints:
         type: object
         custom: []
     cleanBodyParameters:
-      title: doloremque
-      description: 'Eligendi maiores perspiciatis id impedit reprehenderit consequuntur voluptas.'
+      title: placeat
+      description: 'In provident doloribus voluptatibus eveniet quia eligendi tenetur.'
       details: []
     fileParameters: []
     responses:
@@ -107,7 +107,7 @@ endpoints:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '51'
+          x-ratelimit-remaining: '57'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -156,7 +156,7 @@ endpoints:
           content-type: 'text/html; charset=UTF-8'
           cache-control: 'no-cache, private'
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '50'
+          x-ratelimit-remaining: '56'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -206,7 +206,7 @@ endpoints:
           content-type: 'text/html; charset=UTF-8'
           cache-control: 'no-cache, private'
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '49'
+          x-ratelimit-remaining: '55'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -254,9 +254,88 @@ endpoints:
         headers:
           cache-control: 'no-cache, private'
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '48'
+          x-ratelimit-remaining: '54'
           access-control-allow-origin: '*'
         description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/mine-trender
+    metadata:
+      groupName: Trender
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: |-
+          {
+          "data": [
+          {
+          "id": 25,
+          "title": "Eum officia eum.",
+          "description": "Porro doloremque molestiae culpa temporibus perferendis minima. Qui non nulla dolorem laudantium.",
+          "created_at": "2023-09-17T08:12:58.000000Z",
+          "ended_at": null,
+          "offers_count": 3,
+          "best_offer_from": {
+          "id": 11,
+          "tender_id": 25,
+          "company_id": 20,
+          "is_draft": 0,
+          "created_at": "2023-09-17T09:17:03.000000Z",
+          "updated_at": "2023-09-17T09:17:03.000000Z"
+          },
+          "offers": [
+          {
+          "id": 11,
+          "trender_name": "Eum officia eum.",
+          "for": "Dr. Delfina Lesch",
+          "work_on_it": "2023-09-17T09:17:03.000000Z",
+          "work_ended_it": null
+          },
+          {
+          "id": 12,
+          "trender_name": "Eum officia eum.",
+          "for": "Dr. Delfina Lesch",
+          "work_on_it": "2023-09-17T09:17:03.000000Z",
+          "work_ended_it": null
+          },
+          {
+          "id": 13,
+          "trender_name": "Eum officia eum.",
+          "for": "Dr. Delfina Lesch",
+          "work_on_it": "2023-09-17T09:17:03.000000Z",
+          "work_ended_it": null
+          }
+          ]
+          }
+          ]
+          }
+        headers: []
+        description: ''
         custom: []
     responseFields: []
     auth: []

@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('tender_id')->constrained();
             $table->foreignId('company_id')->constrained();
+            $table->boolean('is_draft')->default(false);
             $table->timestamps();
         });
 

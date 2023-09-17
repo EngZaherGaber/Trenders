@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -32,9 +33,22 @@ class Tender extends Model
         'institution_id' => 'integer',
     ];
 
+
+    protected function bestOfferFrom(): Attribute
+    {
+        return Attribute::make(
+            get: fn () => $this->offers()->first(),
+        );
+    }
+
     public function tenderDetails(): HasMany
     {
         return $this->hasMany(TenderDetail::class);
+    }
+
+    public function offers(): HasMany
+    {
+        return $this->hasMany(Offer::class);
     }
 
     public function institution(): BelongsTo

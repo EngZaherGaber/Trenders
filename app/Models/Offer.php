@@ -19,6 +19,7 @@ class Offer extends Model
     protected $fillable = [
         'tender_id',
         'company_id',
+        'is_draft',
     ];
 
     /**

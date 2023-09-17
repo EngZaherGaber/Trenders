@@ -43,7 +43,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"token":"28|cUrIdpduNz1Vp58noR3xe3WO04HrCM9MIh7ou2aW"}'
+        content: '{"token":"30|YHNdsUxdu4iObESpsYBKLORp7ZKHxJeQP9K4WXBt"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -83,7 +83,7 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: voluptatem
+        example: nemo
         type: string
         custom: []
       image:
@@ -97,7 +97,7 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: jarred.schmitt@example.org
+        example: mann.arne@example.com
         type: string
         custom: []
       password:
@@ -128,14 +128,14 @@ endpoints:
         name: created_in
         description: 'Must be a valid date.'
         required: true
-        example: '2023-09-17T09:19:38'
+        example: '2023-09-17T09:30:57'
         type: string
         custom: []
       address:
         name: address
         description: ''
         required: true
-        example: consequuntur
+        example: cupiditate
         type: string
         custom: []
       password_confirmation:
@@ -146,23 +146,23 @@ endpoints:
         type: string
         custom: []
     cleanBodyParameters:
-      name: voluptatem
-      email: jarred.schmitt@example.org
+      name: nemo
+      email: mann.arne@example.com
       password: password
       type: company
       category_ids:
         - 1
         - 2
         - 3
-      created_in: '2023-09-17T09:19:38'
-      address: consequuntur
+      created_in: '2023-09-17T09:30:57'
+      address: cupiditate
       password_confirmation: password
     fileParameters:
       image: null
     responses:
       -
         status: 200
-        content: '{"token":"29|Luj7dc4XLKqSSnwUcBdZ1zOvBdDAQWzIgngEMKM7"}'
+        content: '{"token":"31|S6wGAL8tYbBlvz6Kb25a0V4WtAEGlf0Td1mWpSrz"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json

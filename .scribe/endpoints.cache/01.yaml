@@ -28,21 +28,21 @@ endpoints:
         name: q
         description: ''
         required: false
-        example: asperiores
+        example: delectus
         type: string
         custom: []
     cleanBodyParameters:
-      q: asperiores
+      q: delectus
     fileParameters: []
     responses:
       -
         status: 200
-        content: '[{"id":3,"title":"Earum autem ducimus illo similique.","description":"Qui tenetur est sunt eum. Quo nisi voluptatem nisi at asperiores eos magni blanditiis. Non nemo deleniti enim enim dolores. Adipisci non dicta in nulla fugit magni commodi.","ended_at":null,"institution_id":8,"created_at":"2023-09-17T08:12:56.000000Z","updated_at":"2023-09-17T08:12:56.000000Z"}]'
+        content: '[{"id":6,"title":"Sint dolorum voluptatem dolor itaque.","description":"Perferendis animi assumenda dolore doloribus facere ducimus et. Quas inventore delectus eum aut animi. Eum iste maxime sequi.","ended_at":null,"institution_id":11,"created_at":"2023-09-17T08:12:57.000000Z","updated_at":"2023-09-17T08:12:57.000000Z"},{"id":22,"title":"Quia vel quod porro praesentium.","description":"Ratione quas sequi eaque. Delectus voluptatibus sunt ut. Tenetur beatae voluptates quasi autem ut. Optio incidunt sint et aspernatur quia eos architecto.","ended_at":null,"institution_id":27,"created_at":"2023-09-17T08:12:58.000000Z","updated_at":"2023-09-17T08:12:58.000000Z"}]'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '58'
+          x-ratelimit-remaining: '57'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -77,14 +77,14 @@ endpoints:
         name: title
         description: ''
         required: true
-        example: placeat
+        example: dicta
         type: string
         custom: []
       description:
         name: description
         description: ''
         required: true
-        example: 'In provident doloribus voluptatibus eveniet quia eligendi tenetur.'
+        example: 'Voluptatem labore voluptatibus eum dicta.'
         type: string
         custom: []
       details:
@@ -95,8 +95,8 @@ endpoints:
         type: object
         custom: []
     cleanBodyParameters:
-      title: placeat
-      description: 'In provident doloribus voluptatibus eveniet quia eligendi tenetur.'
+      title: dicta
+      description: 'Voluptatem labore voluptatibus eum dicta.'
       details: []
     fileParameters: []
     responses:
@@ -107,7 +107,7 @@ endpoints:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '57'
+          x-ratelimit-remaining: '56'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -126,7 +126,7 @@ endpoints:
       groupDescription: ''
       subgroup: ''
       subgroupDescription: ''
-      title: 'Display the specified resource.'
+      title: ''
       description: ''
       authenticated: false
       custom: []
@@ -151,14 +151,55 @@ endpoints:
     responses:
       -
         status: 200
-        content: ''
-        headers:
-          content-type: 'text/html; charset=UTF-8'
-          cache-control: 'no-cache, private'
-          x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '56'
-          access-control-allow-origin: '*'
-        description: null
+        content: |-
+          {
+          "data": {
+          "id": 25,
+          "title": "Eum officia eum.",
+          "description": "Porro doloremque molestiae culpa temporibus perferendis minima. Qui non nulla dolorem laudantium.",
+          "created_at": "2023-09-17T08:12:58.000000Z",
+          "ended_at": "2023-09-17 09:25:57",
+          "offers_count": 3,
+          "best_offer_from": "Barry Barton",
+          "offers": [
+          {
+          "id": 11,
+          "trender_name": "Eum officia eum.",
+          "for": "Dr. Delfina Lesch",
+          "work_on_it": "2023-09-17T09:17:03.000000Z",
+          "work_ended_it": "2023-09-17 09:25:57"
+          },
+          {
+          "id": 12,
+          "trender_name": "Eum officia eum.",
+          "for": "Dr. Delfina Lesch",
+          "work_on_it": "2023-09-17T09:17:03.000000Z",
+          "work_ended_it": "2023-09-17 09:25:57"
+          },
+          {
+          "id": 13,
+          "trender_name": "Eum officia eum.",
+          "for": "Dr. Delfina Lesch",
+          "work_on_it": "2023-09-17T09:17:03.000000Z",
+          "work_ended_it": "2023-09-17 09:25:57"
+          }
+          ],
+          "trender_details": [
+          {
+          "id": 10,
+          "type": "quis",
+          "question": "est",
+          "description": "Natus sunt enim beatae quo. Et nisi est dolorum nihil et similique facilis nihil. Explicabo incidunt ut excepturi.",
+          "data": "molestias",
+          "tender_id": 25,
+          "created_at": "2023-09-17T08:12:58.000000Z",
+          "updated_at": "2023-09-17T08:12:58.000000Z"
+          }
+          ]
+          }
+          }
+        headers: []
+        description: ''
         custom: []
     responseFields: []
     auth: []
@@ -336,6 +377,53 @@ endpoints:
           }
         headers: []
         description: ''
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: 'api/trender/{tender_id}/close'
+    metadata:
+      groupName: Trender
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      tender_id:
+        name: tender_id
+        description: 'The ID of the tender.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    cleanUrlParameters:
+      tender_id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
         custom: []
     responseFields: []
     auth: []

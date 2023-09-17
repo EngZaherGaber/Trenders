@@ -55,7 +55,52 @@ class TenderController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * @response {
+    "data": {
+        "id": 25,
+        "title": "Eum officia eum.",
+        "description": "Porro doloremque molestiae culpa temporibus perferendis minima. Qui non nulla dolorem laudantium.",
+        "created_at": "2023-09-17T08:12:58.000000Z",
+        "ended_at": "2023-09-17 09:25:57",
+        "offers_count": 3,
+        "best_offer_from": "Barry Barton",
+        "offers": [
+            {
+                "id": 11,
+                "trender_name": "Eum officia eum.",
+                "for": "Dr. Delfina Lesch",
+                "work_on_it": "2023-09-17T09:17:03.000000Z",
+                "work_ended_it": "2023-09-17 09:25:57"
+            },
+            {
+                "id": 12,
+                "trender_name": "Eum officia eum.",
+                "for": "Dr. Delfina Lesch",
+                "work_on_it": "2023-09-17T09:17:03.000000Z",
+                "work_ended_it": "2023-09-17 09:25:57"
+            },
+            {
+                "id": 13,
+                "trender_name": "Eum officia eum.",
+                "for": "Dr. Delfina Lesch",
+                "work_on_it": "2023-09-17T09:17:03.000000Z",
+                "work_ended_it": "2023-09-17 09:25:57"
+            }
+        ],
+        "trender_details": [
+            {
+                "id": 10,
+                "type": "quis",
+                "question": "est",
+                "description": "Natus sunt enim beatae quo. Et nisi est dolorum nihil et similique facilis nihil. Explicabo incidunt ut excepturi.",
+                "data": "molestias",
+                "tender_id": 25,
+                "created_at": "2023-09-17T08:12:58.000000Z",
+                "updated_at": "2023-09-17T08:12:58.000000Z"
+            }
+        ]
+    }
+}
      */
     public function show(Tender $trender)
     {

@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "Laravel",
-        "_postman_id": "b6af5cbf-1687-41a8-a002-8dda5d853406",
+        "_postman_id": "a291ad2c-e45c-48fd-9af7-7438f3a60fd7",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -73,7 +73,7 @@
                                 }
                             ],
                             "code": 200,
-                            "body": "{\"token\":\"28|cUrIdpduNz1Vp58noR3xe3WO04HrCM9MIh7ou2aW\"}",
+                            "body": "{\"token\":\"30|YHNdsUxdu4iObESpsYBKLORp7ZKHxJeQP9K4WXBt\"}",
                             "name": ""
                         }
                     ]
@@ -103,13 +103,13 @@
                             "formdata": [
                                 {
                                     "key": "name",
-                                    "value": "voluptatem",
+                                    "value": "nemo",
                                     "type": "text",
                                     "description": ""
                                 },
                                 {
                                     "key": "email",
-                                    "value": "jarred.schmitt@example.org",
+                                    "value": "mann.arne@example.com",
                                     "type": "text",
                                     "description": "Must be a valid email address."
                                 },
@@ -145,13 +145,13 @@
                                 },
                                 {
                                     "key": "created_in",
-                                    "value": "2023-09-17T09:19:38",
+                                    "value": "2023-09-17T09:30:57",
                                     "type": "text",
                                     "description": "Must be a valid date."
                                 },
                                 {
                                     "key": "address",
-                                    "value": "consequuntur",
+                                    "value": "cupiditate",
                                     "type": "text",
                                     "description": ""
                                 },
@@ -198,7 +198,7 @@
                                 }
                             ],
                             "code": 200,
-                            "body": "{\"token\":\"29|Luj7dc4XLKqSSnwUcBdZ1zOvBdDAQWzIgngEMKM7\"}",
+                            "body": "{\"token\":\"31|S6wGAL8tYbBlvz6Kb25a0V4WtAEGlf0Td1mWpSrz\"}",
                             "name": ""
                         }
                     ]
@@ -396,7 +396,7 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "59"
+                                    "value": "58"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
@@ -684,66 +684,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"q\":\"asperiores\"}"
-                        },
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": [
-                        {
-                            "header": [
-                                {
-                                    "key": "cache-control",
-                                    "value": "no-cache, private"
-                                },
-                                {
-                                    "key": "content-type",
-                                    "value": "application\/json"
-                                },
-                                {
-                                    "key": "x-ratelimit-limit",
-                                    "value": "60"
-                                },
-                                {
-                                    "key": "x-ratelimit-remaining",
-                                    "value": "58"
-                                },
-                                {
-                                    "key": "access-control-allow-origin",
-                                    "value": "*"
-                                }
-                            ],
-                            "code": 200,
-                            "body": "[{\"id\":3,\"title\":\"Earum autem ducimus illo similique.\",\"description\":\"Qui tenetur est sunt eum. Quo nisi voluptatem nisi at asperiores eos magni blanditiis. Non nemo deleniti enim enim dolores. Adipisci non dicta in nulla fugit magni commodi.\",\"ended_at\":null,\"institution_id\":8,\"created_at\":\"2023-09-17T08:12:56.000000Z\",\"updated_at\":\"2023-09-17T08:12:56.000000Z\"}]",
-                            "name": ""
-                        }
-                    ]
-                },
-                {
-                    "name": "Store a newly created resource in storage.",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "api\/trender",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/api\/trender"
-                        },
-                        "method": "POST",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": {
-                            "mode": "raw",
-                            "raw": "{\"title\":\"placeat\",\"description\":\"In provident doloribus voluptatibus eveniet quia eligendi tenetur.\",\"details\":[]}"
+                            "raw": "{\"q\":\"delectus\"}"
                         },
                         "description": "",
                         "auth": {
@@ -774,6 +715,65 @@
                                     "value": "*"
                                 }
                             ],
+                            "code": 200,
+                            "body": "[{\"id\":6,\"title\":\"Sint dolorum voluptatem dolor itaque.\",\"description\":\"Perferendis animi assumenda dolore doloribus facere ducimus et. Quas inventore delectus eum aut animi. Eum iste maxime sequi.\",\"ended_at\":null,\"institution_id\":11,\"created_at\":\"2023-09-17T08:12:57.000000Z\",\"updated_at\":\"2023-09-17T08:12:57.000000Z\"},{\"id\":22,\"title\":\"Quia vel quod porro praesentium.\",\"description\":\"Ratione quas sequi eaque. Delectus voluptatibus sunt ut. Tenetur beatae voluptates quasi autem ut. Optio incidunt sint et aspernatur quia eos architecto.\",\"ended_at\":null,\"institution_id\":27,\"created_at\":\"2023-09-17T08:12:58.000000Z\",\"updated_at\":\"2023-09-17T08:12:58.000000Z\"}]",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Store a newly created resource in storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/trender",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/trender"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"title\":\"dicta\",\"description\":\"Voluptatem labore voluptatibus eum dicta.\",\"details\":[]}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "56"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
                             "code": 422,
                             "body": "{\"message\":\"The details field is required.\",\"errors\":{\"details\":[\"The details field is required.\"]}}",
                             "name": ""
@@ -781,7 +781,7 @@
                     ]
                 },
                 {
-                    "name": "Display the specified resource.",
+                    "name": "GET api\/trender\/{id}",
                     "request": {
                         "url": {
                             "host": "{{baseUrl}}",
@@ -816,30 +816,9 @@
                     },
                     "response": [
                         {
-                            "header": [
-                                {
-                                    "key": "content-type",
-                                    "value": "text\/html; charset=UTF-8"
-                                },
-                                {
-                                    "key": "cache-control",
-                                    "value": "no-cache, private"
-                                },
-                                {
-                                    "key": "x-ratelimit-limit",
-                                    "value": "60"
-                                },
-                                {
-                                    "key": "x-ratelimit-remaining",
-                                    "value": "56"
-                                },
-                                {
-                                    "key": "access-control-allow-origin",
-                                    "value": "*"
-                                }
-                            ],
+                            "header": [],
                             "code": 200,
-                            "body": "",
+                            "body": "{\n\"data\": {\n\"id\": 25,\n\"title\": \"Eum officia eum.\",\n\"description\": \"Porro doloremque molestiae culpa temporibus perferendis minima. Qui non nulla dolorem laudantium.\",\n\"created_at\": \"2023-09-17T08:12:58.000000Z\",\n\"ended_at\": \"2023-09-17 09:25:57\",\n\"offers_count\": 3,\n\"best_offer_from\": \"Barry Barton\",\n\"offers\": [\n{\n\"id\": 11,\n\"trender_name\": \"Eum officia eum.\",\n\"for\": \"Dr. Delfina Lesch\",\n\"work_on_it\": \"2023-09-17T09:17:03.000000Z\",\n\"work_ended_it\": \"2023-09-17 09:25:57\"\n},\n{\n\"id\": 12,\n\"trender_name\": \"Eum officia eum.\",\n\"for\": \"Dr. Delfina Lesch\",\n\"work_on_it\": \"2023-09-17T09:17:03.000000Z\",\n\"work_ended_it\": \"2023-09-17 09:25:57\"\n},\n{\n\"id\": 13,\n\"trender_name\": \"Eum officia eum.\",\n\"for\": \"Dr. Delfina Lesch\",\n\"work_on_it\": \"2023-09-17T09:17:03.000000Z\",\n\"work_ended_it\": \"2023-09-17 09:25:57\"\n}\n],\n\"trender_details\": [\n{\n\"id\": 10,\n\"type\": \"quis\",\n\"question\": \"est\",\n\"description\": \"Natus sunt enim beatae quo. Et nisi est dolorum nihil et similique facilis nihil. Explicabo incidunt ut excepturi.\",\n\"data\": \"molestias\",\n\"tender_id\": 25,\n\"created_at\": \"2023-09-17T08:12:58.000000Z\",\n\"updated_at\": \"2023-09-17T08:12:58.000000Z\"\n}\n]\n}\n}",
                             "name": ""
                         }
                     ]
@@ -999,6 +978,62 @@
                             "header": [],
                             "code": 200,
                             "body": "{\n\"data\": [\n{\n\"id\": 25,\n\"title\": \"Eum officia eum.\",\n\"description\": \"Porro doloremque molestiae culpa temporibus perferendis minima. Qui non nulla dolorem laudantium.\",\n\"created_at\": \"2023-09-17T08:12:58.000000Z\",\n\"ended_at\": null,\n\"offers_count\": 3,\n\"best_offer_from\": {\n\"id\": 11,\n\"tender_id\": 25,\n\"company_id\": 20,\n\"is_draft\": 0,\n\"created_at\": \"2023-09-17T09:17:03.000000Z\",\n\"updated_at\": \"2023-09-17T09:17:03.000000Z\"\n},\n\"offers\": [\n{\n\"id\": 11,\n\"trender_name\": \"Eum officia eum.\",\n\"for\": \"Dr. Delfina Lesch\",\n\"work_on_it\": \"2023-09-17T09:17:03.000000Z\",\n\"work_ended_it\": null\n},\n{\n\"id\": 12,\n\"trender_name\": \"Eum officia eum.\",\n\"for\": \"Dr. Delfina Lesch\",\n\"work_on_it\": \"2023-09-17T09:17:03.000000Z\",\n\"work_ended_it\": null\n},\n{\n\"id\": 13,\n\"trender_name\": \"Eum officia eum.\",\n\"for\": \"Dr. Delfina Lesch\",\n\"work_on_it\": \"2023-09-17T09:17:03.000000Z\",\n\"work_ended_it\": null\n}\n]\n}\n]\n}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "POST api\/trender\/{tender_id}\/close",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/trender\/:tender_id\/close",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/trender\/:tender_id\/close",
+                            "variable": [
+                                {
+                                    "id": "tender_id",
+                                    "key": "tender_id",
+                                    "value": "1",
+                                    "description": "The ID of the tender."
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
                             "name": ""
                         }
                     ]

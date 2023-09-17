@@ -21,11 +21,11 @@ paths:
               schema:
                 type: object
                 example:
-                  token: 28|cUrIdpduNz1Vp58noR3xe3WO04HrCM9MIh7ou2aW
+                  token: 30|YHNdsUxdu4iObESpsYBKLORp7ZKHxJeQP9K4WXBt
                 properties:
                   token:
                     type: string
-                    example: 28|cUrIdpduNz1Vp58noR3xe3WO04HrCM9MIh7ou2aW
+                    example: 30|YHNdsUxdu4iObESpsYBKLORp7ZKHxJeQP9K4WXBt
       tags:
         - Authentication
       requestBody:
@@ -58,11 +58,11 @@ paths:
               schema:
                 type: object
                 example:
-                  token: 29|Luj7dc4XLKqSSnwUcBdZ1zOvBdDAQWzIgngEMKM7
+                  token: 31|S6wGAL8tYbBlvz6Kb25a0V4WtAEGlf0Td1mWpSrz
                 properties:
                   token:
                     type: string
-                    example: 29|Luj7dc4XLKqSSnwUcBdZ1zOvBdDAQWzIgngEMKM7
+                    example: 31|S6wGAL8tYbBlvz6Kb25a0V4WtAEGlf0Td1mWpSrz
       tags:
         - Authentication
       requestBody:
@@ -75,7 +75,7 @@ paths:
                 name:
                   type: string
                   description: ''
-                  example: voluptatem
+                  example: nemo
                 image:
                   type: string
                   format: binary
@@ -83,7 +83,7 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: jarred.schmitt@example.org
+                  example: mann.arne@example.com
                 password:
                   type: string
                   description: djasoijdsaio.
@@ -104,11 +104,11 @@ paths:
                 created_in:
                   type: string
                   description: 'Must be a valid date.'
-                  example: '2023-09-17T09:19:38'
+                  example: '2023-09-17T09:30:57'
                 address:
                   type: string
                   description: ''
-                  example: consequuntur
+                  example: cupiditate
                 password_confirmation:
                   type: string
                   description: djasoijdsaio.
@@ -1101,13 +1101,21 @@ paths:
                   type: object
                 example:
                   -
-                    id: 3
-                    title: 'Earum autem ducimus illo similique.'
-                    description: 'Qui tenetur est sunt eum. Quo nisi voluptatem nisi at asperiores eos magni blanditiis. Non nemo deleniti enim enim dolores. Adipisci non dicta in nulla fugit magni commodi.'
+                    id: 6
+                    title: 'Sint dolorum voluptatem dolor itaque.'
+                    description: 'Perferendis animi assumenda dolore doloribus facere ducimus et. Quas inventore delectus eum aut animi. Eum iste maxime sequi.'
                     ended_at: null
-                    institution_id: 8
-                    created_at: '2023-09-17T08:12:56.000000Z'
-                    updated_at: '2023-09-17T08:12:56.000000Z'
+                    institution_id: 11
+                    created_at: '2023-09-17T08:12:57.000000Z'
+                    updated_at: '2023-09-17T08:12:57.000000Z'
+                  -
+                    id: 22
+                    title: 'Quia vel quod porro praesentium.'
+                    description: 'Ratione quas sequi eaque. Delectus voluptatibus sunt ut. Tenetur beatae voluptates quasi autem ut. Optio incidunt sint et aspernatur quia eos architecto.'
+                    ended_at: null
+                    institution_id: 27
+                    created_at: '2023-09-17T08:12:58.000000Z'
+                    updated_at: '2023-09-17T08:12:58.000000Z'
       tags:
         - Trender
       requestBody:
@@ -1120,7 +1128,7 @@ paths:
                 q:
                   type: string
                   description: ''
-                  example: asperiores
+                  example: delectus
       security: []
     post:
       summary: 'Store a newly created resource in storage.'
@@ -1164,11 +1172,11 @@ paths:
                 title:
                   type: string
                   description: ''
-                  example: placeat
+                  example: dicta
                 description:
                   type: string
                   description: ''
-                  example: 'In provident doloribus voluptatibus eveniet quia eligendi tenetur.'
+                  example: 'Voluptatem labore voluptatibus eum dicta.'
                 details:
                   type: object
                   description: ''
@@ -1181,18 +1189,158 @@ paths:
       security: []
   '/api/trender/{id}':
     get:
-      summary: 'Display the specified resource.'
-      operationId: displayTheSpecifiedResource
+      summary: ''
+      operationId: getApiTrenderId
       description: ''
       parameters: []
       responses:
         200:
           description: ''
           content:
-            text/plain:
+            application/json:
               schema:
-                type: string
-                example: ''
+                type: object
+                example:
+                  data:
+                    id: 25
+                    title: 'Eum officia eum.'
+                    description: 'Porro doloremque molestiae culpa temporibus perferendis minima. Qui non nulla dolorem laudantium.'
+                    created_at: '2023-09-17T08:12:58.000000Z'
+                    ended_at: '2023-09-17 09:25:57'
+                    offers_count: 3
+                    best_offer_from: 'Barry Barton'
+                    offers:
+                      -
+                        id: 11
+                        trender_name: 'Eum officia eum.'
+                        for: 'Dr. Delfina Lesch'
+                        work_on_it: '2023-09-17T09:17:03.000000Z'
+                        work_ended_it: '2023-09-17 09:25:57'
+                      -
+                        id: 12
+                        trender_name: 'Eum officia eum.'
+                        for: 'Dr. Delfina Lesch'
+                        work_on_it: '2023-09-17T09:17:03.000000Z'
+                        work_ended_it: '2023-09-17 09:25:57'
+                      -
+                        id: 13
+                        trender_name: 'Eum officia eum.'
+                        for: 'Dr. Delfina Lesch'
+                        work_on_it: '2023-09-17T09:17:03.000000Z'
+                        work_ended_it: '2023-09-17 09:25:57'
+                    trender_details:
+                      -
+                        id: 10
+                        type: quis
+                        question: est
+                        description: 'Natus sunt enim beatae quo. Et nisi est dolorum nihil et similique facilis nihil. Explicabo incidunt ut excepturi.'
+                        data: molestias
+                        tender_id: 25
+                        created_at: '2023-09-17T08:12:58.000000Z'
+                        updated_at: '2023-09-17T08:12:58.000000Z'
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      id:
+                        type: integer
+                        example: 25
+                      title:
+                        type: string
+                        example: 'Eum officia eum.'
+                      description:
+                        type: string
+                        example: 'Porro doloremque molestiae culpa temporibus perferendis minima. Qui non nulla dolorem laudantium.'
+                      created_at:
+                        type: string
+                        example: '2023-09-17T08:12:58.000000Z'
+                      ended_at:
+                        type: string
+                        example: '2023-09-17 09:25:57'
+                      offers_count:
+                        type: integer
+                        example: 3
+                      best_offer_from:
+                        type: string
+                        example: 'Barry Barton'
+                      offers:
+                        type: array
+                        example:
+                          -
+                            id: 11
+                            trender_name: 'Eum officia eum.'
+                            for: 'Dr. Delfina Lesch'
+                            work_on_it: '2023-09-17T09:17:03.000000Z'
+                            work_ended_it: '2023-09-17 09:25:57'
+                          -
+                            id: 12
+                            trender_name: 'Eum officia eum.'
+                            for: 'Dr. Delfina Lesch'
+                            work_on_it: '2023-09-17T09:17:03.000000Z'
+                            work_ended_it: '2023-09-17 09:25:57'
+                          -
+                            id: 13
+                            trender_name: 'Eum officia eum.'
+                            for: 'Dr. Delfina Lesch'
+                            work_on_it: '2023-09-17T09:17:03.000000Z'
+                            work_ended_it: '2023-09-17 09:25:57'
+                        items:
+                          type: object
+                          properties:
+                            id:
+                              type: integer
+                              example: 11
+                            trender_name:
+                              type: string
+                              example: 'Eum officia eum.'
+                            for:
+                              type: string
+                              example: 'Dr. Delfina Lesch'
+                            work_on_it:
+                              type: string
+                              example: '2023-09-17T09:17:03.000000Z'
+                            work_ended_it:
+                              type: string
+                              example: '2023-09-17 09:25:57'
+                      trender_details:
+                        type: array
+                        example:
+                          -
+                            id: 10
+                            type: quis
+                            question: est
+                            description: 'Natus sunt enim beatae quo. Et nisi est dolorum nihil et similique facilis nihil. Explicabo incidunt ut excepturi.'
+                            data: molestias
+                            tender_id: 25
+                            created_at: '2023-09-17T08:12:58.000000Z'
+                            updated_at: '2023-09-17T08:12:58.000000Z'
+                        items:
+                          type: object
+                          properties:
+                            id:
+                              type: integer
+                              example: 10
+                            type:
+                              type: string
+                              example: quis
+                            question:
+                              type: string
+                              example: est
+                            description:
+                              type: string
+                              example: 'Natus sunt enim beatae quo. Et nisi est dolorum nihil et similique facilis nihil. Explicabo incidunt ut excepturi.'
+                            data:
+                              type: string
+                              example: molestias
+                            tender_id:
+                              type: integer
+                              example: 25
+                            created_at:
+                              type: string
+                              example: '2023-09-17T08:12:58.000000Z'
+                            updated_at:
+                              type: string
+                              example: '2023-09-17T08:12:58.000000Z'
       tags:
         - Trender
       security: []
@@ -1401,6 +1549,37 @@ paths:
       tags:
         - Trender
       security: []
+  '/api/trender/{tender_id}/close':
+    post:
+      summary: ''
+      operationId: postApiTrenderTender_idClose
+      description: ''
+      parameters: []
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Trender
+      security: []
+    parameters:
+      -
+        in: path
+        name: tender_id
+        description: 'The ID of the tender.'
+        example: 1
+        required: true
+        schema:
+          type: integer
 tags:
   -
     name: Authentication

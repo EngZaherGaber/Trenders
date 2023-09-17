@@ -57,9 +57,11 @@ class TenderController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Tender $tender)
+    public function show(Tender $trender)
     {
-        //
+        $trender->load('tenderDetails', 'offers');
+
+        return new TrenderResource($trender);
     }
 
     /**
@@ -121,6 +123,14 @@ class TenderController extends Controller
         $trenders = auth()->user()->institution->tenders()->with('offers')->get();
 
         return TrenderResource::collection($trenders);
+    }
+
+    public function close(Tender $tender)
+    {
+        $tender->ended_at = now();
+        $tender->save();
+
+        return response()->noContent();
     }
 
     /**

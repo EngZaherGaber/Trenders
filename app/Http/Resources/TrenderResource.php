@@ -23,8 +23,8 @@ class TrenderResource extends JsonResource
             'created_at' => $this->created_at,
             'ended_at' => $this->ended_at,
             'offers_count' => $this->whenLoaded('offers')->count(),
-            // 'best_offer_from' => $this->best_offer_from->company->user->name,
-            // 'offers' => OfferResource::collection($this->offers),
+            'best_offer_from' => $this->best_offer_from?->company->user->name,
+            'offers' => OfferResource::collection($this->whenLoaded('offers')),
             'trender_details' => $this->whenLoaded('tenderDetails'),
         ];
     }

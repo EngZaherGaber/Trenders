@@ -16,6 +16,7 @@ class AuthController extends Controller
     /**
      * @bodyParam password string djasoijdsaio. Example: password
      * @bodyParam email string djasoijdsaio. Example: test@test.com
+     *
      */
     public function login(LoginRequest $request)
     {
@@ -65,16 +66,33 @@ class AuthController extends Controller
         ]);
     }
 
+    /**
+     * @authenticated
+     */
+
     public function userProfile()
     {
         return auth()->user();
     }
 
+    /**
+     * @authenticated
+     */
     public function companyProfile()
     {
         return auth()->user()->company;
     }
 
+    /**
+     * @response {
+    "id": 30,
+    "address": "recusandae",
+    "user_id": 46,
+    "created_in": "2023-09-28T00:00:00.000000Z"
+}
+     * 
+     * @authenticated
+     */
     public function institutionProfile()
     {
         return auth()->user()->institution;

@@ -30,6 +30,7 @@ class RegisterRequest extends FormRequest
             'category_ids' => ['required', 'array'],
             'created_in' => ['required', 'date'],
             'address' => ['required', 'string'],
+            'city' => ['required', 'string'],
         ];
     }
 }

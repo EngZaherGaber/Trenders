@@ -21,11 +21,11 @@ paths:
               schema:
                 type: object
                 example:
-                  token: 9|eoGwWsKHWjA51PorWN51O3WxJfYsjKfoowaxKSVx
+                  token: 3|okRTnEU1PiIXB9WllxXslk2FuisY3IOADih98TLP
                 properties:
                   token:
                     type: string
-                    example: 9|eoGwWsKHWjA51PorWN51O3WxJfYsjKfoowaxKSVx
+                    example: 3|okRTnEU1PiIXB9WllxXslk2FuisY3IOADih98TLP
       tags:
         - Authentication
       requestBody:
@@ -58,11 +58,11 @@ paths:
               schema:
                 type: object
                 example:
-                  token: 10|NpRjH4s6Yjd8ywFA1birH0sCpGfAczOsw88R9iCI
+                  token: 4|nmj0CIPNjMz1HVeQZMhhg6O2cA2M7EWV6nIowXqr
                 properties:
                   token:
                     type: string
-                    example: 10|NpRjH4s6Yjd8ywFA1birH0sCpGfAczOsw88R9iCI
+                    example: 4|nmj0CIPNjMz1HVeQZMhhg6O2cA2M7EWV6nIowXqr
       tags:
         - Authentication
       requestBody:
@@ -75,7 +75,7 @@ paths:
                 name:
                   type: string
                   description: ''
-                  example: rerum
+                  example: esse
                 image:
                   type: string
                   format: binary
@@ -83,7 +83,7 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: qleffler@example.net
+                  example: wilhelmine.lesch@example.org
                 password:
                   type: string
                   description: djasoijdsaio.
@@ -91,7 +91,7 @@ paths:
                 type:
                   type: string
                   description: 'Must be one of <code>instute</code> or <code>company</code>.'
-                  example: company
+                  example: instute
                 category_ids:
                   type: array
                   description: djasoijdsaio.
@@ -104,11 +104,15 @@ paths:
                 created_in:
                   type: string
                   description: 'Must be a valid date.'
-                  example: '2023-09-28T07:58:26'
+                  example: '2023-09-28T08:58:06'
                 address:
                   type: string
                   description: ''
-                  example: voluptatibus
+                  example: amet
+                city:
+                  type: string
+                  description: ''
+                  example: unde
                 password_confirmation:
                   type: string
                   description: djasoijdsaio.
@@ -120,6 +124,7 @@ paths:
                 - type
                 - created_in
                 - address
+                - city
       security: []
   /api/profile:
     get:
@@ -135,42 +140,18 @@ paths:
           schema:
             type: string
       responses:
-        200:
+        401:
           description: ''
           content:
             application/json:
               schema:
                 type: object
                 example:
-                  id: 45
-                  name: 'Ruben Rohan'
-                  image: 'http://localhost:8000/images/https://via.placeholder.com/640x480.png/009911?text=iure'
-                  email: danny51@example.net
-                  email_verified_at: '2023-09-28T07:45:47.000000Z'
-                  created_at: '2023-09-28T07:45:47.000000Z'
-                  updated_at: '2023-09-28T07:45:47.000000Z'
+                  message: Unauthenticated.
                 properties:
-                  id:
-                    type: integer
-                    example: 45
-                  name:
+                  message:
                     type: string
-                    example: 'Ruben Rohan'
-                  image:
-                    type: string
-                    example: 'http://localhost:8000/images/https://via.placeholder.com/640x480.png/009911?text=iure'
-                  email:
-                    type: string
-                    example: danny51@example.net
-                  email_verified_at:
-                    type: string
-                    example: '2023-09-28T07:45:47.000000Z'
-                  created_at:
-                    type: string
-                    example: '2023-09-28T07:45:47.000000Z'
-                  updated_at:
-                    type: string
-                    example: '2023-09-28T07:45:47.000000Z'
+                    example: Unauthenticated.
       tags:
         - Authentication
   /api/profile/company:
@@ -187,30 +168,18 @@ paths:
           schema:
             type: string
       responses:
-        200:
+        401:
           description: ''
           content:
             application/json:
               schema:
                 type: object
                 example:
-                  id: 16
-                  address: nesciunt
-                  user_id: 45
-                  created_in: '2023-09-28T00:00:00.000000Z'
+                  message: Unauthenticated.
                 properties:
-                  id:
-                    type: integer
-                    example: 16
-                  address:
+                  message:
                     type: string
-                    example: nesciunt
-                  user_id:
-                    type: integer
-                    example: 45
-                  created_in:
-                    type: string
-                    example: '2023-09-28T00:00:00.000000Z'
+                    example: Unauthenticated.
       tags:
         - Authentication
   /api/profile/institution:
@@ -667,13 +636,18 @@ paths:
       description: ''
       parameters: []
       responses:
-        200:
+        401:
           description: ''
           content:
-            text/plain:
+            application/json:
               schema:
-                type: string
-                example: ''
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
       tags:
         - Offer
       security: []
@@ -764,13 +738,18 @@ paths:
       description: ''
       parameters: []
       responses:
-        200:
+        401:
           description: ''
           content:
-            text/plain:
+            application/json:
               schema:
-                type: string
-                example: ''
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
       tags:
         - Offer
       security: []
@@ -780,13 +759,18 @@ paths:
       description: ''
       parameters: []
       responses:
-        200:
+        401:
           description: ''
           content:
-            text/plain:
+            application/json:
               schema:
-                type: string
-                example: ''
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
       tags:
         - Offer
       security: []
@@ -804,7 +788,39 @@ paths:
       summary: 'Display a listing of the resource.'
       operationId: displayAListingOfTheResource
       description: ''
-      parameters: []
+      parameters:
+        -
+          in: query
+          name: q
+          description: ''
+          example: facilis
+          required: false
+          schema:
+            type: string
+            description: ''
+            example: facilis
+        -
+          in: query
+          name: category_ids
+          description: ''
+          example: []
+          required: false
+          schema:
+            type: object
+            description: ''
+            example: []
+            properties: []
+        -
+          in: query
+          name: cities
+          description: ''
+          example: []
+          required: false
+          schema:
+            type: object
+            description: ''
+            example: []
+            properties: []
       responses:
         200:
           description: ''
@@ -814,63 +830,7 @@ paths:
                 type: array
                 items:
                   type: object
-                example:
-                  -
-                    id: 4
-                    title: 'Est in eius.'
-                    description: 'Eum et assumenda quia eum magnam dolor. Explicabo culpa deleniti molestiae nihil. Suscipit quia animi consequatur.'
-                    ended_at: null
-                    institution_id: 9
-                    institution_name: 'Prof. Alford Cummings'
-                  -
-                    id: 9
-                    title: 'Adipisci debitis sit enim voluptatem.'
-                    description: 'Aliquid repellat quasi consequatur sapiente fuga amet. Eos laboriosam aut ut veritatis sit. Debitis aliquid facere voluptatem ducimus quisquam rerum corporis.'
-                    ended_at: null
-                    institution_id: 14
-                    institution_name: 'Ricky Leuschke'
-                  -
-                    id: 13
-                    title: 'Aut necessitatibus aperiam voluptatem qui facere.'
-                    description: 'Dolorem perferendis velit ea est rerum. Nulla consequatur natus qui dicta. Porro quia fuga culpa enim veritatis earum.'
-                    ended_at: null
-                    institution_id: 18
-                    institution_name: 'Dr. Mason Koelpin IV'
-                  -
-                    id: 17
-                    title: 'Ut occaecati eligendi consequatur.'
-                    description: 'Velit ipsa molestiae numquam a natus exercitationem. Vitae dolore tempore consectetur doloremque quibusdam in. Laboriosam voluptate commodi inventore molestias ea ipsa dicta eum.'
-                    ended_at: null
-                    institution_id: 22
-                    institution_name: 'Skylar Schamberger III'
-                  -
-                    id: 19
-                    title: 'Necessitatibus laborum ex quo tempore.'
-                    description: 'Distinctio perferendis repellendus temporibus consequatur non. Quibusdam alias id dolorem modi. Nostrum quis suscipit aut quidem delectus.'
-                    ended_at: null
-                    institution_id: 24
-                    institution_name: 'Marcel Prohaska'
-                  -
-                    id: 20
-                    title: 'Vel aspernatur ullam eaque dolor pariatur.'
-                    description: 'Quam beatae molestias illum laudantium consequatur ipsam. Repellat et suscipit quis voluptatem consequatur. Ab placeat rerum voluptatem et. Dolorum quae praesentium quam expedita aut.'
-                    ended_at: null
-                    institution_id: 25
-                    institution_name: 'Daija Moore'
-                  -
-                    id: 21
-                    title: 'A perferendis quam fugit quia consectetur.'
-                    description: 'In consequatur in animi aliquam veritatis cupiditate dolor. Vel qui fugit dolores quod. Et quia nemo repellendus sequi enim delectus odio odit.'
-                    ended_at: null
-                    institution_id: 26
-                    institution_name: 'Estrella Mertz'
-                  -
-                    id: 24
-                    title: 'Est temporibus repudiandae ab veritatis iusto.'
-                    description: 'Et impedit qui qui esse ipsam. Est sit molestiae est qui. In dolor in expedita consequatur quo. Quos quisquam commodi et vel quos ducimus corrupti.'
-                    ended_at: null
-                    institution_id: 29
-                    institution_name: 'Scotty Mosciski'
+                example: []
       tags:
         - Trender
       requestBody:
@@ -883,7 +843,17 @@ paths:
                 q:
                   type: string
                   description: ''
-                  example: consequatur
+                  example: beatae
+                category_ids:
+                  type: object
+                  description: ''
+                  example: null
+                  properties: []
+                cities:
+                  type: object
+                  description: ''
+                  example: null
+                  properties: []
       security: []
     post:
       summary: 'Store a newly created resource in storage.'
@@ -931,7 +901,7 @@ paths:
                 description:
                   type: string
                   description: ''
-                  example: 'Omnis asperiores rerum consequatur est voluptatem qui velit qui.'
+                  example: 'Cum non nesciunt corporis voluptatum possimus et.'
                 details:
                   type: object
                   description: ''

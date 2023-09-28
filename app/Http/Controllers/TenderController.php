@@ -6,6 +6,7 @@ use App\Http\Requests\SearchTenderRequest;
 use App\Http\Requests\StoreTenderRequest;
 use App\Http\Requests\UpdateTenderRequest;
 use App\Http\Resources\TrenderHomeResource;
+use App\Models\Category;
 use App\Models\Tender;
 use Illuminate\Support\Facades\Validator;
 
@@ -17,12 +18,25 @@ class TenderController extends Controller
 {
     /**
      * Display a listing of the resource.
+     * 
+     * @queryParam q string
+     * @queryParam category_ids object
+     * @queryParam cities object
      */
     public function index(SearchTenderRequest $request)
     {
-        $tenders = Tender::whereRaw('LOWER(title) LIKE ? ', ['%' . strtolower($request->q) . '%'])
-            ->orWhereRaw('LOWER(description) LIKE ? ', ['%' . strtolower($request->q) . '%'])
-            ->get();
+        $tenders = Tender::where(fn ($query) => $query->whereRaw('LOWER(title) LIKE ? ', ['%' . strtolower($request->q) . '%'])
+            ->orWhereRaw('LOWER(description) LIKE ? ', ['%' . strtolower($request->q) . '%']));
+
+        if ($request->category_ids) {
+            $tenders = $tenders->whereHas('institution', fn ($query) => $query->whereHas('categories', fn ($query) => $query->whereIn('category_id', $request->category_ids)));
+        }
+
+        if ($request->cities) {
+            $tenders = $tenders->whereHas('institution', fn ($query) => $query->whereIn('city', $request->cities));
+        }
+
+        $tenders = $tenders->get();
 
         return TrenderHomeResource::collection($tenders);
     }

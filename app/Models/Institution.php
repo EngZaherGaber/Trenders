@@ -21,6 +21,7 @@ class Institution extends Model
      */
     protected $fillable = [
         'address',
+        'city',
         'user_id',
         'created_in',
     ];

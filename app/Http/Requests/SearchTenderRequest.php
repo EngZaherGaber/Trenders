@@ -23,6 +23,8 @@ class SearchTenderRequest extends FormRequest
     {
         return [
             'q' => ['nullable', 'string'],
+            'category_ids' => ['nullable', 'array', 'exists:categories,id'],
+            'cities' => ['nullable', 'array', 'exists:institutions,city'],
         ];
     }
 }

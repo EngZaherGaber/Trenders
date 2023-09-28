@@ -21,23 +21,61 @@ endpoints:
       Accept: application/json
     urlParameters: []
     cleanUrlParameters: []
-    queryParameters: []
-    cleanQueryParameters: []
+    queryParameters:
+      q:
+        name: q
+        description: ''
+        required: false
+        example: facilis
+        type: string
+        custom: []
+      category_ids:
+        name: category_ids
+        description: ''
+        required: false
+        example: []
+        type: object
+        custom: []
+      cities:
+        name: cities
+        description: ''
+        required: false
+        example: []
+        type: object
+        custom: []
+    cleanQueryParameters:
+      q: facilis
+      category_ids: []
+      cities: []
     bodyParameters:
       q:
         name: q
         description: ''
         required: false
-        example: consequatur
+        example: beatae
         type: string
         custom: []
+      category_ids:
+        name: category_ids
+        description: ''
+        required: false
+        example: null
+        type: object
+        custom: []
+      cities:
+        name: cities
+        description: ''
+        required: false
+        example: null
+        type: object
+        custom: []
     cleanBodyParameters:
-      q: consequatur
+      q: beatae
     fileParameters: []
     responses:
       -
         status: 200
-        content: '[{"id":4,"title":"Est in eius.","description":"Eum et assumenda quia eum magnam dolor. Explicabo culpa deleniti molestiae nihil. Suscipit quia animi consequatur.","ended_at":null,"institution_id":9,"institution_name":"Prof. Alford Cummings"},{"id":9,"title":"Adipisci debitis sit enim voluptatem.","description":"Aliquid repellat quasi consequatur sapiente fuga amet. Eos laboriosam aut ut veritatis sit. Debitis aliquid facere voluptatem ducimus quisquam rerum corporis.","ended_at":null,"institution_id":14,"institution_name":"Ricky Leuschke"},{"id":13,"title":"Aut necessitatibus aperiam voluptatem qui facere.","description":"Dolorem perferendis velit ea est rerum. Nulla consequatur natus qui dicta. Porro quia fuga culpa enim veritatis earum.","ended_at":null,"institution_id":18,"institution_name":"Dr. Mason Koelpin IV"},{"id":17,"title":"Ut occaecati eligendi consequatur.","description":"Velit ipsa molestiae numquam a natus exercitationem. Vitae dolore tempore consectetur doloremque quibusdam in. Laboriosam voluptate commodi inventore molestias ea ipsa dicta eum.","ended_at":null,"institution_id":22,"institution_name":"Skylar Schamberger III"},{"id":19,"title":"Necessitatibus laborum ex quo tempore.","description":"Distinctio perferendis repellendus temporibus consequatur non. Quibusdam alias id dolorem modi. Nostrum quis suscipit aut quidem delectus.","ended_at":null,"institution_id":24,"institution_name":"Marcel Prohaska"},{"id":20,"title":"Vel aspernatur ullam eaque dolor pariatur.","description":"Quam beatae molestias illum laudantium consequatur ipsam. Repellat et suscipit quis voluptatem consequatur. Ab placeat rerum voluptatem et. Dolorum quae praesentium quam expedita aut.","ended_at":null,"institution_id":25,"institution_name":"Daija Moore"},{"id":21,"title":"A perferendis quam fugit quia consectetur.","description":"In consequatur in animi aliquam veritatis cupiditate dolor. Vel qui fugit dolores quod. Et quia nemo repellendus sequi enim delectus odio odit.","ended_at":null,"institution_id":26,"institution_name":"Estrella Mertz"},{"id":24,"title":"Est temporibus repudiandae ab veritatis iusto.","description":"Et impedit qui qui esse ipsam. Est sit molestiae est qui. In dolor in expedita consequatur quo. Quos quisquam commodi et vel quos ducimus corrupti.","ended_at":null,"institution_id":29,"institution_name":"Scotty Mosciski"}]'
+        content: '[]'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -84,7 +122,7 @@ endpoints:
         name: description
         description: ''
         required: true
-        example: 'Omnis asperiores rerum consequatur est voluptatem qui velit qui.'
+        example: 'Cum non nesciunt corporis voluptatum possimus et.'
         type: string
         custom: []
       details:
@@ -96,7 +134,7 @@ endpoints:
         custom: []
     cleanBodyParameters:
       title: repellendus
-      description: 'Omnis asperiores rerum consequatur est voluptatem qui velit qui.'
+      description: 'Cum non nesciunt corporis voluptatum possimus et.'
       details: []
     fileParameters: []
     responses:

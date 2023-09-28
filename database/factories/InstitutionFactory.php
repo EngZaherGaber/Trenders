@@ -23,6 +23,7 @@ class InstitutionFactory extends Factory
     {
         return [
             'address' => $this->faker->word,
+            'city' => $this->faker->word,
             'created_in' => now(),
             'user_id' => User::factory(),
         ];

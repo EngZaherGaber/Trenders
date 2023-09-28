@@ -53,6 +53,7 @@ class AuthController extends Controller
         } else {
             $type = $user->institution()->create([
                 'address' => $request->address,
+                'city' => $request->city,
                 'created_in' => $request->created_in
             ]);
         }

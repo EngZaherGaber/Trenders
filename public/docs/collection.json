@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "Laravel",
-        "_postman_id": "0b880d48-b060-4633-b379-cf6f8bac8ebf",
+        "_postman_id": "c14f8c5d-3d0b-426f-b45e-4a5ae85240d3",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -73,7 +73,7 @@
                                 }
                             ],
                             "code": 200,
-                            "body": "{\"token\":\"9|eoGwWsKHWjA51PorWN51O3WxJfYsjKfoowaxKSVx\"}",
+                            "body": "{\"token\":\"3|okRTnEU1PiIXB9WllxXslk2FuisY3IOADih98TLP\"}",
                             "name": ""
                         }
                     ]
@@ -103,13 +103,13 @@
                             "formdata": [
                                 {
                                     "key": "name",
-                                    "value": "rerum",
+                                    "value": "esse",
                                     "type": "text",
                                     "description": ""
                                 },
                                 {
                                     "key": "email",
-                                    "value": "qleffler@example.net",
+                                    "value": "wilhelmine.lesch@example.org",
                                     "type": "text",
                                     "description": "Must be a valid email address."
                                 },
@@ -121,7 +121,7 @@
                                 },
                                 {
                                     "key": "type",
-                                    "value": "company",
+                                    "value": "instute",
                                     "type": "text",
                                     "description": "Must be one of <code>instute<\/code> or <code>company<\/code>."
                                 },
@@ -145,13 +145,19 @@
                                 },
                                 {
                                     "key": "created_in",
-                                    "value": "2023-09-28T07:58:26",
+                                    "value": "2023-09-28T08:58:06",
                                     "type": "text",
                                     "description": "Must be a valid date."
                                 },
                                 {
                                     "key": "address",
-                                    "value": "voluptatibus",
+                                    "value": "amet",
+                                    "type": "text",
+                                    "description": ""
+                                },
+                                {
+                                    "key": "city",
+                                    "value": "unde",
                                     "type": "text",
                                     "description": ""
                                 },
@@ -198,7 +204,7 @@
                                 }
                             ],
                             "code": 200,
-                            "body": "{\"token\":\"10|NpRjH4s6Yjd8ywFA1birH0sCpGfAczOsw88R9iCI\"}",
+                            "body": "{\"token\":\"4|nmj0CIPNjMz1HVeQZMhhg6O2cA2M7EWV6nIowXqr\"}",
                             "name": ""
                         }
                     ]
@@ -238,20 +244,12 @@
                                     "value": "application\/json"
                                 },
                                 {
-                                    "key": "x-ratelimit-limit",
-                                    "value": "60"
-                                },
-                                {
-                                    "key": "x-ratelimit-remaining",
-                                    "value": "59"
-                                },
-                                {
                                     "key": "access-control-allow-origin",
                                     "value": "*"
                                 }
                             ],
-                            "code": 200,
-                            "body": "{\"id\":45,\"name\":\"Ruben Rohan\",\"image\":\"http:\\\/\\\/localhost:8000\\\/images\\\/https:\\\/\\\/via.placeholder.com\\\/640x480.png\\\/009911?text=iure\",\"email\":\"danny51@example.net\",\"email_verified_at\":\"2023-09-28T07:45:47.000000Z\",\"created_at\":\"2023-09-28T07:45:47.000000Z\",\"updated_at\":\"2023-09-28T07:45:47.000000Z\"}",
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
                             "name": ""
                         }
                     ]
@@ -291,20 +289,12 @@
                                     "value": "application\/json"
                                 },
                                 {
-                                    "key": "x-ratelimit-limit",
-                                    "value": "60"
-                                },
-                                {
-                                    "key": "x-ratelimit-remaining",
-                                    "value": "58"
-                                },
-                                {
                                     "key": "access-control-allow-origin",
                                     "value": "*"
                                 }
                             ],
-                            "code": 200,
-                            "body": "{\"id\":16,\"address\":\"nesciunt\",\"user_id\":45,\"created_in\":\"2023-09-28T00:00:00.000000Z\"}",
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
                             "name": ""
                         }
                     ]
@@ -477,28 +467,20 @@
                         {
                             "header": [
                                 {
-                                    "key": "content-type",
-                                    "value": "text\/html; charset=UTF-8"
-                                },
-                                {
                                     "key": "cache-control",
                                     "value": "no-cache, private"
                                 },
                                 {
-                                    "key": "x-ratelimit-limit",
-                                    "value": "60"
-                                },
-                                {
-                                    "key": "x-ratelimit-remaining",
-                                    "value": "57"
+                                    "key": "content-type",
+                                    "value": "application\/json"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
                                     "value": "*"
                                 }
                             ],
-                            "code": 200,
-                            "body": "",
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
                             "name": ""
                         }
                     ]
@@ -584,28 +566,20 @@
                         {
                             "header": [
                                 {
-                                    "key": "content-type",
-                                    "value": "text\/html; charset=UTF-8"
-                                },
-                                {
                                     "key": "cache-control",
                                     "value": "no-cache, private"
                                 },
                                 {
-                                    "key": "x-ratelimit-limit",
-                                    "value": "60"
-                                },
-                                {
-                                    "key": "x-ratelimit-remaining",
-                                    "value": "56"
+                                    "key": "content-type",
+                                    "value": "application\/json"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
                                     "value": "*"
                                 }
                             ],
-                            "code": 200,
-                            "body": "",
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
                             "name": ""
                         }
                     ]
@@ -648,28 +622,20 @@
                         {
                             "header": [
                                 {
-                                    "key": "content-type",
-                                    "value": "text\/html; charset=UTF-8"
-                                },
-                                {
                                     "key": "cache-control",
                                     "value": "no-cache, private"
                                 },
                                 {
-                                    "key": "x-ratelimit-limit",
-                                    "value": "60"
-                                },
-                                {
-                                    "key": "x-ratelimit-remaining",
-                                    "value": "55"
+                                    "key": "content-type",
+                                    "value": "application\/json"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
                                     "value": "*"
                                 }
                             ],
-                            "code": 200,
-                            "body": "",
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
                             "name": ""
                         }
                     ]
@@ -686,8 +652,27 @@
                         "url": {
                             "host": "{{baseUrl}}",
                             "path": "api\/trender",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/api\/trender"
+                            "query": [
+                                {
+                                    "key": "q",
+                                    "value": "facilis",
+                                    "description": "",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "category_ids[]",
+                                    "value": "",
+                                    "description": "",
+                                    "disabled": true
+                                },
+                                {
+                                    "key": "cities[]",
+                                    "value": "",
+                                    "description": "",
+                                    "disabled": true
+                                }
+                            ],
+                            "raw": "{{baseUrl}}\/api\/trender?q=facilis&category_ids[]=&cities[]="
                         },
                         "method": "GET",
                         "header": [
@@ -702,7 +687,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"q\":\"consequatur\"}"
+                            "raw": "{\"q\":\"beatae\"}"
                         },
                         "description": "",
                         "auth": {
@@ -734,7 +719,7 @@
                                 }
                             ],
                             "code": 200,
-                            "body": "[{\"id\":4,\"title\":\"Est in eius.\",\"description\":\"Eum et assumenda quia eum magnam dolor. Explicabo culpa deleniti molestiae nihil. Suscipit quia animi consequatur.\",\"ended_at\":null,\"institution_id\":9,\"institution_name\":\"Prof. Alford Cummings\"},{\"id\":9,\"title\":\"Adipisci debitis sit enim voluptatem.\",\"description\":\"Aliquid repellat quasi consequatur sapiente fuga amet. Eos laboriosam aut ut veritatis sit. Debitis aliquid facere voluptatem ducimus quisquam rerum corporis.\",\"ended_at\":null,\"institution_id\":14,\"institution_name\":\"Ricky Leuschke\"},{\"id\":13,\"title\":\"Aut necessitatibus aperiam voluptatem qui facere.\",\"description\":\"Dolorem perferendis velit ea est rerum. Nulla consequatur natus qui dicta. Porro quia fuga culpa enim veritatis earum.\",\"ended_at\":null,\"institution_id\":18,\"institution_name\":\"Dr. Mason Koelpin IV\"},{\"id\":17,\"title\":\"Ut occaecati eligendi consequatur.\",\"description\":\"Velit ipsa molestiae numquam a natus exercitationem. Vitae dolore tempore consectetur doloremque quibusdam in. Laboriosam voluptate commodi inventore molestias ea ipsa dicta eum.\",\"ended_at\":null,\"institution_id\":22,\"institution_name\":\"Skylar Schamberger III\"},{\"id\":19,\"title\":\"Necessitatibus laborum ex quo tempore.\",\"description\":\"Distinctio perferendis repellendus temporibus consequatur non. Quibusdam alias id dolorem modi. Nostrum quis suscipit aut quidem delectus.\",\"ended_at\":null,\"institution_id\":24,\"institution_name\":\"Marcel Prohaska\"},{\"id\":20,\"title\":\"Vel aspernatur ullam eaque dolor pariatur.\",\"description\":\"Quam beatae molestias illum laudantium consequatur ipsam. Repellat et suscipit quis voluptatem consequatur. Ab placeat rerum voluptatem et. Dolorum quae praesentium quam expedita aut.\",\"ended_at\":null,\"institution_id\":25,\"institution_name\":\"Daija Moore\"},{\"id\":21,\"title\":\"A perferendis quam fugit quia consectetur.\",\"description\":\"In consequatur in animi aliquam veritatis cupiditate dolor. Vel qui fugit dolores quod. Et quia nemo repellendus sequi enim delectus odio odit.\",\"ended_at\":null,\"institution_id\":26,\"institution_name\":\"Estrella Mertz\"},{\"id\":24,\"title\":\"Est temporibus repudiandae ab veritatis iusto.\",\"description\":\"Et impedit qui qui esse ipsam. Est sit molestiae est qui. In dolor in expedita consequatur quo. Quos quisquam commodi et vel quos ducimus corrupti.\",\"ended_at\":null,\"institution_id\":29,\"institution_name\":\"Scotty Mosciski\"}]",
+                            "body": "[]",
                             "name": ""
                         }
                     ]
@@ -761,7 +746,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"title\":\"repellendus\",\"description\":\"Omnis asperiores rerum consequatur est voluptatem qui velit qui.\",\"details\":[]}"
+                            "raw": "{\"title\":\"repellendus\",\"description\":\"Cum non nesciunt corporis voluptatum possimus et.\",\"details\":[]}"
                         },
                         "description": "",
                         "auth": {

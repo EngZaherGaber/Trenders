@@ -24,6 +24,7 @@ class StoreTenderRequest extends FormRequest
         return [
             'title' => ['required', 'string'],
             'description' => ['required', 'string'],
+            'columns_number' => ['required', 'integer'],
             'image' => ['nullable', 'string'],
             'details' => ['required', 'array'],
         ];

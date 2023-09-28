@@ -21,12 +21,12 @@ paths:
               schema:
                 type: object
                 example:
-                  token: 16|weLnjWanw4mLTdFqNIK52vC2gwtDyANxvAxDvNSv
+                  token: 2|oISzw3ZStVMSnLrnYygTHx1KFnGPUf9fRbTZL8Nt
                   is_company: true
                 properties:
                   token:
                     type: string
-                    example: 16|weLnjWanw4mLTdFqNIK52vC2gwtDyANxvAxDvNSv
+                    example: 2|oISzw3ZStVMSnLrnYygTHx1KFnGPUf9fRbTZL8Nt
                   is_company:
                     type: boolean
                     example: true
@@ -62,11 +62,11 @@ paths:
               schema:
                 type: object
                 example:
-                  token: 17|oTLLWAaoNkxYdbCu3ESWaZgxotpqZFxU3G51nWBT
+                  token: 3|fVALs2GsCqXOip4GURGz83EjlL1fXvrfXOvth3wq
                 properties:
                   token:
                     type: string
-                    example: 17|oTLLWAaoNkxYdbCu3ESWaZgxotpqZFxU3G51nWBT
+                    example: 3|fVALs2GsCqXOip4GURGz83EjlL1fXvrfXOvth3wq
       tags:
         - Authentication
       requestBody:
@@ -79,7 +79,7 @@ paths:
                 name:
                   type: string
                   description: ''
-                  example: et
+                  example: in
                 image:
                   type: string
                   format: binary
@@ -87,7 +87,7 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: gkonopelski@example.com
+                  example: russell51@example.org
                 password:
                   type: string
                   description: djasoijdsaio.
@@ -108,15 +108,15 @@ paths:
                 created_in:
                   type: string
                   description: 'Must be a valid date.'
-                  example: '2023-09-28T11:43:48'
+                  example: '2023-09-28T12:04:31'
                 address:
                   type: string
                   description: ''
-                  example: dicta
+                  example: debitis
                 city:
                   type: string
                   description: ''
-                  example: dolorem
+                  example: sed
                 password_confirmation:
                   type: string
                   description: djasoijdsaio.
@@ -153,12 +153,12 @@ paths:
                 example:
                   user:
                     id: 46
-                    name: 'Bernice Dickinson PhD'
-                    image: 'http://localhost:8000/images/https://via.placeholder.com/640x480.png/004488?text=impedit'
-                    email: purdy.meghan@example.org
-                    email_verified_at: '2023-09-28T10:07:43.000000Z'
-                    created_at: '2023-09-28T10:07:43.000000Z'
-                    updated_at: '2023-09-28T10:07:43.000000Z'
+                    name: 'Elta Crooks Jr.'
+                    image: 'http://localhost:8000/images/https://via.placeholder.com/640x480.png/0088dd?text=reprehenderit'
+                    email: toni87@example.net
+                    email_verified_at: '2023-09-28T12:02:54.000000Z'
+                    created_at: '2023-09-28T12:02:54.000000Z'
+                    updated_at: '2023-09-28T12:02:54.000000Z'
                     company: null
                   is_company: false
                 properties:
@@ -170,22 +170,22 @@ paths:
                         example: 46
                       name:
                         type: string
-                        example: 'Bernice Dickinson PhD'
+                        example: 'Elta Crooks Jr.'
                       image:
                         type: string
-                        example: 'http://localhost:8000/images/https://via.placeholder.com/640x480.png/004488?text=impedit'
+                        example: 'http://localhost:8000/images/https://via.placeholder.com/640x480.png/0088dd?text=reprehenderit'
                       email:
                         type: string
-                        example: purdy.meghan@example.org
+                        example: toni87@example.net
                       email_verified_at:
                         type: string
-                        example: '2023-09-28T10:07:43.000000Z'
+                        example: '2023-09-28T12:02:54.000000Z'
                       created_at:
                         type: string
-                        example: '2023-09-28T10:07:43.000000Z'
+                        example: '2023-09-28T12:02:54.000000Z'
                       updated_at:
                         type: string
-                        example: '2023-09-28T10:07:43.000000Z'
+                        example: '2023-09-28T12:02:54.000000Z'
                       company:
                         type: string
                         example: null
@@ -838,12 +838,12 @@ paths:
           in: query
           name: q
           description: ''
-          example: molestias
+          example: enim
           required: false
           schema:
             type: string
             description: ''
-            example: molestias
+            example: enim
         -
           in: query
           name: category_ids
@@ -877,33 +877,82 @@ paths:
                   type: object
                 example:
                   -
-                    id: 2
-                    title: 'Veritatis corporis ut unde.'
-                    description: 'Officiis maiores deserunt voluptatum. Est rerum qui et ratione consequatur. Autem id quod ipsa aut alias est id. Rerum doloribus aliquid voluptatem. Necessitatibus aliquid adipisci velit eaque.'
+                    id: 3
+                    title: 'Quo alias corrupti illo.'
+                    description: 'Laudantium autem maxime est iure. Inventore quo fuga aliquid vel rerum. Voluptates et et dolores praesentium cumque sed tempore.'
                     ended_at: null
-                    institution_id: 7
-                    institution_name: 'Abbigail Brakus III'
+                    institution_id: 8
+                    institution_name: 'Dejah Homenick'
                   -
                     id: 4
-                    title: 'Fugiat qui vitae.'
-                    description: 'Officiis accusantium accusantium corporis dicta voluptatem voluptatem. Consequatur perspiciatis enim accusantium ipsum.'
+                    title: 'Suscipit quae et et.'
+                    description: 'Et dolores deserunt non perspiciatis labore ad. Consequuntur sint quod aut rem. Eum commodi ad sequi ipsam molestiae corporis quia.'
                     ended_at: null
                     institution_id: 9
-                    institution_name: 'Odessa Hyatt'
+                    institution_name: 'Verna Cartwright'
+                  -
+                    id: 5
+                    title: 'Repellat asperiores illo architecto quas amet.'
+                    description: 'Quis beatae voluptas qui voluptatibus est. Perspiciatis asperiores voluptas corporis ut. Enim et saepe dolores vitae sint molestiae. At officiis laborum sint tempora et laboriosam earum.'
+                    ended_at: null
+                    institution_id: 10
+                    institution_name: 'Bulah Hansen'
                   -
                     id: 10
-                    title: 'Architecto blanditiis corporis eius voluptas dolorem.'
-                    description: 'Sunt sapiente aut et eos ipsam laborum. Eaque eum excepturi ea voluptatem et adipisci id nihil. Quis error illo voluptatem sit. Aut eum impedit et provident ipsam aspernatur.'
+                    title: 'Quod magnam recusandae autem id.'
+                    description: 'Vel minus natus iste aperiam. Quia labore repellendus suscipit aliquam facere. Aspernatur doloribus tenetur voluptatum repellat illum deserunt. Nesciunt hic cumque incidunt est.'
                     ended_at: null
                     institution_id: 15
-                    institution_name: 'Alisha Kuphal V'
+                    institution_name: 'Karson Kovacek'
+                  -
+                    id: 11
+                    title: 'Doloremque velit omnis sed.'
+                    description: 'Quo labore delectus molestiae totam et. Rerum est sunt quibusdam repudiandae. Ut voluptatem voluptatem molestias laudantium in consequatur. Sed id natus autem cum qui nulla.'
+                    ended_at: null
+                    institution_id: 16
+                    institution_name: 'Rubie Jast'
                   -
                     id: 12
-                    title: 'Qui rerum libero quo et.'
-                    description: 'Mollitia quaerat quo in in repellendus corporis corrupti. Laboriosam culpa molestiae commodi id. Aperiam facere natus deserunt est asperiores. Sequi modi velit asperiores voluptatem.'
+                    title: 'Itaque magni recusandae vitae ut est.'
+                    description: 'Sint dolorum at nobis aliquam libero delectus. Qui rerum nam sint ratione. Quisquam accusamus mollitia incidunt rem.'
                     ended_at: null
                     institution_id: 17
-                    institution_name: 'Yasmine Walter'
+                    institution_name: 'Dr. Timmothy Lubowitz'
+                  -
+                    id: 15
+                    title: 'Natus fugit possimus libero aut.'
+                    description: 'Eos sed sequi nam culpa. Aut magni amet excepturi sit alias. Et quo quasi autem non sed quo. Molestias laboriosam nihil cupiditate qui nostrum.'
+                    ended_at: null
+                    institution_id: 20
+                    institution_name: 'Muhammad Rohan'
+                  -
+                    id: 18
+                    title: 'Consectetur et sit vitae at.'
+                    description: 'Autem incidunt saepe eveniet. Tempore odio non veritatis possimus quia. Cum in quia dicta magni est ipsam facilis. A soluta alias id iusto voluptatum minima beatae quaerat.'
+                    ended_at: null
+                    institution_id: 23
+                    institution_name: 'Hershel Osinski'
+                  -
+                    id: 19
+                    title: 'Aliquam eius et.'
+                    description: 'Assumenda aut ex itaque neque et laborum quis officiis. Fugit minus architecto fugiat ex velit expedita corporis earum. Sed sunt sit amet molestiae eveniet sint.'
+                    ended_at: null
+                    institution_id: 24
+                    institution_name: 'Mr. Gustave Kemmer'
+                  -
+                    id: 23
+                    title: 'Officia vitae quibusdam dolor.'
+                    description: 'Vel illum sunt suscipit molestiae. Ea nihil et quae praesentium. Et blanditiis mollitia cum ratione nisi inventore. Qui porro qui molestiae est sunt laborum. Commodi minus quis deleniti magni rerum.'
+                    ended_at: null
+                    institution_id: 28
+                    institution_name: 'Kira Von'
+                  -
+                    id: 25
+                    title: 'Ut voluptates nesciunt nostrum temporibus.'
+                    description: 'Magni velit quia sequi minus qui occaecati nihil. Consequatur consequatur soluta molestias rerum eligendi sequi error. Rerum in excepturi ab eum. Error laborum rerum mollitia rerum incidunt.'
+                    ended_at: null
+                    institution_id: 30
+                    institution_name: 'Elta Crooks Jr.'
       tags:
         - Trender
       requestBody:
@@ -916,7 +965,7 @@ paths:
                 q:
                   type: string
                   description: ''
-                  example: corporis
+                  example: est
                 category_ids:
                   type: object
                   description: ''
@@ -970,15 +1019,19 @@ paths:
                 title:
                   type: string
                   description: ''
-                  example: quia
+                  example: consequatur
                 description:
                   type: string
                   description: ''
-                  example: 'Voluptatem soluta nam magni sed atque id.'
+                  example: 'Sit omnis repellat ipsa dignissimos.'
+                image:
+                  type: string
+                  description: ''
+                  example: sed
                 details:
                   type: object.
                   description: ''
-                  example: "[\n {\n    \"type\": \"text\",\n    \"data\": {\n     \"validator\": {\n \"required\": true,\n\"error_message\": \"Invalid parameters\"\n}\n}\n }\n]"
+                  example: "[\n {\n    \"name\": \"text\",\n    \"data\": {\n     \"validator\": {\n \"required\": true,\n\"error_message\": \"Invalid parameters\"\n}\n}\n }\n]"
               required:
                 - title
                 - description

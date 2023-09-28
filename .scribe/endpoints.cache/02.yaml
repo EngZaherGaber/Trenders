@@ -45,12 +45,12 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"token":"16|weLnjWanw4mLTdFqNIK52vC2gwtDyANxvAxDvNSv","is_company":true}'
+        content: '{"token":"2|oISzw3ZStVMSnLrnYygTHx1KFnGPUf9fRbTZL8Nt","is_company":true}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '54'
+          x-ratelimit-remaining: '53'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -85,7 +85,7 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: et
+        example: in
         type: string
         custom: []
       image:
@@ -99,7 +99,7 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: gkonopelski@example.com
+        example: russell51@example.org
         type: string
         custom: []
       password:
@@ -130,21 +130,21 @@ endpoints:
         name: created_in
         description: 'Must be a valid date.'
         required: true
-        example: '2023-09-28T11:43:48'
+        example: '2023-09-28T12:04:31'
         type: string
         custom: []
       address:
         name: address
         description: ''
         required: true
-        example: dicta
+        example: debitis
         type: string
         custom: []
       city:
         name: city
         description: ''
         required: true
-        example: dolorem
+        example: sed
         type: string
         custom: []
       password_confirmation:
@@ -155,29 +155,29 @@ endpoints:
         type: string
         custom: []
     cleanBodyParameters:
-      name: et
-      email: gkonopelski@example.com
+      name: in
+      email: russell51@example.org
       password: password
       type: instute
       category_ids:
         - 1
         - 2
         - 3
-      created_in: '2023-09-28T11:43:48'
-      address: dicta
-      city: dolorem
+      created_in: '2023-09-28T12:04:31'
+      address: debitis
+      city: sed
       password_confirmation: password
     fileParameters:
       image: null
     responses:
       -
         status: 200
-        content: '{"token":"17|oTLLWAaoNkxYdbCu3ESWaZgxotpqZFxU3G51nWBT"}'
+        content: '{"token":"3|fVALs2GsCqXOip4GURGz83EjlL1fXvrfXOvth3wq"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '53'
+          x-ratelimit-remaining: '52'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -214,7 +214,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"user":{"id":46,"name":"Bernice Dickinson PhD","image":"http:\/\/localhost:8000\/images\/https:\/\/via.placeholder.com\/640x480.png\/004488?text=impedit","email":"purdy.meghan@example.org","email_verified_at":"2023-09-28T10:07:43.000000Z","created_at":"2023-09-28T10:07:43.000000Z","updated_at":"2023-09-28T10:07:43.000000Z","company":null},"is_company":false}'
+        content: '{"user":{"id":46,"name":"Elta Crooks Jr.","image":"http:\/\/localhost:8000\/images\/https:\/\/via.placeholder.com\/640x480.png\/0088dd?text=reprehenderit","email":"toni87@example.net","email_verified_at":"2023-09-28T12:02:54.000000Z","created_at":"2023-09-28T12:02:54.000000Z","updated_at":"2023-09-28T12:02:54.000000Z","company":null},"is_company":false}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -227,7 +227,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|PGF8EWdnNq6dTXEpzukHxel6Z8qnw17DKnvghij6'
+      - 'Bearer 1|wFG4wYBKkfpOMmqAZFVjcqFLC7fHbrPGYx4BtCTa'
     controller: null
     method: null
     route: null
@@ -274,7 +274,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|PGF8EWdnNq6dTXEpzukHxel6Z8qnw17DKnvghij6'
+      - 'Bearer 1|wFG4wYBKkfpOMmqAZFVjcqFLC7fHbrPGYx4BtCTa'
     controller: null
     method: null
     route: null
@@ -321,7 +321,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|PGF8EWdnNq6dTXEpzukHxel6Z8qnw17DKnvghij6'
+      - 'Bearer 1|wFG4wYBKkfpOMmqAZFVjcqFLC7fHbrPGYx4BtCTa'
     controller: null
     method: null
     route: null

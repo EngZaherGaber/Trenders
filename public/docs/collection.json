@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "Laravel",
-        "_postman_id": "09007d6d-678a-489a-aa1b-30c41e45bdf7",
+        "_postman_id": "df70aff2-90ed-4afe-b99d-0e132d4afb3a",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -65,7 +65,7 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "54"
+                                    "value": "53"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
@@ -73,7 +73,7 @@
                                 }
                             ],
                             "code": 200,
-                            "body": "{\"token\":\"16|weLnjWanw4mLTdFqNIK52vC2gwtDyANxvAxDvNSv\",\"is_company\":true}",
+                            "body": "{\"token\":\"2|oISzw3ZStVMSnLrnYygTHx1KFnGPUf9fRbTZL8Nt\",\"is_company\":true}",
                             "name": ""
                         }
                     ]
@@ -103,13 +103,13 @@
                             "formdata": [
                                 {
                                     "key": "name",
-                                    "value": "et",
+                                    "value": "in",
                                     "type": "text",
                                     "description": ""
                                 },
                                 {
                                     "key": "email",
-                                    "value": "gkonopelski@example.com",
+                                    "value": "russell51@example.org",
                                     "type": "text",
                                     "description": "Must be a valid email address."
                                 },
@@ -145,19 +145,19 @@
                                 },
                                 {
                                     "key": "created_in",
-                                    "value": "2023-09-28T11:43:48",
+                                    "value": "2023-09-28T12:04:31",
                                     "type": "text",
                                     "description": "Must be a valid date."
                                 },
                                 {
                                     "key": "address",
-                                    "value": "dicta",
+                                    "value": "debitis",
                                     "type": "text",
                                     "description": ""
                                 },
                                 {
                                     "key": "city",
-                                    "value": "dolorem",
+                                    "value": "sed",
                                     "type": "text",
                                     "description": ""
                                 },
@@ -196,7 +196,7 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "53"
+                                    "value": "52"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
@@ -204,7 +204,7 @@
                                 }
                             ],
                             "code": 200,
-                            "body": "{\"token\":\"17|oTLLWAaoNkxYdbCu3ESWaZgxotpqZFxU3G51nWBT\"}",
+                            "body": "{\"token\":\"3|fVALs2GsCqXOip4GURGz83EjlL1fXvrfXOvth3wq\"}",
                             "name": ""
                         }
                     ]
@@ -257,7 +257,7 @@
                                 }
                             ],
                             "code": 200,
-                            "body": "{\"user\":{\"id\":46,\"name\":\"Bernice Dickinson PhD\",\"image\":\"http:\\\/\\\/localhost:8000\\\/images\\\/https:\\\/\\\/via.placeholder.com\\\/640x480.png\\\/004488?text=impedit\",\"email\":\"purdy.meghan@example.org\",\"email_verified_at\":\"2023-09-28T10:07:43.000000Z\",\"created_at\":\"2023-09-28T10:07:43.000000Z\",\"updated_at\":\"2023-09-28T10:07:43.000000Z\",\"company\":null},\"is_company\":false}",
+                            "body": "{\"user\":{\"id\":46,\"name\":\"Elta Crooks Jr.\",\"image\":\"http:\\\/\\\/localhost:8000\\\/images\\\/https:\\\/\\\/via.placeholder.com\\\/640x480.png\\\/0088dd?text=reprehenderit\",\"email\":\"toni87@example.net\",\"email_verified_at\":\"2023-09-28T12:02:54.000000Z\",\"created_at\":\"2023-09-28T12:02:54.000000Z\",\"updated_at\":\"2023-09-28T12:02:54.000000Z\",\"company\":null},\"is_company\":false}",
                             "name": ""
                         }
                     ]
@@ -375,7 +375,7 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "59"
+                                    "value": "58"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
@@ -674,7 +674,7 @@
                             "query": [
                                 {
                                     "key": "q",
-                                    "value": "molestias",
+                                    "value": "enim",
                                     "description": "",
                                     "disabled": false
                                 },
@@ -691,7 +691,7 @@
                                     "disabled": true
                                 }
                             ],
-                            "raw": "{{baseUrl}}\/api\/trender?q=molestias&category_ids[]=&cities[]="
+                            "raw": "{{baseUrl}}\/api\/trender?q=enim&category_ids[]=&cities[]="
                         },
                         "method": "GET",
                         "header": [
@@ -706,7 +706,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"q\":\"corporis\"}"
+                            "raw": "{\"q\":\"est\"}"
                         },
                         "description": "",
                         "auth": {
@@ -730,7 +730,7 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "58"
+                                    "value": "57"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
@@ -738,7 +738,7 @@
                                 }
                             ],
                             "code": 200,
-                            "body": "[{\"id\":2,\"title\":\"Veritatis corporis ut unde.\",\"description\":\"Officiis maiores deserunt voluptatum. Est rerum qui et ratione consequatur. Autem id quod ipsa aut alias est id. Rerum doloribus aliquid voluptatem. Necessitatibus aliquid adipisci velit eaque.\",\"ended_at\":null,\"institution_id\":7,\"institution_name\":\"Abbigail Brakus III\"},{\"id\":4,\"title\":\"Fugiat qui vitae.\",\"description\":\"Officiis accusantium accusantium corporis dicta voluptatem voluptatem. Consequatur perspiciatis enim accusantium ipsum.\",\"ended_at\":null,\"institution_id\":9,\"institution_name\":\"Odessa Hyatt\"},{\"id\":10,\"title\":\"Architecto blanditiis corporis eius voluptas dolorem.\",\"description\":\"Sunt sapiente aut et eos ipsam laborum. Eaque eum excepturi ea voluptatem et adipisci id nihil. Quis error illo voluptatem sit. Aut eum impedit et provident ipsam aspernatur.\",\"ended_at\":null,\"institution_id\":15,\"institution_name\":\"Alisha Kuphal V\"},{\"id\":12,\"title\":\"Qui rerum libero quo et.\",\"description\":\"Mollitia quaerat quo in in repellendus corporis corrupti. Laboriosam culpa molestiae commodi id. Aperiam facere natus deserunt est asperiores. Sequi modi velit asperiores voluptatem.\",\"ended_at\":null,\"institution_id\":17,\"institution_name\":\"Yasmine Walter\"}]",
+                            "body": "[{\"id\":3,\"title\":\"Quo alias corrupti illo.\",\"description\":\"Laudantium autem maxime est iure. Inventore quo fuga aliquid vel rerum. Voluptates et et dolores praesentium cumque sed tempore.\",\"ended_at\":null,\"institution_id\":8,\"institution_name\":\"Dejah Homenick\"},{\"id\":4,\"title\":\"Suscipit quae et et.\",\"description\":\"Et dolores deserunt non perspiciatis labore ad. Consequuntur sint quod aut rem. Eum commodi ad sequi ipsam molestiae corporis quia.\",\"ended_at\":null,\"institution_id\":9,\"institution_name\":\"Verna Cartwright\"},{\"id\":5,\"title\":\"Repellat asperiores illo architecto quas amet.\",\"description\":\"Quis beatae voluptas qui voluptatibus est. Perspiciatis asperiores voluptas corporis ut. Enim et saepe dolores vitae sint molestiae. At officiis laborum sint tempora et laboriosam earum.\",\"ended_at\":null,\"institution_id\":10,\"institution_name\":\"Bulah Hansen\"},{\"id\":10,\"title\":\"Quod magnam recusandae autem id.\",\"description\":\"Vel minus natus iste aperiam. Quia labore repellendus suscipit aliquam facere. Aspernatur doloribus tenetur voluptatum repellat illum deserunt. Nesciunt hic cumque incidunt est.\",\"ended_at\":null,\"institution_id\":15,\"institution_name\":\"Karson Kovacek\"},{\"id\":11,\"title\":\"Doloremque velit omnis sed.\",\"description\":\"Quo labore delectus molestiae totam et. Rerum est sunt quibusdam repudiandae. Ut voluptatem voluptatem molestias laudantium in consequatur. Sed id natus autem cum qui nulla.\",\"ended_at\":null,\"institution_id\":16,\"institution_name\":\"Rubie Jast\"},{\"id\":12,\"title\":\"Itaque magni recusandae vitae ut est.\",\"description\":\"Sint dolorum at nobis aliquam libero delectus. Qui rerum nam sint ratione. Quisquam accusamus mollitia incidunt rem.\",\"ended_at\":null,\"institution_id\":17,\"institution_name\":\"Dr. Timmothy Lubowitz\"},{\"id\":15,\"title\":\"Natus fugit possimus libero aut.\",\"description\":\"Eos sed sequi nam culpa. Aut magni amet excepturi sit alias. Et quo quasi autem non sed quo. Molestias laboriosam nihil cupiditate qui nostrum.\",\"ended_at\":null,\"institution_id\":20,\"institution_name\":\"Muhammad Rohan\"},{\"id\":18,\"title\":\"Consectetur et sit vitae at.\",\"description\":\"Autem incidunt saepe eveniet. Tempore odio non veritatis possimus quia. Cum in quia dicta magni est ipsam facilis. A soluta alias id iusto voluptatum minima beatae quaerat.\",\"ended_at\":null,\"institution_id\":23,\"institution_name\":\"Hershel Osinski\"},{\"id\":19,\"title\":\"Aliquam eius et.\",\"description\":\"Assumenda aut ex itaque neque et laborum quis officiis. Fugit minus architecto fugiat ex velit expedita corporis earum. Sed sunt sit amet molestiae eveniet sint.\",\"ended_at\":null,\"institution_id\":24,\"institution_name\":\"Mr. Gustave Kemmer\"},{\"id\":23,\"title\":\"Officia vitae quibusdam dolor.\",\"description\":\"Vel illum sunt suscipit molestiae. Ea nihil et quae praesentium. Et blanditiis mollitia cum ratione nisi inventore. Qui porro qui molestiae est sunt laborum. Commodi minus quis deleniti magni rerum.\",\"ended_at\":null,\"institution_id\":28,\"institution_name\":\"Kira Von\"},{\"id\":25,\"title\":\"Ut voluptates nesciunt nostrum temporibus.\",\"description\":\"Magni velit quia sequi minus qui occaecati nihil. Consequatur consequatur soluta molestias rerum eligendi sequi error. Rerum in excepturi ab eum. Error laborum rerum mollitia rerum incidunt.\",\"ended_at\":null,\"institution_id\":30,\"institution_name\":\"Elta Crooks Jr.\"}]",
                             "name": ""
                         }
                     ]
@@ -765,7 +765,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"title\":\"quia\",\"description\":\"Voluptatem soluta nam magni sed atque id.\",\"details\":\"[\\n {\\n    \\\"type\\\": \\\"text\\\",\\n    \\\"data\\\": {\\n     \\\"validator\\\": {\\n \\\"required\\\": true,\\n\\\"error_message\\\": \\\"Invalid parameters\\\"\\n}\\n}\\n }\\n]\"}"
+                            "raw": "{\"title\":\"consequatur\",\"description\":\"Sit omnis repellat ipsa dignissimos.\",\"image\":\"sed\",\"details\":\"[\\n {\\n    \\\"name\\\": \\\"text\\\",\\n    \\\"data\\\": {\\n     \\\"validator\\\": {\\n \\\"required\\\": true,\\n\\\"error_message\\\": \\\"Invalid parameters\\\"\\n}\\n}\\n }\\n]\"}"
                         },
                         "description": "",
                         "auth": {
@@ -789,7 +789,7 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "57"
+                                    "value": "56"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
@@ -896,7 +896,7 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "56"
+                                    "value": "55"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
@@ -956,7 +956,7 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "55"
+                                    "value": "54"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
@@ -1068,7 +1068,7 @@
         "bearer": [
             {
                 "key": "key",
-                "value": "1|PGF8EWdnNq6dTXEpzukHxel6Z8qnw17DKnvghij6",
+                "value": "1|wFG4wYBKkfpOMmqAZFVjcqFLC7fHbrPGYx4BtCTa",
                 "type": "string"
             }
         ]

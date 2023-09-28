@@ -238,12 +238,12 @@ fetch(url, {
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 54
+x-ratelimit-remaining: 53
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;token&quot;: &quot;16|weLnjWanw4mLTdFqNIK52vC2gwtDyANxvAxDvNSv&quot;,
+    &quot;token&quot;: &quot;2|oISzw3ZStVMSnLrnYygTHx1KFnGPUf9fRbTZL8Nt&quot;,
     &quot;is_company&quot;: true
 }</code>
  </pre>
@@ -358,16 +358,16 @@ You can check the Dev Tools console for debugging information.</code></pre>
     "http://localhost:8000/api/register" \
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
-    --form "name=et"\
-    --form "email=gkonopelski@example.com"\
+    --form "name=in"\
+    --form "email=russell51@example.org"\
     --form "password=password"\
     --form "type=instute"\
     --form "category_ids[]=1"\
-    --form "created_in=2023-09-28T11:43:48"\
-    --form "address=dicta"\
-    --form "city=dolorem"\
+    --form "created_in=2023-09-28T12:04:31"\
+    --form "address=debitis"\
+    --form "city=sed"\
     --form "password_confirmation=password"\
-    --form "image=@/tmp/phpd8xZ1y" </code></pre></div>
+    --form "image=@/tmp/phpAB2Fsm" </code></pre></div>
 
 
 <div class="javascript-example">
@@ -381,14 +381,14 @@ const headers = {
 };
 
 const body = new FormData();
-body.append('name', 'et');
-body.append('email', 'gkonopelski@example.com');
+body.append('name', 'in');
+body.append('email', 'russell51@example.org');
 body.append('password', 'password');
 body.append('type', 'instute');
 body.append('category_ids[]', '1');
-body.append('created_in', '2023-09-28T11:43:48');
-body.append('address', 'dicta');
-body.append('city', 'dolorem');
+body.append('created_in', '2023-09-28T12:04:31');
+body.append('address', 'debitis');
+body.append('city', 'sed');
 body.append('password_confirmation', 'password');
 body.append('image', document.querySelector('input[name="image"]').files[0]);
 
@@ -411,12 +411,12 @@ fetch(url, {
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 53
+x-ratelimit-remaining: 52
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;token&quot;: &quot;17|oTLLWAaoNkxYdbCu3ESWaZgxotpqZFxU3G51nWBT&quot;
+    &quot;token&quot;: &quot;3|fVALs2GsCqXOip4GURGz83EjlL1fXvrfXOvth3wq&quot;
 }</code>
  </pre>
     </span>
@@ -496,10 +496,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="name"                data-endpoint="POSTapi-register"
-               value="et"
+               value="in"
                data-component="body">
     <br>
-<p>Example: <code>et</code></p>
+<p>Example: <code>in</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>image</code></b>&nbsp;&nbsp;
@@ -510,7 +510,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value=""
                data-component="body">
     <br>
-<p>Must be an image. Example: <code>/tmp/phpd8xZ1y</code></p>
+<p>Must be an image. Example: <code>/tmp/phpAB2Fsm</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -518,10 +518,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="POSTapi-register"
-               value="gkonopelski@example.com"
+               value="russell51@example.org"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>gkonopelski@example.com</code></p>
+<p>Must be a valid email address. Example: <code>russell51@example.org</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -564,10 +564,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="created_in"                data-endpoint="POSTapi-register"
-               value="2023-09-28T11:43:48"
+               value="2023-09-28T12:04:31"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2023-09-28T11:43:48</code></p>
+<p>Must be a valid date. Example: <code>2023-09-28T12:04:31</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>address</code></b>&nbsp;&nbsp;
@@ -575,10 +575,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="address"                data-endpoint="POSTapi-register"
-               value="dicta"
+               value="debitis"
                data-component="body">
     <br>
-<p>Example: <code>dicta</code></p>
+<p>Example: <code>debitis</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>city</code></b>&nbsp;&nbsp;
@@ -586,10 +586,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="city"                data-endpoint="POSTapi-register"
-               value="dolorem"
+               value="sed"
                data-component="body">
     <br>
-<p>Example: <code>dolorem</code></p>
+<p>Example: <code>sed</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password_confirmation</code></b>&nbsp;&nbsp;
@@ -660,12 +660,12 @@ access-control-allow-origin: *
 <code class="language-json" style="max-height: 300px;">{
     &quot;user&quot;: {
         &quot;id&quot;: 46,
-        &quot;name&quot;: &quot;Bernice Dickinson PhD&quot;,
-        &quot;image&quot;: &quot;http://localhost:8000/images/https://via.placeholder.com/640x480.png/004488?text=impedit&quot;,
-        &quot;email&quot;: &quot;purdy.meghan@example.org&quot;,
-        &quot;email_verified_at&quot;: &quot;2023-09-28T10:07:43.000000Z&quot;,
-        &quot;created_at&quot;: &quot;2023-09-28T10:07:43.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2023-09-28T10:07:43.000000Z&quot;,
+        &quot;name&quot;: &quot;Elta Crooks Jr.&quot;,
+        &quot;image&quot;: &quot;http://localhost:8000/images/https://via.placeholder.com/640x480.png/0088dd?text=reprehenderit&quot;,
+        &quot;email&quot;: &quot;toni87@example.net&quot;,
+        &quot;email_verified_at&quot;: &quot;2023-09-28T12:02:54.000000Z&quot;,
+        &quot;created_at&quot;: &quot;2023-09-28T12:02:54.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2023-09-28T12:02:54.000000Z&quot;,
         &quot;company&quot;: null
     },
     &quot;is_company&quot;: false
@@ -1074,7 +1074,7 @@ fetch(url, {
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 59
+x-ratelimit-remaining: 58
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -2297,11 +2297,11 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/trender?q=molestias" \
+    --get "http://localhost:8000/api/trender?q=enim" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"q\": \"corporis\"
+    \"q\": \"est\"
 }"
 </code></pre></div>
 
@@ -2312,7 +2312,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const params = {
-    "q": "molestias",
+    "q": "enim",
 };
 Object.keys(params)
     .forEach(key =&gt; url.searchParams.append(key, params[key]));
@@ -2323,7 +2323,7 @@ const headers = {
 };
 
 let body = {
-    "q": "corporis"
+    "q": "est"
 };
 
 fetch(url, {
@@ -2345,42 +2345,98 @@ fetch(url, {
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 58
+x-ratelimit-remaining: 57
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">[
     {
-        &quot;id&quot;: 2,
-        &quot;title&quot;: &quot;Veritatis corporis ut unde.&quot;,
-        &quot;description&quot;: &quot;Officiis maiores deserunt voluptatum. Est rerum qui et ratione consequatur. Autem id quod ipsa aut alias est id. Rerum doloribus aliquid voluptatem. Necessitatibus aliquid adipisci velit eaque.&quot;,
+        &quot;id&quot;: 3,
+        &quot;title&quot;: &quot;Quo alias corrupti illo.&quot;,
+        &quot;description&quot;: &quot;Laudantium autem maxime est iure. Inventore quo fuga aliquid vel rerum. Voluptates et et dolores praesentium cumque sed tempore.&quot;,
         &quot;ended_at&quot;: null,
-        &quot;institution_id&quot;: 7,
-        &quot;institution_name&quot;: &quot;Abbigail Brakus III&quot;
+        &quot;institution_id&quot;: 8,
+        &quot;institution_name&quot;: &quot;Dejah Homenick&quot;
     },
     {
         &quot;id&quot;: 4,
-        &quot;title&quot;: &quot;Fugiat qui vitae.&quot;,
-        &quot;description&quot;: &quot;Officiis accusantium accusantium corporis dicta voluptatem voluptatem. Consequatur perspiciatis enim accusantium ipsum.&quot;,
+        &quot;title&quot;: &quot;Suscipit quae et et.&quot;,
+        &quot;description&quot;: &quot;Et dolores deserunt non perspiciatis labore ad. Consequuntur sint quod aut rem. Eum commodi ad sequi ipsam molestiae corporis quia.&quot;,
         &quot;ended_at&quot;: null,
         &quot;institution_id&quot;: 9,
-        &quot;institution_name&quot;: &quot;Odessa Hyatt&quot;
+        &quot;institution_name&quot;: &quot;Verna Cartwright&quot;
+    },
+    {
+        &quot;id&quot;: 5,
+        &quot;title&quot;: &quot;Repellat asperiores illo architecto quas amet.&quot;,
+        &quot;description&quot;: &quot;Quis beatae voluptas qui voluptatibus est. Perspiciatis asperiores voluptas corporis ut. Enim et saepe dolores vitae sint molestiae. At officiis laborum sint tempora et laboriosam earum.&quot;,
+        &quot;ended_at&quot;: null,
+        &quot;institution_id&quot;: 10,
+        &quot;institution_name&quot;: &quot;Bulah Hansen&quot;
     },
     {
         &quot;id&quot;: 10,
-        &quot;title&quot;: &quot;Architecto blanditiis corporis eius voluptas dolorem.&quot;,
-        &quot;description&quot;: &quot;Sunt sapiente aut et eos ipsam laborum. Eaque eum excepturi ea voluptatem et adipisci id nihil. Quis error illo voluptatem sit. Aut eum impedit et provident ipsam aspernatur.&quot;,
+        &quot;title&quot;: &quot;Quod magnam recusandae autem id.&quot;,
+        &quot;description&quot;: &quot;Vel minus natus iste aperiam. Quia labore repellendus suscipit aliquam facere. Aspernatur doloribus tenetur voluptatum repellat illum deserunt. Nesciunt hic cumque incidunt est.&quot;,
         &quot;ended_at&quot;: null,
         &quot;institution_id&quot;: 15,
-        &quot;institution_name&quot;: &quot;Alisha Kuphal V&quot;
+        &quot;institution_name&quot;: &quot;Karson Kovacek&quot;
+    },
+    {
+        &quot;id&quot;: 11,
+        &quot;title&quot;: &quot;Doloremque velit omnis sed.&quot;,
+        &quot;description&quot;: &quot;Quo labore delectus molestiae totam et. Rerum est sunt quibusdam repudiandae. Ut voluptatem voluptatem molestias laudantium in consequatur. Sed id natus autem cum qui nulla.&quot;,
+        &quot;ended_at&quot;: null,
+        &quot;institution_id&quot;: 16,
+        &quot;institution_name&quot;: &quot;Rubie Jast&quot;
     },
     {
         &quot;id&quot;: 12,
-        &quot;title&quot;: &quot;Qui rerum libero quo et.&quot;,
-        &quot;description&quot;: &quot;Mollitia quaerat quo in in repellendus corporis corrupti. Laboriosam culpa molestiae commodi id. Aperiam facere natus deserunt est asperiores. Sequi modi velit asperiores voluptatem.&quot;,
+        &quot;title&quot;: &quot;Itaque magni recusandae vitae ut est.&quot;,
+        &quot;description&quot;: &quot;Sint dolorum at nobis aliquam libero delectus. Qui rerum nam sint ratione. Quisquam accusamus mollitia incidunt rem.&quot;,
         &quot;ended_at&quot;: null,
         &quot;institution_id&quot;: 17,
-        &quot;institution_name&quot;: &quot;Yasmine Walter&quot;
+        &quot;institution_name&quot;: &quot;Dr. Timmothy Lubowitz&quot;
+    },
+    {
+        &quot;id&quot;: 15,
+        &quot;title&quot;: &quot;Natus fugit possimus libero aut.&quot;,
+        &quot;description&quot;: &quot;Eos sed sequi nam culpa. Aut magni amet excepturi sit alias. Et quo quasi autem non sed quo. Molestias laboriosam nihil cupiditate qui nostrum.&quot;,
+        &quot;ended_at&quot;: null,
+        &quot;institution_id&quot;: 20,
+        &quot;institution_name&quot;: &quot;Muhammad Rohan&quot;
+    },
+    {
+        &quot;id&quot;: 18,
+        &quot;title&quot;: &quot;Consectetur et sit vitae at.&quot;,
+        &quot;description&quot;: &quot;Autem incidunt saepe eveniet. Tempore odio non veritatis possimus quia. Cum in quia dicta magni est ipsam facilis. A soluta alias id iusto voluptatum minima beatae quaerat.&quot;,
+        &quot;ended_at&quot;: null,
+        &quot;institution_id&quot;: 23,
+        &quot;institution_name&quot;: &quot;Hershel Osinski&quot;
+    },
+    {
+        &quot;id&quot;: 19,
+        &quot;title&quot;: &quot;Aliquam eius et.&quot;,
+        &quot;description&quot;: &quot;Assumenda aut ex itaque neque et laborum quis officiis. Fugit minus architecto fugiat ex velit expedita corporis earum. Sed sunt sit amet molestiae eveniet sint.&quot;,
+        &quot;ended_at&quot;: null,
+        &quot;institution_id&quot;: 24,
+        &quot;institution_name&quot;: &quot;Mr. Gustave Kemmer&quot;
+    },
+    {
+        &quot;id&quot;: 23,
+        &quot;title&quot;: &quot;Officia vitae quibusdam dolor.&quot;,
+        &quot;description&quot;: &quot;Vel illum sunt suscipit molestiae. Ea nihil et quae praesentium. Et blanditiis mollitia cum ratione nisi inventore. Qui porro qui molestiae est sunt laborum. Commodi minus quis deleniti magni rerum.&quot;,
+        &quot;ended_at&quot;: null,
+        &quot;institution_id&quot;: 28,
+        &quot;institution_name&quot;: &quot;Kira Von&quot;
+    },
+    {
+        &quot;id&quot;: 25,
+        &quot;title&quot;: &quot;Ut voluptates nesciunt nostrum temporibus.&quot;,
+        &quot;description&quot;: &quot;Magni velit quia sequi minus qui occaecati nihil. Consequatur consequatur soluta molestias rerum eligendi sequi error. Rerum in excepturi ab eum. Error laborum rerum mollitia rerum incidunt.&quot;,
+        &quot;ended_at&quot;: null,
+        &quot;institution_id&quot;: 30,
+        &quot;institution_name&quot;: &quot;Elta Crooks Jr.&quot;
     }
 ]</code>
  </pre>
@@ -2461,10 +2517,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="q"                data-endpoint="GETapi-trender"
-               value="molestias"
+               value="enim"
                data-component="query">
     <br>
-<p>Example: <code>molestias</code></p>
+<p>Example: <code>enim</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>category_ids</code></b>&nbsp;&nbsp;
@@ -2495,10 +2551,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="q"                data-endpoint="GETapi-trender"
-               value="corporis"
+               value="est"
                data-component="body">
     <br>
-<p>Example: <code>corporis</code></p>
+<p>Example: <code>est</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>category_ids</code></b>&nbsp;&nbsp;
@@ -2541,9 +2597,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"title\": \"quia\",
-    \"description\": \"Voluptatem soluta nam magni sed atque id.\",
-    \"details\": \"[\\n {\\n    \\\"type\\\": \\\"text\\\",\\n    \\\"data\\\": {\\n     \\\"validator\\\": {\\n \\\"required\\\": true,\\n\\\"error_message\\\": \\\"Invalid parameters\\\"\\n}\\n}\\n }\\n]\"
+    \"title\": \"consequatur\",
+    \"description\": \"Sit omnis repellat ipsa dignissimos.\",
+    \"image\": \"sed\",
+    \"details\": \"[\\n {\\n    \\\"name\\\": \\\"text\\\",\\n    \\\"data\\\": {\\n     \\\"validator\\\": {\\n \\\"required\\\": true,\\n\\\"error_message\\\": \\\"Invalid parameters\\\"\\n}\\n}\\n }\\n]\"
 }"
 </code></pre></div>
 
@@ -2559,9 +2616,10 @@ const headers = {
 };
 
 let body = {
-    "title": "quia",
-    "description": "Voluptatem soluta nam magni sed atque id.",
-    "details": "[\n {\n    \"type\": \"text\",\n    \"data\": {\n     \"validator\": {\n \"required\": true,\n\"error_message\": \"Invalid parameters\"\n}\n}\n }\n]"
+    "title": "consequatur",
+    "description": "Sit omnis repellat ipsa dignissimos.",
+    "image": "sed",
+    "details": "[\n {\n    \"name\": \"text\",\n    \"data\": {\n     \"validator\": {\n \"required\": true,\n\"error_message\": \"Invalid parameters\"\n}\n}\n }\n]"
 };
 
 fetch(url, {
@@ -2583,7 +2641,7 @@ fetch(url, {
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 57
+x-ratelimit-remaining: 56
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -2673,10 +2731,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="title"                data-endpoint="POSTapi-trender"
-               value="quia"
+               value="consequatur"
                data-component="body">
     <br>
-<p>Example: <code>quia</code></p>
+<p>Example: <code>consequatur</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>description</code></b>&nbsp;&nbsp;
@@ -2684,10 +2742,21 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="description"                data-endpoint="POSTapi-trender"
-               value="Voluptatem soluta nam magni sed atque id."
+               value="Sit omnis repellat ipsa dignissimos."
                data-component="body">
     <br>
-<p>Example: <code>Voluptatem soluta nam magni sed atque id.</code></p>
+<p>Example: <code>Sit omnis repellat ipsa dignissimos.</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>image</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+                <input type="text" style="display: none"
+                              name="image"                data-endpoint="POSTapi-trender"
+               value="sed"
+               data-component="body">
+    <br>
+<p>Example: <code>sed</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>details</code></b>&nbsp;&nbsp;
@@ -2697,7 +2766,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                               name="details"                data-endpoint="POSTapi-trender"
                value="[
  {
-    "type": "text",
+    "name": "text",
     "data": {
      "validator": {
  "required": true,
@@ -2708,7 +2777,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 ]"
                data-component="body">
     <br>
-<p>Example: <code>[ { "type": "text", "data": { "validator": { "required": true, "error_message": "Invalid parameters" } } } ]</code></p>
+<p>Example: <code>[ { "name": "text", "data": { "validator": { "required": true, "error_message": "Invalid parameters" } } } ]</code></p>
         </div>
         </form>
 
@@ -2930,7 +2999,7 @@ fetch(url, {
             <pre><code class="language-http">content-type: text/html; charset=UTF-8
 cache-control: no-cache, private
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 56
+x-ratelimit-remaining: 55
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -3069,7 +3138,7 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 55
+x-ratelimit-remaining: 54
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 <code>Empty response</code>

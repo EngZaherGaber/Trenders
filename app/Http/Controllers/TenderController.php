@@ -69,7 +69,7 @@ class TenderController extends Controller
             }
 
             $vaildator = Validator::make($tenderDetails, [
-                'type' => ['required', 'string'],
+                'name' => ['required', 'string'],
                 'data' => ['present'],
             ]);
 

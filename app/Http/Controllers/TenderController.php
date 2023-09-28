@@ -46,7 +46,7 @@ class TenderController extends Controller
      * 
      * @bodyParam details object. Example: [
      *  {
-     *     "type": "text",
+     *     "name": "text",
      *     "data": {
      *      "validator": {
      *  "required": true,

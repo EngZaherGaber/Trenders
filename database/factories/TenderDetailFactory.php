@@ -22,7 +22,7 @@ class TenderDetailFactory extends Factory
     public function definition(): array
     {
         return [
-            'type' => $this->faker->word,
+            'name' => $this->faker->word,
             'data' => $this->faker->word,
             'tender_id' => Tender::factory(),
         ];

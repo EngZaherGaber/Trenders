@@ -16,7 +16,7 @@ class TenderDetail extends Model
      * @var array
      */
     protected $fillable = [
-        'type',
+        'name',
         'data',
         'tender_id',
     ];

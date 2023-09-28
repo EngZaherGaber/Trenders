@@ -243,7 +243,7 @@ access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;token&quot;: &quot;10|77Tq7fXt3G1IXtN7AUduuYCujSaboo5DNHvtrZ6b&quot;,
+    &quot;token&quot;: &quot;16|weLnjWanw4mLTdFqNIK52vC2gwtDyANxvAxDvNSv&quot;,
     &quot;is_company&quot;: true
 }</code>
  </pre>
@@ -358,16 +358,16 @@ You can check the Dev Tools console for debugging information.</code></pre>
     "http://localhost:8000/api/register" \
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
-    --form "name=aut"\
-    --form "email=tromp.oscar@example.org"\
+    --form "name=et"\
+    --form "email=gkonopelski@example.com"\
     --form "password=password"\
-    --form "type=company"\
+    --form "type=instute"\
     --form "category_ids[]=1"\
-    --form "created_in=2023-09-28T10:15:35"\
-    --form "address=omnis"\
-    --form "city=et"\
+    --form "created_in=2023-09-28T11:43:48"\
+    --form "address=dicta"\
+    --form "city=dolorem"\
     --form "password_confirmation=password"\
-    --form "image=@/tmp/phpubm0rk" </code></pre></div>
+    --form "image=@/tmp/phpd8xZ1y" </code></pre></div>
 
 
 <div class="javascript-example">
@@ -381,14 +381,14 @@ const headers = {
 };
 
 const body = new FormData();
-body.append('name', 'aut');
-body.append('email', 'tromp.oscar@example.org');
+body.append('name', 'et');
+body.append('email', 'gkonopelski@example.com');
 body.append('password', 'password');
-body.append('type', 'company');
+body.append('type', 'instute');
 body.append('category_ids[]', '1');
-body.append('created_in', '2023-09-28T10:15:35');
-body.append('address', 'omnis');
-body.append('city', 'et');
+body.append('created_in', '2023-09-28T11:43:48');
+body.append('address', 'dicta');
+body.append('city', 'dolorem');
 body.append('password_confirmation', 'password');
 body.append('image', document.querySelector('input[name="image"]').files[0]);
 
@@ -416,7 +416,7 @@ access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;token&quot;: &quot;11|WlRime99tEXNXXX4j1am8QskPsMCrNR2MSVkNTeU&quot;
+    &quot;token&quot;: &quot;17|oTLLWAaoNkxYdbCu3ESWaZgxotpqZFxU3G51nWBT&quot;
 }</code>
  </pre>
     </span>
@@ -496,10 +496,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="name"                data-endpoint="POSTapi-register"
-               value="aut"
+               value="et"
                data-component="body">
     <br>
-<p>Example: <code>aut</code></p>
+<p>Example: <code>et</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>image</code></b>&nbsp;&nbsp;
@@ -510,7 +510,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value=""
                data-component="body">
     <br>
-<p>Must be an image. Example: <code>/tmp/phpubm0rk</code></p>
+<p>Must be an image. Example: <code>/tmp/phpd8xZ1y</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -518,10 +518,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="POSTapi-register"
-               value="tromp.oscar@example.org"
+               value="gkonopelski@example.com"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>tromp.oscar@example.org</code></p>
+<p>Must be a valid email address. Example: <code>gkonopelski@example.com</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -540,10 +540,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="type"                data-endpoint="POSTapi-register"
-               value="company"
+               value="instute"
                data-component="body">
     <br>
-<p>Must be one of <code>instute</code> or <code>company</code>. Example: <code>company</code></p>
+<p>Must be one of <code>instute</code> or <code>company</code>. Example: <code>instute</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>category_ids</code></b>&nbsp;&nbsp;
@@ -564,10 +564,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="created_in"                data-endpoint="POSTapi-register"
-               value="2023-09-28T10:15:35"
+               value="2023-09-28T11:43:48"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2023-09-28T10:15:35</code></p>
+<p>Must be a valid date. Example: <code>2023-09-28T11:43:48</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>address</code></b>&nbsp;&nbsp;
@@ -575,10 +575,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="address"                data-endpoint="POSTapi-register"
-               value="omnis"
+               value="dicta"
                data-component="body">
     <br>
-<p>Example: <code>omnis</code></p>
+<p>Example: <code>dicta</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>city</code></b>&nbsp;&nbsp;
@@ -586,10 +586,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="city"                data-endpoint="POSTapi-register"
-               value="et"
+               value="dolorem"
                data-component="body">
     <br>
-<p>Example: <code>et</code></p>
+<p>Example: <code>dolorem</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password_confirmation</code></b>&nbsp;&nbsp;
@@ -1606,7 +1606,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"type\": \"draft\"
+    \"type\": \"ended\"
 }"
 </code></pre></div>
 
@@ -1622,7 +1622,7 @@ const headers = {
 };
 
 let body = {
-    "type": "draft"
+    "type": "ended"
 };
 
 fetch(url, {
@@ -1728,10 +1728,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="type"                data-endpoint="GETapi-offer"
-               value="draft"
+               value="ended"
                data-component="body">
     <br>
-<p>Must be one of <code>ended</code> or <code>draft</code>. Example: <code>draft</code></p>
+<p>Must be one of <code>ended</code> or <code>draft</code>. Example: <code>ended</code></p>
         </div>
         </form>
 
@@ -2297,11 +2297,11 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/trender?q=sequi" \
+    --get "http://localhost:8000/api/trender?q=molestias" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"q\": \"culpa\"
+    \"q\": \"corporis\"
 }"
 </code></pre></div>
 
@@ -2312,7 +2312,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const params = {
-    "q": "sequi",
+    "q": "molestias",
 };
 Object.keys(params)
     .forEach(key =&gt; url.searchParams.append(key, params[key]));
@@ -2323,7 +2323,7 @@ const headers = {
 };
 
 let body = {
-    "q": "culpa"
+    "q": "corporis"
 };
 
 fetch(url, {
@@ -2351,12 +2351,28 @@ access-control-allow-origin: *
 
 <code class="language-json" style="max-height: 300px;">[
     {
-        &quot;id&quot;: 11,
-        &quot;title&quot;: &quot;Distinctio qui maiores.&quot;,
-        &quot;description&quot;: &quot;Esse ipsa quos ad dolorum. Doloremque rerum et quis quasi culpa molestias. Voluptatum laboriosam magni qui sit rem enim sint iure. Veritatis quia odit natus cum.&quot;,
+        &quot;id&quot;: 2,
+        &quot;title&quot;: &quot;Veritatis corporis ut unde.&quot;,
+        &quot;description&quot;: &quot;Officiis maiores deserunt voluptatum. Est rerum qui et ratione consequatur. Autem id quod ipsa aut alias est id. Rerum doloribus aliquid voluptatem. Necessitatibus aliquid adipisci velit eaque.&quot;,
         &quot;ended_at&quot;: null,
-        &quot;institution_id&quot;: 16,
-        &quot;institution_name&quot;: &quot;Prof. Ashtyn Hahn DVM&quot;
+        &quot;institution_id&quot;: 7,
+        &quot;institution_name&quot;: &quot;Abbigail Brakus III&quot;
+    },
+    {
+        &quot;id&quot;: 4,
+        &quot;title&quot;: &quot;Fugiat qui vitae.&quot;,
+        &quot;description&quot;: &quot;Officiis accusantium accusantium corporis dicta voluptatem voluptatem. Consequatur perspiciatis enim accusantium ipsum.&quot;,
+        &quot;ended_at&quot;: null,
+        &quot;institution_id&quot;: 9,
+        &quot;institution_name&quot;: &quot;Odessa Hyatt&quot;
+    },
+    {
+        &quot;id&quot;: 10,
+        &quot;title&quot;: &quot;Architecto blanditiis corporis eius voluptas dolorem.&quot;,
+        &quot;description&quot;: &quot;Sunt sapiente aut et eos ipsam laborum. Eaque eum excepturi ea voluptatem et adipisci id nihil. Quis error illo voluptatem sit. Aut eum impedit et provident ipsam aspernatur.&quot;,
+        &quot;ended_at&quot;: null,
+        &quot;institution_id&quot;: 15,
+        &quot;institution_name&quot;: &quot;Alisha Kuphal V&quot;
     },
     {
         &quot;id&quot;: 12,
@@ -2365,22 +2381,6 @@ access-control-allow-origin: *
         &quot;ended_at&quot;: null,
         &quot;institution_id&quot;: 17,
         &quot;institution_name&quot;: &quot;Yasmine Walter&quot;
-    },
-    {
-        &quot;id&quot;: 17,
-        &quot;title&quot;: &quot;Ullam qui nisi.&quot;,
-        &quot;description&quot;: &quot;Quibusdam non voluptas dolorum. Quisquam dolores delectus eligendi sint quasi. Perferendis sed velit libero ab dolore culpa.&quot;,
-        &quot;ended_at&quot;: null,
-        &quot;institution_id&quot;: 22,
-        &quot;institution_name&quot;: &quot;Kennith Hand&quot;
-    },
-    {
-        &quot;id&quot;: 25,
-        &quot;title&quot;: &quot;Commodi autem consequatur accusantium ratione.&quot;,
-        &quot;description&quot;: &quot;Nihil sit impedit officia incidunt earum. Et porro eligendi vel eius beatae earum harum. Ullam sed exercitationem in culpa eos. Eos ut quo magnam sed iusto.&quot;,
-        &quot;ended_at&quot;: null,
-        &quot;institution_id&quot;: 30,
-        &quot;institution_name&quot;: &quot;Bernice Dickinson PhD&quot;
     }
 ]</code>
  </pre>
@@ -2461,10 +2461,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="q"                data-endpoint="GETapi-trender"
-               value="sequi"
+               value="molestias"
                data-component="query">
     <br>
-<p>Example: <code>sequi</code></p>
+<p>Example: <code>molestias</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>category_ids</code></b>&nbsp;&nbsp;
@@ -2495,10 +2495,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="q"                data-endpoint="GETapi-trender"
-               value="culpa"
+               value="corporis"
                data-component="body">
     <br>
-<p>Example: <code>culpa</code></p>
+<p>Example: <code>corporis</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>category_ids</code></b>&nbsp;&nbsp;
@@ -2541,9 +2541,9 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"title\": \"eius\",
-    \"description\": \"Voluptatibus ab minus quo et sint numquam nam omnis.\",
-    \"details\": []
+    \"title\": \"quia\",
+    \"description\": \"Voluptatem soluta nam magni sed atque id.\",
+    \"details\": \"[\\n {\\n    \\\"type\\\": \\\"text\\\",\\n    \\\"data\\\": {\\n     \\\"validator\\\": {\\n \\\"required\\\": true,\\n\\\"error_message\\\": \\\"Invalid parameters\\\"\\n}\\n}\\n }\\n]\"
 }"
 </code></pre></div>
 
@@ -2559,9 +2559,9 @@ const headers = {
 };
 
 let body = {
-    "title": "eius",
-    "description": "Voluptatibus ab minus quo et sint numquam nam omnis.",
-    "details": []
+    "title": "quia",
+    "description": "Voluptatem soluta nam magni sed atque id.",
+    "details": "[\n {\n    \"type\": \"text\",\n    \"data\": {\n     \"validator\": {\n \"required\": true,\n\"error_message\": \"Invalid parameters\"\n}\n}\n }\n]"
 };
 
 fetch(url, {
@@ -2588,10 +2588,10 @@ access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;The details field is required.&quot;,
+    &quot;message&quot;: &quot;The details field must be an array.&quot;,
     &quot;errors&quot;: {
         &quot;details&quot;: [
-            &quot;The details field is required.&quot;
+            &quot;The details field must be an array.&quot;
         ]
     }
 }</code>
@@ -2673,10 +2673,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="title"                data-endpoint="POSTapi-trender"
-               value="eius"
+               value="quia"
                data-component="body">
     <br>
-<p>Example: <code>eius</code></p>
+<p>Example: <code>quia</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>description</code></b>&nbsp;&nbsp;
@@ -2684,21 +2684,31 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="description"                data-endpoint="POSTapi-trender"
-               value="Voluptatibus ab minus quo et sint numquam nam omnis."
+               value="Voluptatem soluta nam magni sed atque id."
                data-component="body">
     <br>
-<p>Example: <code>Voluptatibus ab minus quo et sint numquam nam omnis.</code></p>
+<p>Example: <code>Voluptatem soluta nam magni sed atque id.</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>details</code></b>&nbsp;&nbsp;
-<small>object</small>&nbsp;
- &nbsp;
+<small>object.</small>&nbsp;
+<i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="details"                data-endpoint="POSTapi-trender"
-               value=""
+               value="[
+ {
+    "type": "text",
+    "data": {
+     "validator": {
+ "required": true,
+"error_message": "Invalid parameters"
+}
+}
+ }
+]"
                data-component="body">
     <br>
-
+<p>Example: <code>[ { "type": "text", "data": { "validator": { "required": true, "error_message": "Invalid parameters" } } } ]</code></p>
         </div>
         </form>
 

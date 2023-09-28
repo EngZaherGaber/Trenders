@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "Laravel",
-        "_postman_id": "cfe05102-9259-4a10-9cb8-71ae07c7f25f",
+        "_postman_id": "09007d6d-678a-489a-aa1b-30c41e45bdf7",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -73,7 +73,7 @@
                                 }
                             ],
                             "code": 200,
-                            "body": "{\"token\":\"10|77Tq7fXt3G1IXtN7AUduuYCujSaboo5DNHvtrZ6b\",\"is_company\":true}",
+                            "body": "{\"token\":\"16|weLnjWanw4mLTdFqNIK52vC2gwtDyANxvAxDvNSv\",\"is_company\":true}",
                             "name": ""
                         }
                     ]
@@ -103,13 +103,13 @@
                             "formdata": [
                                 {
                                     "key": "name",
-                                    "value": "aut",
+                                    "value": "et",
                                     "type": "text",
                                     "description": ""
                                 },
                                 {
                                     "key": "email",
-                                    "value": "tromp.oscar@example.org",
+                                    "value": "gkonopelski@example.com",
                                     "type": "text",
                                     "description": "Must be a valid email address."
                                 },
@@ -121,7 +121,7 @@
                                 },
                                 {
                                     "key": "type",
-                                    "value": "company",
+                                    "value": "instute",
                                     "type": "text",
                                     "description": "Must be one of <code>instute<\/code> or <code>company<\/code>."
                                 },
@@ -145,19 +145,19 @@
                                 },
                                 {
                                     "key": "created_in",
-                                    "value": "2023-09-28T10:15:35",
+                                    "value": "2023-09-28T11:43:48",
                                     "type": "text",
                                     "description": "Must be a valid date."
                                 },
                                 {
                                     "key": "address",
-                                    "value": "omnis",
+                                    "value": "dicta",
                                     "type": "text",
                                     "description": ""
                                 },
                                 {
                                     "key": "city",
-                                    "value": "et",
+                                    "value": "dolorem",
                                     "type": "text",
                                     "description": ""
                                 },
@@ -204,7 +204,7 @@
                                 }
                             ],
                             "code": 200,
-                            "body": "{\"token\":\"11|WlRime99tEXNXXX4j1am8QskPsMCrNR2MSVkNTeU\"}",
+                            "body": "{\"token\":\"17|oTLLWAaoNkxYdbCu3ESWaZgxotpqZFxU3G51nWBT\"}",
                             "name": ""
                         }
                     ]
@@ -416,7 +416,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"type\":\"draft\"}"
+                            "raw": "{\"type\":\"ended\"}"
                         },
                         "description": "",
                         "auth": {
@@ -674,7 +674,7 @@
                             "query": [
                                 {
                                     "key": "q",
-                                    "value": "sequi",
+                                    "value": "molestias",
                                     "description": "",
                                     "disabled": false
                                 },
@@ -691,7 +691,7 @@
                                     "disabled": true
                                 }
                             ],
-                            "raw": "{{baseUrl}}\/api\/trender?q=sequi&category_ids[]=&cities[]="
+                            "raw": "{{baseUrl}}\/api\/trender?q=molestias&category_ids[]=&cities[]="
                         },
                         "method": "GET",
                         "header": [
@@ -706,7 +706,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"q\":\"culpa\"}"
+                            "raw": "{\"q\":\"corporis\"}"
                         },
                         "description": "",
                         "auth": {
@@ -738,7 +738,7 @@
                                 }
                             ],
                             "code": 200,
-                            "body": "[{\"id\":11,\"title\":\"Distinctio qui maiores.\",\"description\":\"Esse ipsa quos ad dolorum. Doloremque rerum et quis quasi culpa molestias. Voluptatum laboriosam magni qui sit rem enim sint iure. Veritatis quia odit natus cum.\",\"ended_at\":null,\"institution_id\":16,\"institution_name\":\"Prof. Ashtyn Hahn DVM\"},{\"id\":12,\"title\":\"Qui rerum libero quo et.\",\"description\":\"Mollitia quaerat quo in in repellendus corporis corrupti. Laboriosam culpa molestiae commodi id. Aperiam facere natus deserunt est asperiores. Sequi modi velit asperiores voluptatem.\",\"ended_at\":null,\"institution_id\":17,\"institution_name\":\"Yasmine Walter\"},{\"id\":17,\"title\":\"Ullam qui nisi.\",\"description\":\"Quibusdam non voluptas dolorum. Quisquam dolores delectus eligendi sint quasi. Perferendis sed velit libero ab dolore culpa.\",\"ended_at\":null,\"institution_id\":22,\"institution_name\":\"Kennith Hand\"},{\"id\":25,\"title\":\"Commodi autem consequatur accusantium ratione.\",\"description\":\"Nihil sit impedit officia incidunt earum. Et porro eligendi vel eius beatae earum harum. Ullam sed exercitationem in culpa eos. Eos ut quo magnam sed iusto.\",\"ended_at\":null,\"institution_id\":30,\"institution_name\":\"Bernice Dickinson PhD\"}]",
+                            "body": "[{\"id\":2,\"title\":\"Veritatis corporis ut unde.\",\"description\":\"Officiis maiores deserunt voluptatum. Est rerum qui et ratione consequatur. Autem id quod ipsa aut alias est id. Rerum doloribus aliquid voluptatem. Necessitatibus aliquid adipisci velit eaque.\",\"ended_at\":null,\"institution_id\":7,\"institution_name\":\"Abbigail Brakus III\"},{\"id\":4,\"title\":\"Fugiat qui vitae.\",\"description\":\"Officiis accusantium accusantium corporis dicta voluptatem voluptatem. Consequatur perspiciatis enim accusantium ipsum.\",\"ended_at\":null,\"institution_id\":9,\"institution_name\":\"Odessa Hyatt\"},{\"id\":10,\"title\":\"Architecto blanditiis corporis eius voluptas dolorem.\",\"description\":\"Sunt sapiente aut et eos ipsam laborum. Eaque eum excepturi ea voluptatem et adipisci id nihil. Quis error illo voluptatem sit. Aut eum impedit et provident ipsam aspernatur.\",\"ended_at\":null,\"institution_id\":15,\"institution_name\":\"Alisha Kuphal V\"},{\"id\":12,\"title\":\"Qui rerum libero quo et.\",\"description\":\"Mollitia quaerat quo in in repellendus corporis corrupti. Laboriosam culpa molestiae commodi id. Aperiam facere natus deserunt est asperiores. Sequi modi velit asperiores voluptatem.\",\"ended_at\":null,\"institution_id\":17,\"institution_name\":\"Yasmine Walter\"}]",
                             "name": ""
                         }
                     ]
@@ -765,7 +765,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"title\":\"eius\",\"description\":\"Voluptatibus ab minus quo et sint numquam nam omnis.\",\"details\":[]}"
+                            "raw": "{\"title\":\"quia\",\"description\":\"Voluptatem soluta nam magni sed atque id.\",\"details\":\"[\\n {\\n    \\\"type\\\": \\\"text\\\",\\n    \\\"data\\\": {\\n     \\\"validator\\\": {\\n \\\"required\\\": true,\\n\\\"error_message\\\": \\\"Invalid parameters\\\"\\n}\\n}\\n }\\n]\"}"
                         },
                         "description": "",
                         "auth": {
@@ -797,7 +797,7 @@
                                 }
                             ],
                             "code": 422,
-                            "body": "{\"message\":\"The details field is required.\",\"errors\":{\"details\":[\"The details field is required.\"]}}",
+                            "body": "{\"message\":\"The details field must be an array.\",\"errors\":{\"details\":[\"The details field must be an array.\"]}}",
                             "name": ""
                         }
                     ]

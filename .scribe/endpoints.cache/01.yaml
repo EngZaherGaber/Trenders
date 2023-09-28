@@ -26,7 +26,7 @@ endpoints:
         name: q
         description: ''
         required: false
-        example: sequi
+        example: molestias
         type: string
         custom: []
       category_ids:
@@ -44,7 +44,7 @@ endpoints:
         type: object
         custom: []
     cleanQueryParameters:
-      q: sequi
+      q: molestias
       category_ids: []
       cities: []
     bodyParameters:
@@ -52,7 +52,7 @@ endpoints:
         name: q
         description: ''
         required: false
-        example: culpa
+        example: corporis
         type: string
         custom: []
       category_ids:
@@ -70,12 +70,12 @@ endpoints:
         type: object
         custom: []
     cleanBodyParameters:
-      q: culpa
+      q: corporis
     fileParameters: []
     responses:
       -
         status: 200
-        content: '[{"id":11,"title":"Distinctio qui maiores.","description":"Esse ipsa quos ad dolorum. Doloremque rerum et quis quasi culpa molestias. Voluptatum laboriosam magni qui sit rem enim sint iure. Veritatis quia odit natus cum.","ended_at":null,"institution_id":16,"institution_name":"Prof. Ashtyn Hahn DVM"},{"id":12,"title":"Qui rerum libero quo et.","description":"Mollitia quaerat quo in in repellendus corporis corrupti. Laboriosam culpa molestiae commodi id. Aperiam facere natus deserunt est asperiores. Sequi modi velit asperiores voluptatem.","ended_at":null,"institution_id":17,"institution_name":"Yasmine Walter"},{"id":17,"title":"Ullam qui nisi.","description":"Quibusdam non voluptas dolorum. Quisquam dolores delectus eligendi sint quasi. Perferendis sed velit libero ab dolore culpa.","ended_at":null,"institution_id":22,"institution_name":"Kennith Hand"},{"id":25,"title":"Commodi autem consequatur accusantium ratione.","description":"Nihil sit impedit officia incidunt earum. Et porro eligendi vel eius beatae earum harum. Ullam sed exercitationem in culpa eos. Eos ut quo magnam sed iusto.","ended_at":null,"institution_id":30,"institution_name":"Bernice Dickinson PhD"}]'
+        content: '[{"id":2,"title":"Veritatis corporis ut unde.","description":"Officiis maiores deserunt voluptatum. Est rerum qui et ratione consequatur. Autem id quod ipsa aut alias est id. Rerum doloribus aliquid voluptatem. Necessitatibus aliquid adipisci velit eaque.","ended_at":null,"institution_id":7,"institution_name":"Abbigail Brakus III"},{"id":4,"title":"Fugiat qui vitae.","description":"Officiis accusantium accusantium corporis dicta voluptatem voluptatem. Consequatur perspiciatis enim accusantium ipsum.","ended_at":null,"institution_id":9,"institution_name":"Odessa Hyatt"},{"id":10,"title":"Architecto blanditiis corporis eius voluptas dolorem.","description":"Sunt sapiente aut et eos ipsam laborum. Eaque eum excepturi ea voluptatem et adipisci id nihil. Quis error illo voluptatem sit. Aut eum impedit et provident ipsam aspernatur.","ended_at":null,"institution_id":15,"institution_name":"Alisha Kuphal V"},{"id":12,"title":"Qui rerum libero quo et.","description":"Mollitia quaerat quo in in repellendus corporis corrupti. Laboriosam culpa molestiae commodi id. Aperiam facere natus deserunt est asperiores. Sequi modi velit asperiores voluptatem.","ended_at":null,"institution_id":17,"institution_name":"Yasmine Walter"}]'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -115,32 +115,54 @@ endpoints:
         name: title
         description: ''
         required: true
-        example: eius
+        example: quia
         type: string
         custom: []
       description:
         name: description
         description: ''
         required: true
-        example: 'Voluptatibus ab minus quo et sint numquam nam omnis.'
+        example: 'Voluptatem soluta nam magni sed atque id.'
         type: string
         custom: []
       details:
         name: details
         description: ''
-        required: true
-        example: []
-        type: object
+        required: false
+        example: |-
+          [
+           {
+              "type": "text",
+              "data": {
+               "validator": {
+           "required": true,
+          "error_message": "Invalid parameters"
+          }
+          }
+           }
+          ]
+        type: object.
         custom: []
     cleanBodyParameters:
-      title: eius
-      description: 'Voluptatibus ab minus quo et sint numquam nam omnis.'
-      details: []
+      title: quia
+      description: 'Voluptatem soluta nam magni sed atque id.'
+      details: |-
+        [
+         {
+            "type": "text",
+            "data": {
+             "validator": {
+         "required": true,
+        "error_message": "Invalid parameters"
+        }
+        }
+         }
+        ]
     fileParameters: []
     responses:
       -
         status: 422
-        content: '{"message":"The details field is required.","errors":{"details":["The details field is required."]}}'
+        content: '{"message":"The details field must be an array.","errors":{"details":["The details field must be an array."]}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json

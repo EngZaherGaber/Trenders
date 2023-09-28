@@ -43,6 +43,18 @@ class TenderController extends Controller
 
     /**
      * Store a newly created resource in storage.
+     * 
+     * @bodyParam details object. Example: [
+     *  {
+     *     "type": "text",
+     *     "data": {
+     *      "validator": {
+     *  "required": true,
+     * "error_message": "Invalid parameters"
+     * }
+     * }
+     *  }
+     * ]
      */
     public function store(StoreTenderRequest $request)
     {
@@ -56,9 +68,7 @@ class TenderController extends Controller
             }
 
             $vaildator = Validator::make($tenderDetails, [
-                'type' => ['required', 'string', 'in:text,textarea,select,radio,checkbox,uploader'],
-                'question' => ['required', 'string'],
-                'description' => ['required', 'string'],
+                'type' => ['required', 'string'],
                 'data' => ['present'],
             ]);
 

@@ -21,12 +21,12 @@ paths:
               schema:
                 type: object
                 example:
-                  token: 10|77Tq7fXt3G1IXtN7AUduuYCujSaboo5DNHvtrZ6b
+                  token: 16|weLnjWanw4mLTdFqNIK52vC2gwtDyANxvAxDvNSv
                   is_company: true
                 properties:
                   token:
                     type: string
-                    example: 10|77Tq7fXt3G1IXtN7AUduuYCujSaboo5DNHvtrZ6b
+                    example: 16|weLnjWanw4mLTdFqNIK52vC2gwtDyANxvAxDvNSv
                   is_company:
                     type: boolean
                     example: true
@@ -62,11 +62,11 @@ paths:
               schema:
                 type: object
                 example:
-                  token: 11|WlRime99tEXNXXX4j1am8QskPsMCrNR2MSVkNTeU
+                  token: 17|oTLLWAaoNkxYdbCu3ESWaZgxotpqZFxU3G51nWBT
                 properties:
                   token:
                     type: string
-                    example: 11|WlRime99tEXNXXX4j1am8QskPsMCrNR2MSVkNTeU
+                    example: 17|oTLLWAaoNkxYdbCu3ESWaZgxotpqZFxU3G51nWBT
       tags:
         - Authentication
       requestBody:
@@ -79,7 +79,7 @@ paths:
                 name:
                   type: string
                   description: ''
-                  example: aut
+                  example: et
                 image:
                   type: string
                   format: binary
@@ -87,7 +87,7 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: tromp.oscar@example.org
+                  example: gkonopelski@example.com
                 password:
                   type: string
                   description: djasoijdsaio.
@@ -95,7 +95,7 @@ paths:
                 type:
                   type: string
                   description: 'Must be one of <code>instute</code> or <code>company</code>.'
-                  example: company
+                  example: instute
                 category_ids:
                   type: array
                   description: djasoijdsaio.
@@ -108,15 +108,15 @@ paths:
                 created_in:
                   type: string
                   description: 'Must be a valid date.'
-                  example: '2023-09-28T10:15:35'
+                  example: '2023-09-28T11:43:48'
                 address:
                   type: string
                   description: ''
-                  example: omnis
+                  example: dicta
                 city:
                   type: string
                   description: ''
-                  example: et
+                  example: dolorem
                 password_confirmation:
                   type: string
                   description: djasoijdsaio.
@@ -686,7 +686,7 @@ paths:
                 type:
                   type: string
                   description: 'Must be one of <code>ended</code> or <code>draft</code>.'
-                  example: draft
+                  example: ended
               required:
                 - type
       security: []
@@ -838,12 +838,12 @@ paths:
           in: query
           name: q
           description: ''
-          example: sequi
+          example: molestias
           required: false
           schema:
             type: string
             description: ''
-            example: sequi
+            example: molestias
         -
           in: query
           name: category_ids
@@ -877,12 +877,26 @@ paths:
                   type: object
                 example:
                   -
-                    id: 11
-                    title: 'Distinctio qui maiores.'
-                    description: 'Esse ipsa quos ad dolorum. Doloremque rerum et quis quasi culpa molestias. Voluptatum laboriosam magni qui sit rem enim sint iure. Veritatis quia odit natus cum.'
+                    id: 2
+                    title: 'Veritatis corporis ut unde.'
+                    description: 'Officiis maiores deserunt voluptatum. Est rerum qui et ratione consequatur. Autem id quod ipsa aut alias est id. Rerum doloribus aliquid voluptatem. Necessitatibus aliquid adipisci velit eaque.'
                     ended_at: null
-                    institution_id: 16
-                    institution_name: 'Prof. Ashtyn Hahn DVM'
+                    institution_id: 7
+                    institution_name: 'Abbigail Brakus III'
+                  -
+                    id: 4
+                    title: 'Fugiat qui vitae.'
+                    description: 'Officiis accusantium accusantium corporis dicta voluptatem voluptatem. Consequatur perspiciatis enim accusantium ipsum.'
+                    ended_at: null
+                    institution_id: 9
+                    institution_name: 'Odessa Hyatt'
+                  -
+                    id: 10
+                    title: 'Architecto blanditiis corporis eius voluptas dolorem.'
+                    description: 'Sunt sapiente aut et eos ipsam laborum. Eaque eum excepturi ea voluptatem et adipisci id nihil. Quis error illo voluptatem sit. Aut eum impedit et provident ipsam aspernatur.'
+                    ended_at: null
+                    institution_id: 15
+                    institution_name: 'Alisha Kuphal V'
                   -
                     id: 12
                     title: 'Qui rerum libero quo et.'
@@ -890,20 +904,6 @@ paths:
                     ended_at: null
                     institution_id: 17
                     institution_name: 'Yasmine Walter'
-                  -
-                    id: 17
-                    title: 'Ullam qui nisi.'
-                    description: 'Quibusdam non voluptas dolorum. Quisquam dolores delectus eligendi sint quasi. Perferendis sed velit libero ab dolore culpa.'
-                    ended_at: null
-                    institution_id: 22
-                    institution_name: 'Kennith Hand'
-                  -
-                    id: 25
-                    title: 'Commodi autem consequatur accusantium ratione.'
-                    description: 'Nihil sit impedit officia incidunt earum. Et porro eligendi vel eius beatae earum harum. Ullam sed exercitationem in culpa eos. Eos ut quo magnam sed iusto.'
-                    ended_at: null
-                    institution_id: 30
-                    institution_name: 'Bernice Dickinson PhD'
       tags:
         - Trender
       requestBody:
@@ -916,7 +916,7 @@ paths:
                 q:
                   type: string
                   description: ''
-                  example: culpa
+                  example: corporis
                 category_ids:
                   type: object
                   description: ''
@@ -941,21 +941,21 @@ paths:
               schema:
                 type: object
                 example:
-                  message: 'The details field is required.'
+                  message: 'The details field must be an array.'
                   errors:
                     details:
-                      - 'The details field is required.'
+                      - 'The details field must be an array.'
                 properties:
                   message:
                     type: string
-                    example: 'The details field is required.'
+                    example: 'The details field must be an array.'
                   errors:
                     type: object
                     properties:
                       details:
                         type: array
                         example:
-                          - 'The details field is required.'
+                          - 'The details field must be an array.'
                         items:
                           type: string
       tags:
@@ -970,20 +970,18 @@ paths:
                 title:
                   type: string
                   description: ''
-                  example: eius
+                  example: quia
                 description:
                   type: string
                   description: ''
-                  example: 'Voluptatibus ab minus quo et sint numquam nam omnis.'
+                  example: 'Voluptatem soluta nam magni sed atque id.'
                 details:
-                  type: object
+                  type: object.
                   description: ''
-                  example: []
-                  properties: []
+                  example: "[\n {\n    \"type\": \"text\",\n    \"data\": {\n     \"validator\": {\n \"required\": true,\n\"error_message\": \"Invalid parameters\"\n}\n}\n }\n]"
               required:
                 - title
                 - description
-                - details
       security: []
   '/api/trender/{id}':
     get:

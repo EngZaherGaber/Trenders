@@ -43,12 +43,12 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"token":"7|HGxClTYfCE8cjaDLHcWDssnrwlD8sJdJe7dROwhg"}'
+        content: '{"token":"9|eoGwWsKHWjA51PorWN51O3WxJfYsjKfoowaxKSVx"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '53'
+          x-ratelimit-remaining: '54'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -83,7 +83,7 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: culpa
+        example: rerum
         type: string
         custom: []
       image:
@@ -97,7 +97,7 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: dkilback@example.net
+        example: qleffler@example.net
         type: string
         custom: []
       password:
@@ -128,14 +128,14 @@ endpoints:
         name: created_in
         description: 'Must be a valid date.'
         required: true
-        example: '2023-09-28T07:49:15'
+        example: '2023-09-28T07:58:26'
         type: string
         custom: []
       address:
         name: address
         description: ''
         required: true
-        example: iure
+        example: voluptatibus
         type: string
         custom: []
       password_confirmation:
@@ -146,28 +146,28 @@ endpoints:
         type: string
         custom: []
     cleanBodyParameters:
-      name: culpa
-      email: dkilback@example.net
+      name: rerum
+      email: qleffler@example.net
       password: password
       type: company
       category_ids:
         - 1
         - 2
         - 3
-      created_in: '2023-09-28T07:49:15'
-      address: iure
+      created_in: '2023-09-28T07:58:26'
+      address: voluptatibus
       password_confirmation: password
     fileParameters:
       image: null
     responses:
       -
         status: 200
-        content: '{"token":"8|1fFFpsGIA0A8deLk9kNL5gN51SGer7X7Vc20flAF"}'
+        content: '{"token":"10|NpRjH4s6Yjd8ywFA1birH0sCpGfAczOsw88R9iCI"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '52'
+          x-ratelimit-remaining: '53'
           access-control-allow-origin: '*'
         description: null
         custom: []

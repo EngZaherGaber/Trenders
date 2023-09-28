@@ -26,11 +26,11 @@ endpoints:
         name: type
         description: 'Must be one of <code>ended</code> or <code>draft</code>.'
         required: true
-        example: draft
+        example: ended
         type: string
         custom: []
     cleanBodyParameters:
-      type: draft
+      type: ended
     fileParameters: []
     responses:
       -

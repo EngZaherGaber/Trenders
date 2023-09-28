@@ -21,11 +21,11 @@ paths:
               schema:
                 type: object
                 example:
-                  token: 7|HGxClTYfCE8cjaDLHcWDssnrwlD8sJdJe7dROwhg
+                  token: 9|eoGwWsKHWjA51PorWN51O3WxJfYsjKfoowaxKSVx
                 properties:
                   token:
                     type: string
-                    example: 7|HGxClTYfCE8cjaDLHcWDssnrwlD8sJdJe7dROwhg
+                    example: 9|eoGwWsKHWjA51PorWN51O3WxJfYsjKfoowaxKSVx
       tags:
         - Authentication
       requestBody:
@@ -58,11 +58,11 @@ paths:
               schema:
                 type: object
                 example:
-                  token: 8|1fFFpsGIA0A8deLk9kNL5gN51SGer7X7Vc20flAF
+                  token: 10|NpRjH4s6Yjd8ywFA1birH0sCpGfAczOsw88R9iCI
                 properties:
                   token:
                     type: string
-                    example: 8|1fFFpsGIA0A8deLk9kNL5gN51SGer7X7Vc20flAF
+                    example: 10|NpRjH4s6Yjd8ywFA1birH0sCpGfAczOsw88R9iCI
       tags:
         - Authentication
       requestBody:
@@ -75,7 +75,7 @@ paths:
                 name:
                   type: string
                   description: ''
-                  example: culpa
+                  example: rerum
                 image:
                   type: string
                   format: binary
@@ -83,7 +83,7 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: dkilback@example.net
+                  example: qleffler@example.net
                 password:
                   type: string
                   description: djasoijdsaio.
@@ -104,11 +104,11 @@ paths:
                 created_in:
                   type: string
                   description: 'Must be a valid date.'
-                  example: '2023-09-28T07:49:15'
+                  example: '2023-09-28T07:58:26'
                 address:
                   type: string
                   description: ''
-                  example: iure
+                  example: voluptatibus
                 password_confirmation:
                   type: string
                   description: djasoijdsaio.
@@ -265,670 +265,334 @@ paths:
           content:
             application/json:
               schema:
-                type: object
+                type: array
+                items:
+                  type: object
                 example:
-                  data:
-                    -
-                      id: 1
-                      name: Electronics
-                    -
-                      id: 2
-                      name: 'Home & Kitchen'
-                    -
-                      id: 3
-                      name: 'Health & Beauty'
-                    -
-                      id: 4
-                      name: Fashion
-                    -
-                      id: 5
-                      name: 'Sports & Outdoors'
-                    -
-                      id: 6
-                      name: 'Toys & Games'
-                    -
-                      id: 7
-                      name: Books
-                    -
-                      id: 8
-                      name: 'Pet Supplies'
-                    -
-                      id: 9
-                      name: 'Office Supplies'
-                    -
-                      id: 10
-                      name: Jewelry
-                    -
-                      id: 11
-                      name: Automotive
-                    -
-                      id: 12
-                      name: Grocery
-                    -
-                      id: 13
-                      name: 'Movies & TV Shows'
-                    -
-                      id: 14
-                      name: Music
-                    -
-                      id: 15
-                      name: 'Industrial & Scientific'
-                    -
-                      id: 16
-                      name: 'Arts & Crafts'
-                    -
-                      id: 17
-                      name: Baby
-                    -
-                      id: 18
-                      name: 'Tools & Home Improvement'
-                    -
-                      id: 19
-                      name: 'Luggage & Travel Gear'
-                    -
-                      id: 20
-                      name: 'Video Games'
-                    -
-                      id: 21
-                      name: Handmade
-                    -
-                      id: 22
-                      name: 'Collectibles & Fine Art'
-                    -
-                      id: 23
-                      name: 'Digital Products'
-                    -
-                      id: 24
-                      name: 'Gift Cards'
-                    -
-                      id: 25
-                      name: Appliances
-                    -
-                      id: 26
-                      name: 'Audio & Video'
-                    -
-                      id: 27
-                      name: 'Bags & Backpacks'
-                    -
-                      id: 28
-                      name: 'Bath & Body'
-                    -
-                      id: 29
-                      name: 'Bedding & Linens'
-                    -
-                      id: 30
-                      name: Beverages
-                    -
-                      id: 31
-                      name: 'Camping & Hiking'
-                    -
-                      id: 32
-                      name: 'Cameras & Photography'
-                    -
-                      id: 33
-                      name: 'Car Parts & Accessories'
-                    -
-                      id: 34
-                      name: 'Cleaning Supplies'
-                    -
-                      id: 35
-                      name: Collectibles
-                    -
-                      id: 36
-                      name: 'Computer Components'
-                    -
-                      id: 37
-                      name: 'Cookware & Bakeware'
-                    -
-                      id: 38
-                      name: 'Costumes & Accessories'
-                    -
-                      id: 39
-                      name: 'Craft Supplies'
-                    -
-                      id: 40
-                      name: 'Dental Care'
-                    -
-                      id: 41
-                      name: 'Desk Accessories'
-                    -
-                      id: 42
-                      name: 'Diet & Nutrition'
-                    -
-                      id: 43
-                      name: 'Dinnerware & Serveware'
-                    -
-                      id: 44
-                      name: 'DVDs & Blu-ray'
-                    -
-                      id: 45
-                      name: 'Education & Teaching'
-                    -
-                      id: 46
-                      name: 'Event & Party Supplies'
-                    -
-                      id: 47
-                      name: Eyewear
-                    -
-                      id: 48
-                      name: Furniture
-                    -
-                      id: 49
-                      name: 'Gardening & Lawn Care'
-                    -
-                      id: 50
-                      name: 'Hair Care'
-                    -
-                      id: 51
-                      name: 'Handbags & Wallets'
-                    -
-                      id: 52
-                      name: Hardware
-                    -
-                      id: 53
-                      name: 'Headphones & Earbuds'
-                    -
-                      id: 54
-                      name: 'Home Decor'
-                    -
-                      id: 55
-                      name: 'Home Improvement'
-                    -
-                      id: 56
-                      name: 'Home Storage & Organization'
-                    -
-                      id: 57
-                      name: Instruments
-                    -
-                      id: 58
-                      name: 'Jackets & Coats'
-                    -
-                      id: 59
-                      name: "Kids' Clothing"
-                    -
-                      id: 60
-                      name: 'Kitchen & Dining'
-                    -
-                      id: 61
-                      name: 'Laundry Supplies'
-                    -
-                      id: 62
-                      name: 'Lighting & Ceiling Fans'
-                    -
-                      id: 63
-                      name: 'Makeup & Beauty Tools'
-                    -
-                      id: 64
-                      name: 'Medical Supplies & Equipment'
-                    -
-                      id: 65
-                      name: "Men's Clothing"
-                    -
-                      id: 66
-                      name: 'Musical Instruments'
-                    -
-                      id: 67
-                      name: 'Networking & Wireless'
-                    -
-                      id: 68
-                      name: 'Novelty & Gag Toys'
-                    -
-                      id: 69
-                      name: 'Outdoor Decor'
-                    -
-                      id: 70
-                      name: 'Outdoor Power Tools'
-                    -
-                      id: 71
-                      name: 'Painting, Drawing & Art Supplies'
-                    -
-                      id: 72
-                      name: 'Patio Furniture & Accessories'
-                    -
-                      id: 73
-                      name: 'Personal Care'
-                    -
-                      id: 74
-                      name: 'Personal Protective Equipment'
-                    -
-                      id: 75
-                      name: 'Pest Control'
-                    -
-                      id: 76
-                      name: 'Plant-Based Foods'
-                    -
-                      id: 77
-                      name: Plumbing
-                    -
-                      id: 78
-                      name: 'Portable Audio & Speakers'
-                    -
-                      id: 79
-                      name: 'Printers & Ink'
-                    -
-                      id: 80
-                      name: 'Safety & Security'
-                    -
-                      id: 81
-                      name: 'School & Office Supplies'
-                    -
-                      id: 82
-                      name: 'Shaving & Hair Removal'
-                    -
-                      id: 83
-                      name: Shoes
-                    -
-                      id: 84
-                      name: 'Skin Care'
-                    -
-                      id: 85
-                      name: 'Smart Home'
-                    -
-                      id: 86
-                      name: 'Smartphones & Accessories'
-                    -
-                      id: 87
-                      name: Snacks
-                    -
-                      id: 88
-                      name: Software
-                    -
-                      id: 89
-                      name: 'Storage & Organization'
-                    -
-                      id: 90
-                      name: Sunglasses
-                    -
-                      id: 91
-                      name: 'Tablets & Accessories'
-                    -
-                      id: 92
-                      name: 'Tea & Coffee'
-                    -
-                      id: 93
-                      name: Televisions
-                    -
-                      id: 94
-                      name: 'Tires & Wheels'
-                    -
-                      id: 95
-                      name: 'Tools & Equipment'
-                    -
-                      id: 96
-                      name: 'Toys & Collectibles'
-                    -
-                      id: 97
-                      name: 'Travel Accessories'
-                    -
-                      id: 98
-                      name: 'Underwear & Socks'
-                    -
-                      id: 99
-                      name: 'Vacuums & Floor Care'
-                    -
-                      id: 100
-                      name: Vegetables
-                    -
-                      id: 101
-                      name: 'Video Projectors'
-                    -
-                      id: 102
-                      name: Watches
-                    -
-                      id: 103
-                      name: 'Water Bottles'
-                    -
-                      id: 104
-                      name: 'Wine & Spirits'
-                    -
-                      id: 105
-                      name: "Women's Clothing"
-                    -
-                      id: 106
-                      name: 'Workout Clothing'
-                    -
-                      id: 107
-                      name: 'Yoga & Fitness'
-                    -
-                      id: 108
-                      name: 'Zipper Bags'
-                properties:
-                  data:
-                    type: array
-                    example:
-                      -
-                        id: 1
-                        name: Electronics
-                      -
-                        id: 2
-                        name: 'Home & Kitchen'
-                      -
-                        id: 3
-                        name: 'Health & Beauty'
-                      -
-                        id: 4
-                        name: Fashion
-                      -
-                        id: 5
-                        name: 'Sports & Outdoors'
-                      -
-                        id: 6
-                        name: 'Toys & Games'
-                      -
-                        id: 7
-                        name: Books
-                      -
-                        id: 8
-                        name: 'Pet Supplies'
-                      -
-                        id: 9
-                        name: 'Office Supplies'
-                      -
-                        id: 10
-                        name: Jewelry
-                      -
-                        id: 11
-                        name: Automotive
-                      -
-                        id: 12
-                        name: Grocery
-                      -
-                        id: 13
-                        name: 'Movies & TV Shows'
-                      -
-                        id: 14
-                        name: Music
-                      -
-                        id: 15
-                        name: 'Industrial & Scientific'
-                      -
-                        id: 16
-                        name: 'Arts & Crafts'
-                      -
-                        id: 17
-                        name: Baby
-                      -
-                        id: 18
-                        name: 'Tools & Home Improvement'
-                      -
-                        id: 19
-                        name: 'Luggage & Travel Gear'
-                      -
-                        id: 20
-                        name: 'Video Games'
-                      -
-                        id: 21
-                        name: Handmade
-                      -
-                        id: 22
-                        name: 'Collectibles & Fine Art'
-                      -
-                        id: 23
-                        name: 'Digital Products'
-                      -
-                        id: 24
-                        name: 'Gift Cards'
-                      -
-                        id: 25
-                        name: Appliances
-                      -
-                        id: 26
-                        name: 'Audio & Video'
-                      -
-                        id: 27
-                        name: 'Bags & Backpacks'
-                      -
-                        id: 28
-                        name: 'Bath & Body'
-                      -
-                        id: 29
-                        name: 'Bedding & Linens'
-                      -
-                        id: 30
-                        name: Beverages
-                      -
-                        id: 31
-                        name: 'Camping & Hiking'
-                      -
-                        id: 32
-                        name: 'Cameras & Photography'
-                      -
-                        id: 33
-                        name: 'Car Parts & Accessories'
-                      -
-                        id: 34
-                        name: 'Cleaning Supplies'
-                      -
-                        id: 35
-                        name: Collectibles
-                      -
-                        id: 36
-                        name: 'Computer Components'
-                      -
-                        id: 37
-                        name: 'Cookware & Bakeware'
-                      -
-                        id: 38
-                        name: 'Costumes & Accessories'
-                      -
-                        id: 39
-                        name: 'Craft Supplies'
-                      -
-                        id: 40
-                        name: 'Dental Care'
-                      -
-                        id: 41
-                        name: 'Desk Accessories'
-                      -
-                        id: 42
-                        name: 'Diet & Nutrition'
-                      -
-                        id: 43
-                        name: 'Dinnerware & Serveware'
-                      -
-                        id: 44
-                        name: 'DVDs & Blu-ray'
-                      -
-                        id: 45
-                        name: 'Education & Teaching'
-                      -
-                        id: 46
-                        name: 'Event & Party Supplies'
-                      -
-                        id: 47
-                        name: Eyewear
-                      -
-                        id: 48
-                        name: Furniture
-                      -
-                        id: 49
-                        name: 'Gardening & Lawn Care'
-                      -
-                        id: 50
-                        name: 'Hair Care'
-                      -
-                        id: 51
-                        name: 'Handbags & Wallets'
-                      -
-                        id: 52
-                        name: Hardware
-                      -
-                        id: 53
-                        name: 'Headphones & Earbuds'
-                      -
-                        id: 54
-                        name: 'Home Decor'
-                      -
-                        id: 55
-                        name: 'Home Improvement'
-                      -
-                        id: 56
-                        name: 'Home Storage & Organization'
-                      -
-                        id: 57
-                        name: Instruments
-                      -
-                        id: 58
-                        name: 'Jackets & Coats'
-                      -
-                        id: 59
-                        name: "Kids' Clothing"
-                      -
-                        id: 60
-                        name: 'Kitchen & Dining'
-                      -
-                        id: 61
-                        name: 'Laundry Supplies'
-                      -
-                        id: 62
-                        name: 'Lighting & Ceiling Fans'
-                      -
-                        id: 63
-                        name: 'Makeup & Beauty Tools'
-                      -
-                        id: 64
-                        name: 'Medical Supplies & Equipment'
-                      -
-                        id: 65
-                        name: "Men's Clothing"
-                      -
-                        id: 66
-                        name: 'Musical Instruments'
-                      -
-                        id: 67
-                        name: 'Networking & Wireless'
-                      -
-                        id: 68
-                        name: 'Novelty & Gag Toys'
-                      -
-                        id: 69
-                        name: 'Outdoor Decor'
-                      -
-                        id: 70
-                        name: 'Outdoor Power Tools'
-                      -
-                        id: 71
-                        name: 'Painting, Drawing & Art Supplies'
-                      -
-                        id: 72
-                        name: 'Patio Furniture & Accessories'
-                      -
-                        id: 73
-                        name: 'Personal Care'
-                      -
-                        id: 74
-                        name: 'Personal Protective Equipment'
-                      -
-                        id: 75
-                        name: 'Pest Control'
-                      -
-                        id: 76
-                        name: 'Plant-Based Foods'
-                      -
-                        id: 77
-                        name: Plumbing
-                      -
-                        id: 78
-                        name: 'Portable Audio & Speakers'
-                      -
-                        id: 79
-                        name: 'Printers & Ink'
-                      -
-                        id: 80
-                        name: 'Safety & Security'
-                      -
-                        id: 81
-                        name: 'School & Office Supplies'
-                      -
-                        id: 82
-                        name: 'Shaving & Hair Removal'
-                      -
-                        id: 83
-                        name: Shoes
-                      -
-                        id: 84
-                        name: 'Skin Care'
-                      -
-                        id: 85
-                        name: 'Smart Home'
-                      -
-                        id: 86
-                        name: 'Smartphones & Accessories'
-                      -
-                        id: 87
-                        name: Snacks
-                      -
-                        id: 88
-                        name: Software
-                      -
-                        id: 89
-                        name: 'Storage & Organization'
-                      -
-                        id: 90
-                        name: Sunglasses
-                      -
-                        id: 91
-                        name: 'Tablets & Accessories'
-                      -
-                        id: 92
-                        name: 'Tea & Coffee'
-                      -
-                        id: 93
-                        name: Televisions
-                      -
-                        id: 94
-                        name: 'Tires & Wheels'
-                      -
-                        id: 95
-                        name: 'Tools & Equipment'
-                      -
-                        id: 96
-                        name: 'Toys & Collectibles'
-                      -
-                        id: 97
-                        name: 'Travel Accessories'
-                      -
-                        id: 98
-                        name: 'Underwear & Socks'
-                      -
-                        id: 99
-                        name: 'Vacuums & Floor Care'
-                      -
-                        id: 100
-                        name: Vegetables
-                      -
-                        id: 101
-                        name: 'Video Projectors'
-                      -
-                        id: 102
-                        name: Watches
-                      -
-                        id: 103
-                        name: 'Water Bottles'
-                      -
-                        id: 104
-                        name: 'Wine & Spirits'
-                      -
-                        id: 105
-                        name: "Women's Clothing"
-                      -
-                        id: 106
-                        name: 'Workout Clothing'
-                      -
-                        id: 107
-                        name: 'Yoga & Fitness'
-                      -
-                        id: 108
-                        name: 'Zipper Bags'
-                    items:
-                      type: object
-                      properties:
-                        id:
-                          type: integer
-                          example: 1
-                        name:
-                          type: string
-                          example: Electronics
+                  -
+                    id: 1
+                    name: Electronics
+                  -
+                    id: 2
+                    name: 'Home & Kitchen'
+                  -
+                    id: 3
+                    name: 'Health & Beauty'
+                  -
+                    id: 4
+                    name: Fashion
+                  -
+                    id: 5
+                    name: 'Sports & Outdoors'
+                  -
+                    id: 6
+                    name: 'Toys & Games'
+                  -
+                    id: 7
+                    name: Books
+                  -
+                    id: 8
+                    name: 'Pet Supplies'
+                  -
+                    id: 9
+                    name: 'Office Supplies'
+                  -
+                    id: 10
+                    name: Jewelry
+                  -
+                    id: 11
+                    name: Automotive
+                  -
+                    id: 12
+                    name: Grocery
+                  -
+                    id: 13
+                    name: 'Movies & TV Shows'
+                  -
+                    id: 14
+                    name: Music
+                  -
+                    id: 15
+                    name: 'Industrial & Scientific'
+                  -
+                    id: 16
+                    name: 'Arts & Crafts'
+                  -
+                    id: 17
+                    name: Baby
+                  -
+                    id: 18
+                    name: 'Tools & Home Improvement'
+                  -
+                    id: 19
+                    name: 'Luggage & Travel Gear'
+                  -
+                    id: 20
+                    name: 'Video Games'
+                  -
+                    id: 21
+                    name: Handmade
+                  -
+                    id: 22
+                    name: 'Collectibles & Fine Art'
+                  -
+                    id: 23
+                    name: 'Digital Products'
+                  -
+                    id: 24
+                    name: 'Gift Cards'
+                  -
+                    id: 25
+                    name: Appliances
+                  -
+                    id: 26
+                    name: 'Audio & Video'
+                  -
+                    id: 27
+                    name: 'Bags & Backpacks'
+                  -
+                    id: 28
+                    name: 'Bath & Body'
+                  -
+                    id: 29
+                    name: 'Bedding & Linens'
+                  -
+                    id: 30
+                    name: Beverages
+                  -
+                    id: 31
+                    name: 'Camping & Hiking'
+                  -
+                    id: 32
+                    name: 'Cameras & Photography'
+                  -
+                    id: 33
+                    name: 'Car Parts & Accessories'
+                  -
+                    id: 34
+                    name: 'Cleaning Supplies'
+                  -
+                    id: 35
+                    name: Collectibles
+                  -
+                    id: 36
+                    name: 'Computer Components'
+                  -
+                    id: 37
+                    name: 'Cookware & Bakeware'
+                  -
+                    id: 38
+                    name: 'Costumes & Accessories'
+                  -
+                    id: 39
+                    name: 'Craft Supplies'
+                  -
+                    id: 40
+                    name: 'Dental Care'
+                  -
+                    id: 41
+                    name: 'Desk Accessories'
+                  -
+                    id: 42
+                    name: 'Diet & Nutrition'
+                  -
+                    id: 43
+                    name: 'Dinnerware & Serveware'
+                  -
+                    id: 44
+                    name: 'DVDs & Blu-ray'
+                  -
+                    id: 45
+                    name: 'Education & Teaching'
+                  -
+                    id: 46
+                    name: 'Event & Party Supplies'
+                  -
+                    id: 47
+                    name: Eyewear
+                  -
+                    id: 48
+                    name: Furniture
+                  -
+                    id: 49
+                    name: 'Gardening & Lawn Care'
+                  -
+                    id: 50
+                    name: 'Hair Care'
+                  -
+                    id: 51
+                    name: 'Handbags & Wallets'
+                  -
+                    id: 52
+                    name: Hardware
+                  -
+                    id: 53
+                    name: 'Headphones & Earbuds'
+                  -
+                    id: 54
+                    name: 'Home Decor'
+                  -
+                    id: 55
+                    name: 'Home Improvement'
+                  -
+                    id: 56
+                    name: 'Home Storage & Organization'
+                  -
+                    id: 57
+                    name: Instruments
+                  -
+                    id: 58
+                    name: 'Jackets & Coats'
+                  -
+                    id: 59
+                    name: "Kids' Clothing"
+                  -
+                    id: 60
+                    name: 'Kitchen & Dining'
+                  -
+                    id: 61
+                    name: 'Laundry Supplies'
+                  -
+                    id: 62
+                    name: 'Lighting & Ceiling Fans'
+                  -
+                    id: 63
+                    name: 'Makeup & Beauty Tools'
+                  -
+                    id: 64
+                    name: 'Medical Supplies & Equipment'
+                  -
+                    id: 65
+                    name: "Men's Clothing"
+                  -
+                    id: 66
+                    name: 'Musical Instruments'
+                  -
+                    id: 67
+                    name: 'Networking & Wireless'
+                  -
+                    id: 68
+                    name: 'Novelty & Gag Toys'
+                  -
+                    id: 69
+                    name: 'Outdoor Decor'
+                  -
+                    id: 70
+                    name: 'Outdoor Power Tools'
+                  -
+                    id: 71
+                    name: 'Painting, Drawing & Art Supplies'
+                  -
+                    id: 72
+                    name: 'Patio Furniture & Accessories'
+                  -
+                    id: 73
+                    name: 'Personal Care'
+                  -
+                    id: 74
+                    name: 'Personal Protective Equipment'
+                  -
+                    id: 75
+                    name: 'Pest Control'
+                  -
+                    id: 76
+                    name: 'Plant-Based Foods'
+                  -
+                    id: 77
+                    name: Plumbing
+                  -
+                    id: 78
+                    name: 'Portable Audio & Speakers'
+                  -
+                    id: 79
+                    name: 'Printers & Ink'
+                  -
+                    id: 80
+                    name: 'Safety & Security'
+                  -
+                    id: 81
+                    name: 'School & Office Supplies'
+                  -
+                    id: 82
+                    name: 'Shaving & Hair Removal'
+                  -
+                    id: 83
+                    name: Shoes
+                  -
+                    id: 84
+                    name: 'Skin Care'
+                  -
+                    id: 85
+                    name: 'Smart Home'
+                  -
+                    id: 86
+                    name: 'Smartphones & Accessories'
+                  -
+                    id: 87
+                    name: Snacks
+                  -
+                    id: 88
+                    name: Software
+                  -
+                    id: 89
+                    name: 'Storage & Organization'
+                  -
+                    id: 90
+                    name: Sunglasses
+                  -
+                    id: 91
+                    name: 'Tablets & Accessories'
+                  -
+                    id: 92
+                    name: 'Tea & Coffee'
+                  -
+                    id: 93
+                    name: Televisions
+                  -
+                    id: 94
+                    name: 'Tires & Wheels'
+                  -
+                    id: 95
+                    name: 'Tools & Equipment'
+                  -
+                    id: 96
+                    name: 'Toys & Collectibles'
+                  -
+                    id: 97
+                    name: 'Travel Accessories'
+                  -
+                    id: 98
+                    name: 'Underwear & Socks'
+                  -
+                    id: 99
+                    name: 'Vacuums & Floor Care'
+                  -
+                    id: 100
+                    name: Vegetables
+                  -
+                    id: 101
+                    name: 'Video Projectors'
+                  -
+                    id: 102
+                    name: Watches
+                  -
+                    id: 103
+                    name: 'Water Bottles'
+                  -
+                    id: 104
+                    name: 'Wine & Spirits'
+                  -
+                    id: 105
+                    name: "Women's Clothing"
+                  -
+                    id: 106
+                    name: 'Workout Clothing'
+                  -
+                    id: 107
+                    name: 'Yoga & Fitness'
+                  -
+                    id: 108
+                    name: 'Zipper Bags'
       tags:
         - Category
       security: []
@@ -993,7 +657,7 @@ paths:
                 type:
                   type: string
                   description: 'Must be one of <code>ended</code> or <code>draft</code>.'
-                  example: draft
+                  example: ended
               required:
                 - type
       security: []
@@ -1147,90 +811,66 @@ paths:
           content:
             application/json:
               schema:
-                type: object
+                type: array
+                items:
+                  type: object
                 example:
-                  data:
-                    -
-                      id: 2
-                      title: 'Facere animi qui qui ut.'
-                      description: 'Ratione et quos ipsam. Voluptatem cum modi ullam aut corporis praesentium repudiandae. Cum occaecati est qui cumque praesentium in qui. Non voluptatum in dolorum ut.'
-                      ended_at: null
-                      institution_id: 7
-                      institution_name: 'Carleton Reynolds'
-                    -
-                      id: 9
-                      title: 'Adipisci debitis sit enim voluptatem.'
-                      description: 'Aliquid repellat quasi consequatur sapiente fuga amet. Eos laboriosam aut ut veritatis sit. Debitis aliquid facere voluptatem ducimus quisquam rerum corporis.'
-                      ended_at: null
-                      institution_id: 14
-                      institution_name: 'Ricky Leuschke'
-                    -
-                      id: 13
-                      title: 'Aut necessitatibus aperiam voluptatem qui facere.'
-                      description: 'Dolorem perferendis velit ea est rerum. Nulla consequatur natus qui dicta. Porro quia fuga culpa enim veritatis earum.'
-                      ended_at: null
-                      institution_id: 18
-                      institution_name: 'Dr. Mason Koelpin IV'
-                    -
-                      id: 18
-                      title: 'Perspiciatis et iure perferendis optio repellat.'
-                      description: 'Voluptatibus deleniti commodi perspiciatis officia. Molestias repellendus atque quibusdam tenetur odit non quia. Sit est facere assumenda eligendi omnis aut.'
-                      ended_at: null
-                      institution_id: 23
-                      institution_name: 'Prof. Darwin Ryan I'
-                properties:
-                  data:
-                    type: array
-                    example:
-                      -
-                        id: 2
-                        title: 'Facere animi qui qui ut.'
-                        description: 'Ratione et quos ipsam. Voluptatem cum modi ullam aut corporis praesentium repudiandae. Cum occaecati est qui cumque praesentium in qui. Non voluptatum in dolorum ut.'
-                        ended_at: null
-                        institution_id: 7
-                        institution_name: 'Carleton Reynolds'
-                      -
-                        id: 9
-                        title: 'Adipisci debitis sit enim voluptatem.'
-                        description: 'Aliquid repellat quasi consequatur sapiente fuga amet. Eos laboriosam aut ut veritatis sit. Debitis aliquid facere voluptatem ducimus quisquam rerum corporis.'
-                        ended_at: null
-                        institution_id: 14
-                        institution_name: 'Ricky Leuschke'
-                      -
-                        id: 13
-                        title: 'Aut necessitatibus aperiam voluptatem qui facere.'
-                        description: 'Dolorem perferendis velit ea est rerum. Nulla consequatur natus qui dicta. Porro quia fuga culpa enim veritatis earum.'
-                        ended_at: null
-                        institution_id: 18
-                        institution_name: 'Dr. Mason Koelpin IV'
-                      -
-                        id: 18
-                        title: 'Perspiciatis et iure perferendis optio repellat.'
-                        description: 'Voluptatibus deleniti commodi perspiciatis officia. Molestias repellendus atque quibusdam tenetur odit non quia. Sit est facere assumenda eligendi omnis aut.'
-                        ended_at: null
-                        institution_id: 23
-                        institution_name: 'Prof. Darwin Ryan I'
-                    items:
-                      type: object
-                      properties:
-                        id:
-                          type: integer
-                          example: 2
-                        title:
-                          type: string
-                          example: 'Facere animi qui qui ut.'
-                        description:
-                          type: string
-                          example: 'Ratione et quos ipsam. Voluptatem cum modi ullam aut corporis praesentium repudiandae. Cum occaecati est qui cumque praesentium in qui. Non voluptatum in dolorum ut.'
-                        ended_at:
-                          type: string
-                          example: null
-                        institution_id:
-                          type: integer
-                          example: 7
-                        institution_name:
-                          type: string
-                          example: 'Carleton Reynolds'
+                  -
+                    id: 4
+                    title: 'Est in eius.'
+                    description: 'Eum et assumenda quia eum magnam dolor. Explicabo culpa deleniti molestiae nihil. Suscipit quia animi consequatur.'
+                    ended_at: null
+                    institution_id: 9
+                    institution_name: 'Prof. Alford Cummings'
+                  -
+                    id: 9
+                    title: 'Adipisci debitis sit enim voluptatem.'
+                    description: 'Aliquid repellat quasi consequatur sapiente fuga amet. Eos laboriosam aut ut veritatis sit. Debitis aliquid facere voluptatem ducimus quisquam rerum corporis.'
+                    ended_at: null
+                    institution_id: 14
+                    institution_name: 'Ricky Leuschke'
+                  -
+                    id: 13
+                    title: 'Aut necessitatibus aperiam voluptatem qui facere.'
+                    description: 'Dolorem perferendis velit ea est rerum. Nulla consequatur natus qui dicta. Porro quia fuga culpa enim veritatis earum.'
+                    ended_at: null
+                    institution_id: 18
+                    institution_name: 'Dr. Mason Koelpin IV'
+                  -
+                    id: 17
+                    title: 'Ut occaecati eligendi consequatur.'
+                    description: 'Velit ipsa molestiae numquam a natus exercitationem. Vitae dolore tempore consectetur doloremque quibusdam in. Laboriosam voluptate commodi inventore molestias ea ipsa dicta eum.'
+                    ended_at: null
+                    institution_id: 22
+                    institution_name: 'Skylar Schamberger III'
+                  -
+                    id: 19
+                    title: 'Necessitatibus laborum ex quo tempore.'
+                    description: 'Distinctio perferendis repellendus temporibus consequatur non. Quibusdam alias id dolorem modi. Nostrum quis suscipit aut quidem delectus.'
+                    ended_at: null
+                    institution_id: 24
+                    institution_name: 'Marcel Prohaska'
+                  -
+                    id: 20
+                    title: 'Vel aspernatur ullam eaque dolor pariatur.'
+                    description: 'Quam beatae molestias illum laudantium consequatur ipsam. Repellat et suscipit quis voluptatem consequatur. Ab placeat rerum voluptatem et. Dolorum quae praesentium quam expedita aut.'
+                    ended_at: null
+                    institution_id: 25
+                    institution_name: 'Daija Moore'
+                  -
+                    id: 21
+                    title: 'A perferendis quam fugit quia consectetur.'
+                    description: 'In consequatur in animi aliquam veritatis cupiditate dolor. Vel qui fugit dolores quod. Et quia nemo repellendus sequi enim delectus odio odit.'
+                    ended_at: null
+                    institution_id: 26
+                    institution_name: 'Estrella Mertz'
+                  -
+                    id: 24
+                    title: 'Est temporibus repudiandae ab veritatis iusto.'
+                    description: 'Et impedit qui qui esse ipsam. Est sit molestiae est qui. In dolor in expedita consequatur quo. Quos quisquam commodi et vel quos ducimus corrupti.'
+                    ended_at: null
+                    institution_id: 29
+                    institution_name: 'Scotty Mosciski'
       tags:
         - Trender
       requestBody:
@@ -1243,7 +883,7 @@ paths:
                 q:
                   type: string
                   description: ''
-                  example: facere
+                  example: consequatur
       security: []
     post:
       summary: 'Store a newly created resource in storage.'
@@ -1287,11 +927,11 @@ paths:
                 title:
                   type: string
                   description: ''
-                  example: et
+                  example: repellendus
                 description:
                   type: string
                   description: ''
-                  example: 'At dolores sed deleniti sint.'
+                  example: 'Omnis asperiores rerum consequatur est voluptatem qui velit qui.'
                 details:
                   type: object
                   description: ''

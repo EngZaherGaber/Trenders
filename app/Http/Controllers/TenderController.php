@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\SearchTenderRequest;
 use App\Http\Requests\StoreTenderRequest;
 use App\Http\Requests\UpdateTenderRequest;
-use App\Http\Resources\TrenderResource;
+use App\Http\Resources\TrenderHomeResource;
 use App\Models\Tender;
 use Illuminate\Support\Facades\Validator;
 
@@ -24,7 +24,7 @@ class TenderController extends Controller
             ->orWhereRaw('LOWER(description) LIKE ? ', ['%' . strtolower($request->q) . '%'])
             ->get();
 
-        return $tenders;
+        return TrenderHomeResource::collection($tenders);
     }
 
     /**

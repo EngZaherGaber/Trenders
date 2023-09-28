@@ -18,11 +18,12 @@ class TrenderResource extends JsonResource
             'id' => $this->id,
             'title' => $this->title,
             'description' => $this->description,
+            'image' => $this->image,
+            'columns_number' => $this->columns_number,
             'created_at' => $this->created_at,
-            'ended_at' => $this->ended_at,
-            'offers_count' => $this->offers()->count(),
-            'best_offer_from' => $this->best_offer_from->company->user->name,
-            'offers' => OfferResource::collection($this->offers),
+            // 'offers_count' => $this->offers()->count(),
+            // 'best_offer_from' => $this->best_offer_from->company->user->name,
+            // 'offers' => OfferResource::collection($this->offers),
             'trender_details' => $this->whenLoaded('tenderDetails'),
         ];
     }

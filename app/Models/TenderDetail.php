@@ -22,6 +22,17 @@ class TenderDetail extends Model
     ];
 
     /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $hidden = [
+        'created_at',
+        'updated_at',
+        'tender_id',
+    ];
+
+    /**
      * The attributes that should be cast to native types.
      *
      * @var array

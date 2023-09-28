@@ -21,12 +21,12 @@ paths:
               schema:
                 type: object
                 example:
-                  token: 2|oISzw3ZStVMSnLrnYygTHx1KFnGPUf9fRbTZL8Nt
+                  token: 12|SbxoNsYPeapHm9rsYlHdVkgk3kKkg7l8zXf1jguH
                   is_company: true
                 properties:
                   token:
                     type: string
-                    example: 2|oISzw3ZStVMSnLrnYygTHx1KFnGPUf9fRbTZL8Nt
+                    example: 12|SbxoNsYPeapHm9rsYlHdVkgk3kKkg7l8zXf1jguH
                   is_company:
                     type: boolean
                     example: true
@@ -62,11 +62,11 @@ paths:
               schema:
                 type: object
                 example:
-                  token: 3|fVALs2GsCqXOip4GURGz83EjlL1fXvrfXOvth3wq
+                  token: 13|CFXT6BAS2vn9nWgr2mYNW5WChzp1w4rasfcnMb1r
                 properties:
                   token:
                     type: string
-                    example: 3|fVALs2GsCqXOip4GURGz83EjlL1fXvrfXOvth3wq
+                    example: 13|CFXT6BAS2vn9nWgr2mYNW5WChzp1w4rasfcnMb1r
       tags:
         - Authentication
       requestBody:
@@ -79,7 +79,7 @@ paths:
                 name:
                   type: string
                   description: ''
-                  example: in
+                  example: molestiae
                 image:
                   type: string
                   format: binary
@@ -87,7 +87,7 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: russell51@example.org
+                  example: sam.christiansen@example.org
                 password:
                   type: string
                   description: djasoijdsaio.
@@ -95,7 +95,7 @@ paths:
                 type:
                   type: string
                   description: 'Must be one of <code>instute</code> or <code>company</code>.'
-                  example: instute
+                  example: company
                 category_ids:
                   type: array
                   description: djasoijdsaio.
@@ -108,15 +108,15 @@ paths:
                 created_in:
                   type: string
                   description: 'Must be a valid date.'
-                  example: '2023-09-28T12:04:31'
+                  example: '2023-09-28T12:16:54'
                 address:
                   type: string
                   description: ''
-                  example: debitis
+                  example: illum
                 city:
                   type: string
                   description: ''
-                  example: sed
+                  example: architecto
                 password_confirmation:
                   type: string
                   description: djasoijdsaio.
@@ -686,7 +686,7 @@ paths:
                 type:
                   type: string
                   description: 'Must be one of <code>ended</code> or <code>draft</code>.'
-                  example: ended
+                  example: draft
               required:
                 - type
       security: []
@@ -838,12 +838,12 @@ paths:
           in: query
           name: q
           description: ''
-          example: enim
+          example: inventore
           required: false
           schema:
             type: string
             description: ''
-            example: enim
+            example: inventore
         -
           in: query
           name: category_ids
@@ -877,6 +877,20 @@ paths:
                   type: object
                 example:
                   -
+                    id: 1
+                    title: 'Facilis ducimus et sunt fugit.'
+                    description: 'Et tempora iste provident totam soluta vitae. Id nihil perspiciatis nemo perferendis culpa veniam. Explicabo velit quaerat hic quia numquam nemo consequatur.'
+                    ended_at: null
+                    institution_id: 6
+                    institution_name: 'Domenica Altenwerth'
+                  -
+                    id: 2
+                    title: 'Exercitationem mollitia ullam aut et labore.'
+                    description: 'Officiis voluptas quam voluptatibus repellendus quo dolorum. Aut ab sit enim consequatur. Error quo maiores sed vero.'
+                    ended_at: null
+                    institution_id: 7
+                    institution_name: 'Monserrat Kirlin'
+                  -
                     id: 3
                     title: 'Quo alias corrupti illo.'
                     description: 'Laudantium autem maxime est iure. Inventore quo fuga aliquid vel rerum. Voluptates et et dolores praesentium cumque sed tempore.'
@@ -898,6 +912,34 @@ paths:
                     institution_id: 10
                     institution_name: 'Bulah Hansen'
                   -
+                    id: 6
+                    title: 'Unde ut vitae consequuntur doloribus.'
+                    description: 'Et ut consequatur autem qui velit ut adipisci. Laborum adipisci sed qui iste a consequuntur. Ut et repudiandae deleniti non officiis repudiandae. Quo tempora vero eligendi autem error.'
+                    ended_at: null
+                    institution_id: 11
+                    institution_name: 'Rosalia Graham IV'
+                  -
+                    id: 7
+                    title: 'Libero inventore in qui accusantium.'
+                    description: 'Et amet reprehenderit atque et ipsa. Autem sunt quod perspiciatis. Vero quia quis nesciunt qui aliquam.'
+                    ended_at: null
+                    institution_id: 12
+                    institution_name: 'Kamille Stanton'
+                  -
+                    id: 8
+                    title: 'Et aut voluptas id eius.'
+                    description: 'Porro quasi et quia eos rerum. Voluptatem nemo qui consequuntur consequatur architecto. Occaecati saepe et voluptatibus modi ut nihil veniam odio. Provident ea qui porro aut eum.'
+                    ended_at: null
+                    institution_id: 13
+                    institution_name: 'Mr. Joshuah Mills IV'
+                  -
+                    id: 9
+                    title: 'Occaecati at quod qui.'
+                    description: 'Culpa vel sed eos explicabo. Velit porro et aut fugit. Deleniti et modi sunt.'
+                    ended_at: null
+                    institution_id: 14
+                    institution_name: 'Kitty Mante'
+                  -
                     id: 10
                     title: 'Quod magnam recusandae autem id.'
                     description: 'Vel minus natus iste aperiam. Quia labore repellendus suscipit aliquam facere. Aspernatur doloribus tenetur voluptatum repellat illum deserunt. Nesciunt hic cumque incidunt est.'
@@ -912,12 +954,12 @@ paths:
                     institution_id: 16
                     institution_name: 'Rubie Jast'
                   -
-                    id: 12
-                    title: 'Itaque magni recusandae vitae ut est.'
-                    description: 'Sint dolorum at nobis aliquam libero delectus. Qui rerum nam sint ratione. Quisquam accusamus mollitia incidunt rem.'
+                    id: 14
+                    title: 'Nemo eveniet quae blanditiis ullam.'
+                    description: 'Ipsum nesciunt sed similique voluptas. Nobis magni sunt asperiores corporis quia in ut natus. Et ea ipsum voluptate ut impedit. Minus sed consequatur reiciendis provident minima modi.'
                     ended_at: null
-                    institution_id: 17
-                    institution_name: 'Dr. Timmothy Lubowitz'
+                    institution_id: 19
+                    institution_name: 'Chaim Schaefer'
                   -
                     id: 15
                     title: 'Natus fugit possimus libero aut.'
@@ -925,6 +967,20 @@ paths:
                     ended_at: null
                     institution_id: 20
                     institution_name: 'Muhammad Rohan'
+                  -
+                    id: 16
+                    title: 'Autem hic non dolores qui.'
+                    description: 'Et reprehenderit non distinctio. Error debitis libero repellendus sit delectus et pariatur. Corporis id aliquam totam incidunt amet velit accusantium. Nobis voluptatibus saepe sit ex aut sunt.'
+                    ended_at: null
+                    institution_id: 21
+                    institution_name: 'Cyrus Erdman'
+                  -
+                    id: 17
+                    title: 'Alias perspiciatis placeat incidunt.'
+                    description: 'Similique rerum ut nesciunt consequatur quia rem. Veniam commodi voluptas rerum voluptatem. Ullam corporis dicta eligendi tenetur atque vitae.'
+                    ended_at: null
+                    institution_id: 22
+                    institution_name: 'Alex Davis'
                   -
                     id: 18
                     title: 'Consectetur et sit vitae at.'
@@ -940,6 +996,20 @@ paths:
                     institution_id: 24
                     institution_name: 'Mr. Gustave Kemmer'
                   -
+                    id: 21
+                    title: 'Dolore illum aut voluptatibus.'
+                    description: 'Voluptate nisi incidunt ducimus culpa soluta eos autem. Voluptatum sit beatae voluptatibus quia magnam sit. Adipisci quia ratione necessitatibus eveniet consequuntur non ullam ut.'
+                    ended_at: null
+                    institution_id: 26
+                    institution_name: 'Rahul Hayes'
+                  -
+                    id: 22
+                    title: 'Animi consectetur quas error.'
+                    description: 'Et rerum nesciunt dolore ab doloremque ut a. Laborum soluta a necessitatibus ullam voluptate. Eius odit aut consequatur non quam voluptatem. Dolor aperiam omnis dicta asperiores excepturi amet.'
+                    ended_at: null
+                    institution_id: 27
+                    institution_name: 'Jamison Schmitt'
+                  -
                     id: 23
                     title: 'Officia vitae quibusdam dolor.'
                     description: 'Vel illum sunt suscipit molestiae. Ea nihil et quae praesentium. Et blanditiis mollitia cum ratione nisi inventore. Qui porro qui molestiae est sunt laborum. Commodi minus quis deleniti magni rerum.'
@@ -947,12 +1017,12 @@ paths:
                     institution_id: 28
                     institution_name: 'Kira Von'
                   -
-                    id: 25
-                    title: 'Ut voluptates nesciunt nostrum temporibus.'
-                    description: 'Magni velit quia sequi minus qui occaecati nihil. Consequatur consequatur soluta molestias rerum eligendi sequi error. Rerum in excepturi ab eum. Error laborum rerum mollitia rerum incidunt.'
+                    id: 24
+                    title: 'Nesciunt numquam illo.'
+                    description: 'Qui amet nihil corporis provident ex sapiente. Voluptas omnis tempore sunt qui dicta similique maiores tenetur. Debitis laboriosam quae hic illo et.'
                     ended_at: null
-                    institution_id: 30
-                    institution_name: 'Elta Crooks Jr.'
+                    institution_id: 29
+                    institution_name: 'Anastacio Parisian PhD'
       tags:
         - Trender
       requestBody:
@@ -965,7 +1035,7 @@ paths:
                 q:
                   type: string
                   description: ''
-                  example: est
+                  example: et
                 category_ids:
                   type: object
                   description: ''
@@ -1019,15 +1089,15 @@ paths:
                 title:
                   type: string
                   description: ''
-                  example: consequatur
+                  example: fugiat
                 description:
                   type: string
                   description: ''
-                  example: 'Sit omnis repellat ipsa dignissimos.'
+                  example: 'Aut laborum reprehenderit ratione quae sapiente vitae vitae.'
                 image:
                   type: string
                   description: ''
-                  example: sed
+                  example: architecto
                 details:
                   type: object.
                   description: ''
@@ -1050,146 +1120,55 @@ paths:
               schema:
                 type: object
                 example:
-                  data:
-                    id: 25
-                    title: 'Eum officia eum.'
-                    description: 'Porro doloremque molestiae culpa temporibus perferendis minima. Qui non nulla dolorem laudantium.'
-                    created_at: '2023-09-17T08:12:58.000000Z'
-                    ended_at: '2023-09-17 09:25:57'
-                    offers_count: 3
-                    best_offer_from: 'Barry Barton'
-                    offers:
+                  id: 1
+                  title: 'Facilis ducimus et sunt fugit.'
+                  description: 'Et tempora iste provident totam soluta vitae. Id nihil perspiciatis nemo perferendis culpa veniam. Explicabo velit quaerat hic quia numquam nemo consequatur.'
+                  image: null
+                  columns_number: 1
+                  created_at: '2023-09-28T12:02:51.000000Z'
+                  trender_details:
+                    -
+                      id: 11
+                      name: id
+                      data: cum
+                properties:
+                  id:
+                    type: integer
+                    example: 1
+                  title:
+                    type: string
+                    example: 'Facilis ducimus et sunt fugit.'
+                  description:
+                    type: string
+                    example: 'Et tempora iste provident totam soluta vitae. Id nihil perspiciatis nemo perferendis culpa veniam. Explicabo velit quaerat hic quia numquam nemo consequatur.'
+                  image:
+                    type: string
+                    example: null
+                  columns_number:
+                    type: integer
+                    example: 1
+                  created_at:
+                    type: string
+                    example: '2023-09-28T12:02:51.000000Z'
+                  trender_details:
+                    type: array
+                    example:
                       -
                         id: 11
-                        trender_name: 'Eum officia eum.'
-                        for: 'Dr. Delfina Lesch'
-                        work_on_it: '2023-09-17T09:17:03.000000Z'
-                        work_ended_it: '2023-09-17 09:25:57'
-                      -
-                        id: 12
-                        trender_name: 'Eum officia eum.'
-                        for: 'Dr. Delfina Lesch'
-                        work_on_it: '2023-09-17T09:17:03.000000Z'
-                        work_ended_it: '2023-09-17 09:25:57'
-                      -
-                        id: 13
-                        trender_name: 'Eum officia eum.'
-                        for: 'Dr. Delfina Lesch'
-                        work_on_it: '2023-09-17T09:17:03.000000Z'
-                        work_ended_it: '2023-09-17 09:25:57'
-                    trender_details:
-                      -
-                        id: 10
-                        type: quis
-                        question: est
-                        description: 'Natus sunt enim beatae quo. Et nisi est dolorum nihil et similique facilis nihil. Explicabo incidunt ut excepturi.'
-                        data: molestias
-                        tender_id: 25
-                        created_at: '2023-09-17T08:12:58.000000Z'
-                        updated_at: '2023-09-17T08:12:58.000000Z'
-                properties:
-                  data:
-                    type: object
-                    properties:
-                      id:
-                        type: integer
-                        example: 25
-                      title:
-                        type: string
-                        example: 'Eum officia eum.'
-                      description:
-                        type: string
-                        example: 'Porro doloremque molestiae culpa temporibus perferendis minima. Qui non nulla dolorem laudantium.'
-                      created_at:
-                        type: string
-                        example: '2023-09-17T08:12:58.000000Z'
-                      ended_at:
-                        type: string
-                        example: '2023-09-17 09:25:57'
-                      offers_count:
-                        type: integer
-                        example: 3
-                      best_offer_from:
-                        type: string
-                        example: 'Barry Barton'
-                      offers:
-                        type: array
-                        example:
-                          -
-                            id: 11
-                            trender_name: 'Eum officia eum.'
-                            for: 'Dr. Delfina Lesch'
-                            work_on_it: '2023-09-17T09:17:03.000000Z'
-                            work_ended_it: '2023-09-17 09:25:57'
-                          -
-                            id: 12
-                            trender_name: 'Eum officia eum.'
-                            for: 'Dr. Delfina Lesch'
-                            work_on_it: '2023-09-17T09:17:03.000000Z'
-                            work_ended_it: '2023-09-17 09:25:57'
-                          -
-                            id: 13
-                            trender_name: 'Eum officia eum.'
-                            for: 'Dr. Delfina Lesch'
-                            work_on_it: '2023-09-17T09:17:03.000000Z'
-                            work_ended_it: '2023-09-17 09:25:57'
-                        items:
-                          type: object
-                          properties:
-                            id:
-                              type: integer
-                              example: 11
-                            trender_name:
-                              type: string
-                              example: 'Eum officia eum.'
-                            for:
-                              type: string
-                              example: 'Dr. Delfina Lesch'
-                            work_on_it:
-                              type: string
-                              example: '2023-09-17T09:17:03.000000Z'
-                            work_ended_it:
-                              type: string
-                              example: '2023-09-17 09:25:57'
-                      trender_details:
-                        type: array
-                        example:
-                          -
-                            id: 10
-                            type: quis
-                            question: est
-                            description: 'Natus sunt enim beatae quo. Et nisi est dolorum nihil et similique facilis nihil. Explicabo incidunt ut excepturi.'
-                            data: molestias
-                            tender_id: 25
-                            created_at: '2023-09-17T08:12:58.000000Z'
-                            updated_at: '2023-09-17T08:12:58.000000Z'
-                        items:
-                          type: object
-                          properties:
-                            id:
-                              type: integer
-                              example: 10
-                            type:
-                              type: string
-                              example: quis
-                            question:
-                              type: string
-                              example: est
-                            description:
-                              type: string
-                              example: 'Natus sunt enim beatae quo. Et nisi est dolorum nihil et similique facilis nihil. Explicabo incidunt ut excepturi.'
-                            data:
-                              type: string
-                              example: molestias
-                            tender_id:
-                              type: integer
-                              example: 25
-                            created_at:
-                              type: string
-                              example: '2023-09-17T08:12:58.000000Z'
-                            updated_at:
-                              type: string
-                              example: '2023-09-17T08:12:58.000000Z'
+                        name: id
+                        data: cum
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: integer
+                          example: 11
+                        name:
+                          type: string
+                          example: id
+                        data:
+                          type: string
+                          example: cum
       tags:
         - Trender
       security: []

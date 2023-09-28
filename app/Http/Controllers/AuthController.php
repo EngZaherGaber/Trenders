@@ -111,4 +111,22 @@ class AuthController extends Controller
     {
         return auth()->user()->institution;
     }
+
+    /**
+     * @response {
+    "id": 30,
+    "address": "nemo",
+    "city": "reiciendis",
+    "user_id": 46,
+    "created_in": "2023-09-28T00:00:00.000000Z"
+}
+     * 
+     * @authenticated
+     */
+    public function logout()
+    {
+        auth()->user()->currentAccessToken()->delete();
+
+        return response()->noContent();
+    }
 }

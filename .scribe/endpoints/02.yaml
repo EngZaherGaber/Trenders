@@ -43,12 +43,12 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"token":"8|Yz3Tn5dxBUcIO6GMDQMuSaDRTZZFgSuupypNmmPh","is_company":true}'
+        content: '{"token":"10|77Tq7fXt3G1IXtN7AUduuYCujSaboo5DNHvtrZ6b","is_company":true}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '40'
+          x-ratelimit-remaining: '54'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -83,7 +83,7 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: eius
+        example: aut
         type: string
         custom: []
       image:
@@ -97,7 +97,7 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: rboyer@example.org
+        example: tromp.oscar@example.org
         type: string
         custom: []
       password:
@@ -111,7 +111,7 @@ endpoints:
         name: type
         description: 'Must be one of <code>instute</code> or <code>company</code>.'
         required: true
-        example: instute
+        example: company
         type: string
         custom: []
       category_ids:
@@ -128,21 +128,21 @@ endpoints:
         name: created_in
         description: 'Must be a valid date.'
         required: true
-        example: '2023-09-28T10:10:53'
+        example: '2023-09-28T10:15:35'
         type: string
         custom: []
       address:
         name: address
         description: ''
         required: true
-        example: pariatur
+        example: omnis
         type: string
         custom: []
       city:
         name: city
         description: ''
         required: true
-        example: porro
+        example: et
         type: string
         custom: []
       password_confirmation:
@@ -153,29 +153,29 @@ endpoints:
         type: string
         custom: []
     cleanBodyParameters:
-      name: eius
-      email: rboyer@example.org
+      name: aut
+      email: tromp.oscar@example.org
       password: password
-      type: instute
+      type: company
       category_ids:
         - 1
         - 2
         - 3
-      created_in: '2023-09-28T10:10:53'
-      address: pariatur
-      city: porro
+      created_in: '2023-09-28T10:15:35'
+      address: omnis
+      city: et
       password_confirmation: password
     fileParameters:
       image: null
     responses:
       -
         status: 200
-        content: '{"token":"9|lH0UeFt0cgZdjH8A1uf3ckDQhCNHCeuHKM080Nt3"}'
+        content: '{"token":"11|WlRime99tEXNXXX4j1am8QskPsMCrNR2MSVkNTeU"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '39'
+          x-ratelimit-remaining: '53'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -217,7 +217,7 @@ endpoints:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '54'
+          x-ratelimit-remaining: '59'
           access-control-allow-origin: '*'
         description: null
         custom: []

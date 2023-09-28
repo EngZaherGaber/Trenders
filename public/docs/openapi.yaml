@@ -21,11 +21,15 @@ paths:
               schema:
                 type: object
                 example:
-                  token: 3|okRTnEU1PiIXB9WllxXslk2FuisY3IOADih98TLP
+                  token: 8|Yz3Tn5dxBUcIO6GMDQMuSaDRTZZFgSuupypNmmPh
+                  is_company: true
                 properties:
                   token:
                     type: string
-                    example: 3|okRTnEU1PiIXB9WllxXslk2FuisY3IOADih98TLP
+                    example: 8|Yz3Tn5dxBUcIO6GMDQMuSaDRTZZFgSuupypNmmPh
+                  is_company:
+                    type: boolean
+                    example: true
       tags:
         - Authentication
       requestBody:
@@ -58,11 +62,11 @@ paths:
               schema:
                 type: object
                 example:
-                  token: 4|nmj0CIPNjMz1HVeQZMhhg6O2cA2M7EWV6nIowXqr
+                  token: 9|lH0UeFt0cgZdjH8A1uf3ckDQhCNHCeuHKM080Nt3
                 properties:
                   token:
                     type: string
-                    example: 4|nmj0CIPNjMz1HVeQZMhhg6O2cA2M7EWV6nIowXqr
+                    example: 9|lH0UeFt0cgZdjH8A1uf3ckDQhCNHCeuHKM080Nt3
       tags:
         - Authentication
       requestBody:
@@ -75,7 +79,7 @@ paths:
                 name:
                   type: string
                   description: ''
-                  example: esse
+                  example: eius
                 image:
                   type: string
                   format: binary
@@ -83,7 +87,7 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: wilhelmine.lesch@example.org
+                  example: rboyer@example.org
                 password:
                   type: string
                   description: djasoijdsaio.
@@ -104,15 +108,15 @@ paths:
                 created_in:
                   type: string
                   description: 'Must be a valid date.'
-                  example: '2023-09-28T08:58:06'
+                  example: '2023-09-28T10:10:53'
                 address:
                   type: string
                   description: ''
-                  example: amet
+                  example: pariatur
                 city:
                   type: string
                   description: ''
-                  example: unde
+                  example: porro
                 password_confirmation:
                   type: string
                   description: djasoijdsaio.
@@ -140,18 +144,54 @@ paths:
           schema:
             type: string
       responses:
-        401:
+        200:
           description: ''
           content:
             application/json:
               schema:
                 type: object
                 example:
-                  message: Unauthenticated.
+                  user:
+                    id: 46
+                    name: 'Bernice Dickinson PhD'
+                    image: 'http://localhost:8000/images/https://via.placeholder.com/640x480.png/004488?text=impedit'
+                    email: purdy.meghan@example.org
+                    email_verified_at: '2023-09-28T10:07:43.000000Z'
+                    created_at: '2023-09-28T10:07:43.000000Z'
+                    updated_at: '2023-09-28T10:07:43.000000Z'
+                    company: null
+                  is_company: false
                 properties:
-                  message:
-                    type: string
-                    example: Unauthenticated.
+                  user:
+                    type: object
+                    properties:
+                      id:
+                        type: integer
+                        example: 46
+                      name:
+                        type: string
+                        example: 'Bernice Dickinson PhD'
+                      image:
+                        type: string
+                        example: 'http://localhost:8000/images/https://via.placeholder.com/640x480.png/004488?text=impedit'
+                      email:
+                        type: string
+                        example: purdy.meghan@example.org
+                      email_verified_at:
+                        type: string
+                        example: '2023-09-28T10:07:43.000000Z'
+                      created_at:
+                        type: string
+                        example: '2023-09-28T10:07:43.000000Z'
+                      updated_at:
+                        type: string
+                        example: '2023-09-28T10:07:43.000000Z'
+                      company:
+                        type: string
+                        example: null
+                  is_company:
+                    type: boolean
+                    example: false
       tags:
         - Authentication
   /api/profile/company:
@@ -168,18 +208,34 @@ paths:
           schema:
             type: string
       responses:
-        401:
+        200:
           description: ''
           content:
             application/json:
               schema:
                 type: object
                 example:
-                  message: Unauthenticated.
+                  id: 30
+                  address: nemo
+                  city: reiciendis
+                  user_id: 46
+                  created_in: '2023-09-28T00:00:00.000000Z'
                 properties:
-                  message:
+                  id:
+                    type: integer
+                    example: 30
+                  address:
                     type: string
-                    example: Unauthenticated.
+                    example: nemo
+                  city:
+                    type: string
+                    example: reiciendis
+                  user_id:
+                    type: integer
+                    example: 46
+                  created_in:
+                    type: string
+                    example: '2023-09-28T00:00:00.000000Z'
       tags:
         - Authentication
   /api/profile/institution:
@@ -204,7 +260,8 @@ paths:
                 type: object
                 example:
                   id: 30
-                  address: recusandae
+                  address: nemo
+                  city: reiciendis
                   user_id: 46
                   created_in: '2023-09-28T00:00:00.000000Z'
                 properties:
@@ -213,7 +270,10 @@ paths:
                     example: 30
                   address:
                     type: string
-                    example: recusandae
+                    example: nemo
+                  city:
+                    type: string
+                    example: reiciendis
                   user_id:
                     type: integer
                     example: 46
@@ -626,7 +686,7 @@ paths:
                 type:
                   type: string
                   description: 'Must be one of <code>ended</code> or <code>draft</code>.'
-                  example: ended
+                  example: draft
               required:
                 - type
       security: []
@@ -636,18 +696,13 @@ paths:
       description: ''
       parameters: []
       responses:
-        401:
+        200:
           description: ''
           content:
-            application/json:
+            text/plain:
               schema:
-                type: object
-                example:
-                  message: Unauthenticated.
-                properties:
-                  message:
-                    type: string
-                    example: Unauthenticated.
+                type: string
+                example: ''
       tags:
         - Offer
       security: []
@@ -738,18 +793,13 @@ paths:
       description: ''
       parameters: []
       responses:
-        401:
+        200:
           description: ''
           content:
-            application/json:
+            text/plain:
               schema:
-                type: object
-                example:
-                  message: Unauthenticated.
-                properties:
-                  message:
-                    type: string
-                    example: Unauthenticated.
+                type: string
+                example: ''
       tags:
         - Offer
       security: []
@@ -759,18 +809,13 @@ paths:
       description: ''
       parameters: []
       responses:
-        401:
+        200:
           description: ''
           content:
-            application/json:
+            text/plain:
               schema:
-                type: object
-                example:
-                  message: Unauthenticated.
-                properties:
-                  message:
-                    type: string
-                    example: Unauthenticated.
+                type: string
+                example: ''
       tags:
         - Offer
       security: []
@@ -793,12 +838,12 @@ paths:
           in: query
           name: q
           description: ''
-          example: facilis
+          example: officiis
           required: false
           schema:
             type: string
             description: ''
-            example: facilis
+            example: officiis
         -
           in: query
           name: category_ids
@@ -830,7 +875,91 @@ paths:
                 type: array
                 items:
                   type: object
-                example: []
+                example:
+                  -
+                    id: 1
+                    title: 'Perspiciatis voluptas quidem sed asperiores et.'
+                    description: 'Itaque est eum ipsum quo. Rerum sit rerum aut eveniet cupiditate eum quos. Temporibus deserunt tempora possimus.'
+                    ended_at: null
+                    institution_id: 6
+                    institution_name: 'Prof. Brooks Huel IV'
+                  -
+                    id: 2
+                    title: 'Veritatis corporis ut unde.'
+                    description: 'Officiis maiores deserunt voluptatum. Est rerum qui et ratione consequatur. Autem id quod ipsa aut alias est id. Rerum doloribus aliquid voluptatem. Necessitatibus aliquid adipisci velit eaque.'
+                    ended_at: null
+                    institution_id: 7
+                    institution_name: 'Abbigail Brakus III'
+                  -
+                    id: 3
+                    title: 'Animi ratione distinctio.'
+                    description: 'Saepe fugiat et id ratione. Sapiente cum nulla quibusdam eaque qui. Recusandae dolor hic perspiciatis quos ducimus tempora.'
+                    ended_at: null
+                    institution_id: 8
+                    institution_name: 'Maggie Mann'
+                  -
+                    id: 6
+                    title: 'Illum cumque quo distinctio.'
+                    description: 'Ex et iste aut necessitatibus. Voluptas numquam nam ut neque quo omnis nostrum et. Aut vero enim voluptate. Ullam commodi rerum eos cupiditate.'
+                    ended_at: null
+                    institution_id: 11
+                    institution_name: 'Prof. Jerald Legros IV'
+                  -
+                    id: 7
+                    title: 'Sint tenetur sit dolores recusandae.'
+                    description: 'Sint explicabo totam id cupiditate. Nostrum quia ab dolor tempore voluptatem ut omnis id. Aliquam dolorem eaque velit tempora ex et atque. Iste qui deleniti molestiae occaecati.'
+                    ended_at: null
+                    institution_id: 12
+                    institution_name: 'Kathryn Ratke'
+                  -
+                    id: 8
+                    title: 'Et voluptatem minima molestias.'
+                    description: 'Illum fugiat eligendi consequatur. Earum dolorum libero architecto ut aut nihil. Quia amet perferendis impedit similique adipisci sed. Reiciendis pariatur ad incidunt minima fugit voluptates.'
+                    ended_at: null
+                    institution_id: 13
+                    institution_name: 'Prof. Jennie Aufderhar'
+                  -
+                    id: 9
+                    title: 'Quaerat qui officiis voluptatem.'
+                    description: 'Porro unde ex eaque qui nihil laborum. Magni numquam reprehenderit velit reprehenderit repellat totam. Sunt ut voluptate aliquid ducimus sint sed.'
+                    ended_at: null
+                    institution_id: 14
+                    institution_name: 'Dr. Nels Bogisich'
+                  -
+                    id: 10
+                    title: 'Architecto blanditiis corporis eius voluptas dolorem.'
+                    description: 'Sunt sapiente aut et eos ipsam laborum. Eaque eum excepturi ea voluptatem et adipisci id nihil. Quis error illo voluptatem sit. Aut eum impedit et provident ipsam aspernatur.'
+                    ended_at: null
+                    institution_id: 15
+                    institution_name: 'Alisha Kuphal V'
+                  -
+                    id: 12
+                    title: 'Qui rerum libero quo et.'
+                    description: 'Mollitia quaerat quo in in repellendus corporis corrupti. Laboriosam culpa molestiae commodi id. Aperiam facere natus deserunt est asperiores. Sequi modi velit asperiores voluptatem.'
+                    ended_at: null
+                    institution_id: 17
+                    institution_name: 'Yasmine Walter'
+                  -
+                    id: 21
+                    title: 'Aut vitae neque nam quia.'
+                    description: 'Magni quasi repellendus molestias dolor voluptatibus sit non. Saepe atque cupiditate deleniti vero. Quas ipsum non quaerat. Esse adipisci esse dolorum ut.'
+                    ended_at: null
+                    institution_id: 26
+                    institution_name: 'Lavonne Kreiger'
+                  -
+                    id: 23
+                    title: 'Quia adipisci in fugiat et nesciunt.'
+                    description: 'Vel rem aliquid voluptatibus perferendis. Unde quibusdam molestias animi illum. Dolorum ut eos ipsa cumque exercitationem ullam et asperiores.'
+                    ended_at: null
+                    institution_id: 28
+                    institution_name: 'Jeremy Torp'
+                  -
+                    id: 25
+                    title: 'Commodi autem consequatur accusantium ratione.'
+                    description: 'Nihil sit impedit officia incidunt earum. Et porro eligendi vel eius beatae earum harum. Ullam sed exercitationem in culpa eos. Eos ut quo magnam sed iusto.'
+                    ended_at: null
+                    institution_id: 30
+                    institution_name: 'Bernice Dickinson PhD'
       tags:
         - Trender
       requestBody:
@@ -843,7 +972,7 @@ paths:
                 q:
                   type: string
                   description: ''
-                  example: beatae
+                  example: id
                 category_ids:
                   type: object
                   description: ''
@@ -897,11 +1026,11 @@ paths:
                 title:
                   type: string
                   description: ''
-                  example: repellendus
+                  example: vitae
                 description:
                   type: string
                   description: ''
-                  example: 'Cum non nesciunt corporis voluptatum possimus et.'
+                  example: 'Ut dolor sapiente aliquid rerum sint id debitis.'
                 details:
                   type: object
                   description: ''

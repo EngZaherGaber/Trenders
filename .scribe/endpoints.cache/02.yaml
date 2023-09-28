@@ -45,12 +45,12 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"token":"3|okRTnEU1PiIXB9WllxXslk2FuisY3IOADih98TLP"}'
+        content: '{"token":"8|Yz3Tn5dxBUcIO6GMDQMuSaDRTZZFgSuupypNmmPh","is_company":true}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '54'
+          x-ratelimit-remaining: '40'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -85,7 +85,7 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: esse
+        example: eius
         type: string
         custom: []
       image:
@@ -99,7 +99,7 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: wilhelmine.lesch@example.org
+        example: rboyer@example.org
         type: string
         custom: []
       password:
@@ -130,21 +130,21 @@ endpoints:
         name: created_in
         description: 'Must be a valid date.'
         required: true
-        example: '2023-09-28T08:58:06'
+        example: '2023-09-28T10:10:53'
         type: string
         custom: []
       address:
         name: address
         description: ''
         required: true
-        example: amet
+        example: pariatur
         type: string
         custom: []
       city:
         name: city
         description: ''
         required: true
-        example: unde
+        example: porro
         type: string
         custom: []
       password_confirmation:
@@ -155,29 +155,29 @@ endpoints:
         type: string
         custom: []
     cleanBodyParameters:
-      name: esse
-      email: wilhelmine.lesch@example.org
+      name: eius
+      email: rboyer@example.org
       password: password
       type: instute
       category_ids:
         - 1
         - 2
         - 3
-      created_in: '2023-09-28T08:58:06'
-      address: amet
-      city: unde
+      created_in: '2023-09-28T10:10:53'
+      address: pariatur
+      city: porro
       password_confirmation: password
     fileParameters:
       image: null
     responses:
       -
         status: 200
-        content: '{"token":"4|nmj0CIPNjMz1HVeQZMhhg6O2cA2M7EWV6nIowXqr"}'
+        content: '{"token":"9|lH0UeFt0cgZdjH8A1uf3ckDQhCNHCeuHKM080Nt3"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '53'
+          x-ratelimit-remaining: '39'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -213,11 +213,13 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 401
-        content: '{"message":"Unauthenticated."}'
+        status: 200
+        content: '{"user":{"id":46,"name":"Bernice Dickinson PhD","image":"http:\/\/localhost:8000\/images\/https:\/\/via.placeholder.com\/640x480.png\/004488?text=impedit","email":"purdy.meghan@example.org","email_verified_at":"2023-09-28T10:07:43.000000Z","created_at":"2023-09-28T10:07:43.000000Z","updated_at":"2023-09-28T10:07:43.000000Z","company":null},"is_company":false}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '54'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -225,7 +227,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 6|n1zXxXSz3CxDLWM2Tj40ZpimVPnSqKoyF9xhJvB8'
+      - 'Bearer 1|PGF8EWdnNq6dTXEpzukHxel6Z8qnw17DKnvghij6'
     controller: null
     method: null
     route: null
@@ -256,19 +258,23 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 401
-        content: '{"message":"Unauthenticated."}'
-        headers:
-          cache-control: 'no-cache, private'
-          content-type: application/json
-          access-control-allow-origin: '*'
-        description: null
+        status: 200
+        content: |-
+          {
+          "id": 30,
+          "address": "nemo",
+          "city": "reiciendis",
+          "user_id": 46,
+          "created_in": "2023-09-28T00:00:00.000000Z"
+          }
+        headers: []
+        description: ''
         custom: []
     responseFields: []
     auth:
       - headers
       - Authorization
-      - 'Bearer 6|n1zXxXSz3CxDLWM2Tj40ZpimVPnSqKoyF9xhJvB8'
+      - 'Bearer 1|PGF8EWdnNq6dTXEpzukHxel6Z8qnw17DKnvghij6'
     controller: null
     method: null
     route: null
@@ -303,7 +309,8 @@ endpoints:
         content: |-
           {
           "id": 30,
-          "address": "recusandae",
+          "address": "nemo",
+          "city": "reiciendis",
           "user_id": 46,
           "created_in": "2023-09-28T00:00:00.000000Z"
           }
@@ -314,7 +321,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 6|n1zXxXSz3CxDLWM2Tj40ZpimVPnSqKoyF9xhJvB8'
+      - 'Bearer 1|PGF8EWdnNq6dTXEpzukHxel6Z8qnw17DKnvghij6'
     controller: null
     method: null
     route: null

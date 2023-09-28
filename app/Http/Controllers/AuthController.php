@@ -28,6 +28,7 @@ class AuthController extends Controller
 
         return response([
             'token' => $token,
+            'is_company' => $user->company != null,
         ]);
     }
 
@@ -68,15 +69,26 @@ class AuthController extends Controller
     }
 
     /**
+     * 
      * @authenticated
      */
 
     public function userProfile()
     {
-        return auth()->user();
+        return response([
+            'user' => auth()->user(),
+            'is_company' => auth()->user()->company != null,
+        ]);
     }
 
     /**
+     * @response {
+    "id": 30,
+    "address": "nemo",
+    "city": "reiciendis",
+    "user_id": 46,
+    "created_in": "2023-09-28T00:00:00.000000Z"
+}
      * @authenticated
      */
     public function companyProfile()
@@ -87,7 +99,8 @@ class AuthController extends Controller
     /**
      * @response {
     "id": 30,
-    "address": "recusandae",
+    "address": "nemo",
+    "city": "reiciendis",
     "user_id": 46,
     "created_in": "2023-09-28T00:00:00.000000Z"
 }

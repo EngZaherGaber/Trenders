@@ -238,12 +238,13 @@ fetch(url, {
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 54
+x-ratelimit-remaining: 40
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;token&quot;: &quot;3|okRTnEU1PiIXB9WllxXslk2FuisY3IOADih98TLP&quot;
+    &quot;token&quot;: &quot;8|Yz3Tn5dxBUcIO6GMDQMuSaDRTZZFgSuupypNmmPh&quot;,
+    &quot;is_company&quot;: true
 }</code>
  </pre>
     </span>
@@ -357,16 +358,16 @@ You can check the Dev Tools console for debugging information.</code></pre>
     "http://localhost:8000/api/register" \
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
-    --form "name=esse"\
-    --form "email=wilhelmine.lesch@example.org"\
+    --form "name=eius"\
+    --form "email=rboyer@example.org"\
     --form "password=password"\
     --form "type=instute"\
     --form "category_ids[]=1"\
-    --form "created_in=2023-09-28T08:58:06"\
-    --form "address=amet"\
-    --form "city=unde"\
+    --form "created_in=2023-09-28T10:10:53"\
+    --form "address=pariatur"\
+    --form "city=porro"\
     --form "password_confirmation=password"\
-    --form "image=@/tmp/php9g1r5X" </code></pre></div>
+    --form "image=@/tmp/phpYevYng" </code></pre></div>
 
 
 <div class="javascript-example">
@@ -380,14 +381,14 @@ const headers = {
 };
 
 const body = new FormData();
-body.append('name', 'esse');
-body.append('email', 'wilhelmine.lesch@example.org');
+body.append('name', 'eius');
+body.append('email', 'rboyer@example.org');
 body.append('password', 'password');
 body.append('type', 'instute');
 body.append('category_ids[]', '1');
-body.append('created_in', '2023-09-28T08:58:06');
-body.append('address', 'amet');
-body.append('city', 'unde');
+body.append('created_in', '2023-09-28T10:10:53');
+body.append('address', 'pariatur');
+body.append('city', 'porro');
 body.append('password_confirmation', 'password');
 body.append('image', document.querySelector('input[name="image"]').files[0]);
 
@@ -410,12 +411,12 @@ fetch(url, {
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 53
+x-ratelimit-remaining: 39
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;token&quot;: &quot;4|nmj0CIPNjMz1HVeQZMhhg6O2cA2M7EWV6nIowXqr&quot;
+    &quot;token&quot;: &quot;9|lH0UeFt0cgZdjH8A1uf3ckDQhCNHCeuHKM080Nt3&quot;
 }</code>
  </pre>
     </span>
@@ -495,10 +496,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="name"                data-endpoint="POSTapi-register"
-               value="esse"
+               value="eius"
                data-component="body">
     <br>
-<p>Example: <code>esse</code></p>
+<p>Example: <code>eius</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>image</code></b>&nbsp;&nbsp;
@@ -509,7 +510,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value=""
                data-component="body">
     <br>
-<p>Must be an image. Example: <code>/tmp/php9g1r5X</code></p>
+<p>Must be an image. Example: <code>/tmp/phpYevYng</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -517,10 +518,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="POSTapi-register"
-               value="wilhelmine.lesch@example.org"
+               value="rboyer@example.org"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>wilhelmine.lesch@example.org</code></p>
+<p>Must be a valid email address. Example: <code>rboyer@example.org</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -563,10 +564,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="created_in"                data-endpoint="POSTapi-register"
-               value="2023-09-28T08:58:06"
+               value="2023-09-28T10:10:53"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2023-09-28T08:58:06</code></p>
+<p>Must be a valid date. Example: <code>2023-09-28T10:10:53</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>address</code></b>&nbsp;&nbsp;
@@ -574,10 +575,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="address"                data-endpoint="POSTapi-register"
-               value="amet"
+               value="pariatur"
                data-component="body">
     <br>
-<p>Example: <code>amet</code></p>
+<p>Example: <code>pariatur</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>city</code></b>&nbsp;&nbsp;
@@ -585,10 +586,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="city"                data-endpoint="POSTapi-register"
-               value="unde"
+               value="porro"
                data-component="body">
     <br>
-<p>Example: <code>unde</code></p>
+<p>Example: <code>porro</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password_confirmation</code></b>&nbsp;&nbsp;
@@ -643,7 +644,7 @@ fetch(url, {
 
 <span id="example-responses-GETapi-profile">
             <blockquote>
-            <p>Example response (401):</p>
+            <p>Example response (200):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -651,11 +652,23 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 54
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;Unauthenticated.&quot;
+    &quot;user&quot;: {
+        &quot;id&quot;: 46,
+        &quot;name&quot;: &quot;Bernice Dickinson PhD&quot;,
+        &quot;image&quot;: &quot;http://localhost:8000/images/https://via.placeholder.com/640x480.png/004488?text=impedit&quot;,
+        &quot;email&quot;: &quot;purdy.meghan@example.org&quot;,
+        &quot;email_verified_at&quot;: &quot;2023-09-28T10:07:43.000000Z&quot;,
+        &quot;created_at&quot;: &quot;2023-09-28T10:07:43.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2023-09-28T10:07:43.000000Z&quot;,
+        &quot;company&quot;: null
+    },
+    &quot;is_company&quot;: false
 }</code>
  </pre>
     </span>
@@ -781,19 +794,16 @@ fetch(url, {
 
 <span id="example-responses-GETapi-profile-company">
             <blockquote>
-            <p>Example response (401):</p>
+            <p>Example response (200):</p>
         </blockquote>
-                <details class="annotation">
-            <summary style="cursor: pointer;">
-                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
-            </summary>
-            <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
-access-control-allow-origin: *
- </code></pre></details>         <pre>
+                <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;Unauthenticated.&quot;
+    &quot;id&quot;: 30,
+    &quot;address&quot;: &quot;nemo&quot;,
+    &quot;city&quot;: &quot;reiciendis&quot;,
+    &quot;user_id&quot;: 46,
+    &quot;created_in&quot;: &quot;2023-09-28T00:00:00.000000Z&quot;
 }</code>
  </pre>
     </span>
@@ -925,7 +935,8 @@ fetch(url, {
 
 <code class="language-json" style="max-height: 300px;">{
     &quot;id&quot;: 30,
-    &quot;address&quot;: &quot;recusandae&quot;,
+    &quot;address&quot;: &quot;nemo&quot;,
+    &quot;city&quot;: &quot;reiciendis&quot;,
     &quot;user_id&quot;: 46,
     &quot;created_in&quot;: &quot;2023-09-28T00:00:00.000000Z&quot;
 }</code>
@@ -1063,7 +1074,7 @@ fetch(url, {
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 59
+x-ratelimit-remaining: 45
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -1595,7 +1606,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"type\": \"ended\"
+    \"type\": \"draft\"
 }"
 </code></pre></div>
 
@@ -1611,7 +1622,7 @@ const headers = {
 };
 
 let body = {
-    "type": "ended"
+    "type": "draft"
 };
 
 fetch(url, {
@@ -1717,10 +1728,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="type"                data-endpoint="GETapi-offer"
-               value="ended"
+               value="draft"
                data-component="body">
     <br>
-<p>Must be one of <code>ended</code> or <code>draft</code>. Example: <code>ended</code></p>
+<p>Must be one of <code>ended</code> or <code>draft</code>. Example: <code>draft</code></p>
         </div>
         </form>
 
@@ -1761,20 +1772,20 @@ fetch(url, {
 
 <span id="example-responses-POSTapi-offer">
             <blockquote>
-            <p>Example response (401):</p>
+            <p>Example response (200):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
                 <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
             </summary>
-            <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
+            <pre><code class="language-http">content-type: text/html; charset=UTF-8
+cache-control: no-cache, private
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 53
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
-<code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;Unauthenticated.&quot;
-}</code>
+<code class="language-json" style="max-height: 300px;"></code>
  </pre>
     </span>
 <span id="execution-results-POSTapi-offer" hidden>
@@ -2030,20 +2041,20 @@ fetch(url, {
 
 <span id="example-responses-PUTapi-offer--id-">
             <blockquote>
-            <p>Example response (401):</p>
+            <p>Example response (200):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
                 <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
             </summary>
-            <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
+            <pre><code class="language-http">content-type: text/html; charset=UTF-8
+cache-control: no-cache, private
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 52
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
-<code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;Unauthenticated.&quot;
-}</code>
+<code class="language-json" style="max-height: 300px;"></code>
  </pre>
     </span>
 <span id="execution-results-PUTapi-offer--id-" hidden>
@@ -2170,20 +2181,20 @@ fetch(url, {
 
 <span id="example-responses-DELETEapi-offer--id-">
             <blockquote>
-            <p>Example response (401):</p>
+            <p>Example response (200):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
                 <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
             </summary>
-            <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
+            <pre><code class="language-http">content-type: text/html; charset=UTF-8
+cache-control: no-cache, private
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 51
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
-<code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;Unauthenticated.&quot;
-}</code>
+<code class="language-json" style="max-height: 300px;"></code>
  </pre>
     </span>
 <span id="execution-results-DELETEapi-offer--id-" hidden>
@@ -2286,11 +2297,11 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/trender?q=facilis" \
+    --get "http://localhost:8000/api/trender?q=officiis" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"q\": \"beatae\"
+    \"q\": \"id\"
 }"
 </code></pre></div>
 
@@ -2301,7 +2312,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const params = {
-    "q": "facilis",
+    "q": "officiis",
 };
 Object.keys(params)
     .forEach(key =&gt; url.searchParams.append(key, params[key]));
@@ -2312,7 +2323,7 @@ const headers = {
 };
 
 let body = {
-    "q": "beatae"
+    "q": "id"
 };
 
 fetch(url, {
@@ -2334,11 +2345,108 @@ fetch(url, {
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 58
+x-ratelimit-remaining: 44
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
-<code class="language-json" style="max-height: 300px;">[]</code>
+<code class="language-json" style="max-height: 300px;">[
+    {
+        &quot;id&quot;: 1,
+        &quot;title&quot;: &quot;Perspiciatis voluptas quidem sed asperiores et.&quot;,
+        &quot;description&quot;: &quot;Itaque est eum ipsum quo. Rerum sit rerum aut eveniet cupiditate eum quos. Temporibus deserunt tempora possimus.&quot;,
+        &quot;ended_at&quot;: null,
+        &quot;institution_id&quot;: 6,
+        &quot;institution_name&quot;: &quot;Prof. Brooks Huel IV&quot;
+    },
+    {
+        &quot;id&quot;: 2,
+        &quot;title&quot;: &quot;Veritatis corporis ut unde.&quot;,
+        &quot;description&quot;: &quot;Officiis maiores deserunt voluptatum. Est rerum qui et ratione consequatur. Autem id quod ipsa aut alias est id. Rerum doloribus aliquid voluptatem. Necessitatibus aliquid adipisci velit eaque.&quot;,
+        &quot;ended_at&quot;: null,
+        &quot;institution_id&quot;: 7,
+        &quot;institution_name&quot;: &quot;Abbigail Brakus III&quot;
+    },
+    {
+        &quot;id&quot;: 3,
+        &quot;title&quot;: &quot;Animi ratione distinctio.&quot;,
+        &quot;description&quot;: &quot;Saepe fugiat et id ratione. Sapiente cum nulla quibusdam eaque qui. Recusandae dolor hic perspiciatis quos ducimus tempora.&quot;,
+        &quot;ended_at&quot;: null,
+        &quot;institution_id&quot;: 8,
+        &quot;institution_name&quot;: &quot;Maggie Mann&quot;
+    },
+    {
+        &quot;id&quot;: 6,
+        &quot;title&quot;: &quot;Illum cumque quo distinctio.&quot;,
+        &quot;description&quot;: &quot;Ex et iste aut necessitatibus. Voluptas numquam nam ut neque quo omnis nostrum et. Aut vero enim voluptate. Ullam commodi rerum eos cupiditate.&quot;,
+        &quot;ended_at&quot;: null,
+        &quot;institution_id&quot;: 11,
+        &quot;institution_name&quot;: &quot;Prof. Jerald Legros IV&quot;
+    },
+    {
+        &quot;id&quot;: 7,
+        &quot;title&quot;: &quot;Sint tenetur sit dolores recusandae.&quot;,
+        &quot;description&quot;: &quot;Sint explicabo totam id cupiditate. Nostrum quia ab dolor tempore voluptatem ut omnis id. Aliquam dolorem eaque velit tempora ex et atque. Iste qui deleniti molestiae occaecati.&quot;,
+        &quot;ended_at&quot;: null,
+        &quot;institution_id&quot;: 12,
+        &quot;institution_name&quot;: &quot;Kathryn Ratke&quot;
+    },
+    {
+        &quot;id&quot;: 8,
+        &quot;title&quot;: &quot;Et voluptatem minima molestias.&quot;,
+        &quot;description&quot;: &quot;Illum fugiat eligendi consequatur. Earum dolorum libero architecto ut aut nihil. Quia amet perferendis impedit similique adipisci sed. Reiciendis pariatur ad incidunt minima fugit voluptates.&quot;,
+        &quot;ended_at&quot;: null,
+        &quot;institution_id&quot;: 13,
+        &quot;institution_name&quot;: &quot;Prof. Jennie Aufderhar&quot;
+    },
+    {
+        &quot;id&quot;: 9,
+        &quot;title&quot;: &quot;Quaerat qui officiis voluptatem.&quot;,
+        &quot;description&quot;: &quot;Porro unde ex eaque qui nihil laborum. Magni numquam reprehenderit velit reprehenderit repellat totam. Sunt ut voluptate aliquid ducimus sint sed.&quot;,
+        &quot;ended_at&quot;: null,
+        &quot;institution_id&quot;: 14,
+        &quot;institution_name&quot;: &quot;Dr. Nels Bogisich&quot;
+    },
+    {
+        &quot;id&quot;: 10,
+        &quot;title&quot;: &quot;Architecto blanditiis corporis eius voluptas dolorem.&quot;,
+        &quot;description&quot;: &quot;Sunt sapiente aut et eos ipsam laborum. Eaque eum excepturi ea voluptatem et adipisci id nihil. Quis error illo voluptatem sit. Aut eum impedit et provident ipsam aspernatur.&quot;,
+        &quot;ended_at&quot;: null,
+        &quot;institution_id&quot;: 15,
+        &quot;institution_name&quot;: &quot;Alisha Kuphal V&quot;
+    },
+    {
+        &quot;id&quot;: 12,
+        &quot;title&quot;: &quot;Qui rerum libero quo et.&quot;,
+        &quot;description&quot;: &quot;Mollitia quaerat quo in in repellendus corporis corrupti. Laboriosam culpa molestiae commodi id. Aperiam facere natus deserunt est asperiores. Sequi modi velit asperiores voluptatem.&quot;,
+        &quot;ended_at&quot;: null,
+        &quot;institution_id&quot;: 17,
+        &quot;institution_name&quot;: &quot;Yasmine Walter&quot;
+    },
+    {
+        &quot;id&quot;: 21,
+        &quot;title&quot;: &quot;Aut vitae neque nam quia.&quot;,
+        &quot;description&quot;: &quot;Magni quasi repellendus molestias dolor voluptatibus sit non. Saepe atque cupiditate deleniti vero. Quas ipsum non quaerat. Esse adipisci esse dolorum ut.&quot;,
+        &quot;ended_at&quot;: null,
+        &quot;institution_id&quot;: 26,
+        &quot;institution_name&quot;: &quot;Lavonne Kreiger&quot;
+    },
+    {
+        &quot;id&quot;: 23,
+        &quot;title&quot;: &quot;Quia adipisci in fugiat et nesciunt.&quot;,
+        &quot;description&quot;: &quot;Vel rem aliquid voluptatibus perferendis. Unde quibusdam molestias animi illum. Dolorum ut eos ipsa cumque exercitationem ullam et asperiores.&quot;,
+        &quot;ended_at&quot;: null,
+        &quot;institution_id&quot;: 28,
+        &quot;institution_name&quot;: &quot;Jeremy Torp&quot;
+    },
+    {
+        &quot;id&quot;: 25,
+        &quot;title&quot;: &quot;Commodi autem consequatur accusantium ratione.&quot;,
+        &quot;description&quot;: &quot;Nihil sit impedit officia incidunt earum. Et porro eligendi vel eius beatae earum harum. Ullam sed exercitationem in culpa eos. Eos ut quo magnam sed iusto.&quot;,
+        &quot;ended_at&quot;: null,
+        &quot;institution_id&quot;: 30,
+        &quot;institution_name&quot;: &quot;Bernice Dickinson PhD&quot;
+    }
+]</code>
  </pre>
     </span>
 <span id="execution-results-GETapi-trender" hidden>
@@ -2417,10 +2525,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="q"                data-endpoint="GETapi-trender"
-               value="facilis"
+               value="officiis"
                data-component="query">
     <br>
-<p>Example: <code>facilis</code></p>
+<p>Example: <code>officiis</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>category_ids</code></b>&nbsp;&nbsp;
@@ -2451,10 +2559,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="q"                data-endpoint="GETapi-trender"
-               value="beatae"
+               value="id"
                data-component="body">
     <br>
-<p>Example: <code>beatae</code></p>
+<p>Example: <code>id</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>category_ids</code></b>&nbsp;&nbsp;
@@ -2497,8 +2605,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"title\": \"repellendus\",
-    \"description\": \"Cum non nesciunt corporis voluptatum possimus et.\",
+    \"title\": \"vitae\",
+    \"description\": \"Ut dolor sapiente aliquid rerum sint id debitis.\",
     \"details\": []
 }"
 </code></pre></div>
@@ -2515,8 +2623,8 @@ const headers = {
 };
 
 let body = {
-    "title": "repellendus",
-    "description": "Cum non nesciunt corporis voluptatum possimus et.",
+    "title": "vitae",
+    "description": "Ut dolor sapiente aliquid rerum sint id debitis.",
     "details": []
 };
 
@@ -2539,7 +2647,7 @@ fetch(url, {
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 57
+x-ratelimit-remaining: 43
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -2629,10 +2737,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="title"                data-endpoint="POSTapi-trender"
-               value="repellendus"
+               value="vitae"
                data-component="body">
     <br>
-<p>Example: <code>repellendus</code></p>
+<p>Example: <code>vitae</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>description</code></b>&nbsp;&nbsp;
@@ -2640,10 +2748,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="description"                data-endpoint="POSTapi-trender"
-               value="Cum non nesciunt corporis voluptatum possimus et."
+               value="Ut dolor sapiente aliquid rerum sint id debitis."
                data-component="body">
     <br>
-<p>Example: <code>Cum non nesciunt corporis voluptatum possimus et.</code></p>
+<p>Example: <code>Ut dolor sapiente aliquid rerum sint id debitis.</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>details</code></b>&nbsp;&nbsp;
@@ -2876,7 +2984,7 @@ fetch(url, {
             <pre><code class="language-http">content-type: text/html; charset=UTF-8
 cache-control: no-cache, private
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 56
+x-ratelimit-remaining: 42
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -3015,7 +3123,7 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 55
+x-ratelimit-remaining: 41
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 <code>Empty response</code>

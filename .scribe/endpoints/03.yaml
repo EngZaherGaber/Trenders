@@ -26,11 +26,11 @@ endpoints:
         name: type
         description: 'Must be one of <code>ended</code> or <code>draft</code>.'
         required: true
-        example: ended
+        example: draft
         type: string
         custom: []
     cleanBodyParameters:
-      type: ended
+      type: draft
     fileParameters: []
     responses:
       -
@@ -81,11 +81,13 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 401
-        content: '{"message":"Unauthenticated."}'
+        status: 200
+        content: ''
         headers:
+          content-type: 'text/html; charset=UTF-8'
           cache-control: 'no-cache, private'
-          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '53'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -192,11 +194,13 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 401
-        content: '{"message":"Unauthenticated."}'
+        status: 200
+        content: ''
         headers:
+          content-type: 'text/html; charset=UTF-8'
           cache-control: 'no-cache, private'
-          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '52'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -239,11 +243,13 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 401
-        content: '{"message":"Unauthenticated."}'
+        status: 200
+        content: ''
         headers:
+          content-type: 'text/html; charset=UTF-8'
           cache-control: 'no-cache, private'
-          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '51'
           access-control-allow-origin: '*'
         description: null
         custom: []

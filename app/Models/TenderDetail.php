@@ -17,8 +17,6 @@ class TenderDetail extends Model
      */
     protected $fillable = [
         'type',
-        'question',
-        'description',
         'data',
         'tender_id',
     ];

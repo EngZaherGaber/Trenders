@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('image')->nullable();
             $table->string('title');
+            $table->integer('columns_number')->default(1);
             $table->string('description');
             $table->timestamp('ended_at')->nullable();
             $table->foreignId('institution_id')->constrained();

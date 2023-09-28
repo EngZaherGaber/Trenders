@@ -20,6 +20,7 @@ class Tender extends Model
     protected $fillable = [
         'title',
         'description',
+        'columns_number',
         'institution_id',
     ];
 

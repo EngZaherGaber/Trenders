@@ -243,7 +243,7 @@ access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;token&quot;: &quot;14|xb3ZhoyGVfrFNsrLc0IqvrF1EgcR7wtJM2MTGrQC&quot;,
+    &quot;token&quot;: &quot;18|IqB94Yf53GT7apxXjHeKruL2a4Mr3pJuyyv2wKt4&quot;,
     &quot;is_company&quot;: true
 }</code>
  </pre>
@@ -358,16 +358,16 @@ You can check the Dev Tools console for debugging information.</code></pre>
     "http://localhost:8000/api/register" \
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
-    --form "name=dolorum"\
-    --form "email=angeline.reichert@example.net"\
+    --form "name=sed"\
+    --form "email=pauline11@example.com"\
     --form "password=password"\
-    --form "type=company"\
+    --form "type=instute"\
     --form "category_ids[]=1"\
-    --form "created_in=2023-09-28T12:45:15"\
-    --form "address=fugit"\
-    --form "city=soluta"\
+    --form "created_in=2023-09-28T13:01:16"\
+    --form "address=deleniti"\
+    --form "city=hic"\
     --form "password_confirmation=password"\
-    --form "image=@/tmp/phpU5w87L" </code></pre></div>
+    --form "image=@/tmp/phprBq4Hy" </code></pre></div>
 
 
 <div class="javascript-example">
@@ -381,14 +381,14 @@ const headers = {
 };
 
 const body = new FormData();
-body.append('name', 'dolorum');
-body.append('email', 'angeline.reichert@example.net');
+body.append('name', 'sed');
+body.append('email', 'pauline11@example.com');
 body.append('password', 'password');
-body.append('type', 'company');
+body.append('type', 'instute');
 body.append('category_ids[]', '1');
-body.append('created_in', '2023-09-28T12:45:15');
-body.append('address', 'fugit');
-body.append('city', 'soluta');
+body.append('created_in', '2023-09-28T13:01:16');
+body.append('address', 'deleniti');
+body.append('city', 'hic');
 body.append('password_confirmation', 'password');
 body.append('image', document.querySelector('input[name="image"]').files[0]);
 
@@ -416,7 +416,7 @@ access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;token&quot;: &quot;15|IFL1mdYqt8WpJ2n9tJ1tmDIASOk7kI0yNbMVpcnD&quot;
+    &quot;token&quot;: &quot;19|x1gMBSLOv3RR35tn9QrKEqq3dAxSB8wNJzL5bWRx&quot;
 }</code>
  </pre>
     </span>
@@ -496,10 +496,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="name"                data-endpoint="POSTapi-register"
-               value="dolorum"
+               value="sed"
                data-component="body">
     <br>
-<p>Example: <code>dolorum</code></p>
+<p>Example: <code>sed</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>image</code></b>&nbsp;&nbsp;
@@ -510,7 +510,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value=""
                data-component="body">
     <br>
-<p>Must be an image. Example: <code>/tmp/phpU5w87L</code></p>
+<p>Must be an image. Example: <code>/tmp/phprBq4Hy</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -518,10 +518,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="POSTapi-register"
-               value="angeline.reichert@example.net"
+               value="pauline11@example.com"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>angeline.reichert@example.net</code></p>
+<p>Must be a valid email address. Example: <code>pauline11@example.com</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -540,10 +540,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="type"                data-endpoint="POSTapi-register"
-               value="company"
+               value="instute"
                data-component="body">
     <br>
-<p>Must be one of <code>instute</code> or <code>company</code>. Example: <code>company</code></p>
+<p>Must be one of <code>instute</code> or <code>company</code>. Example: <code>instute</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>category_ids</code></b>&nbsp;&nbsp;
@@ -564,10 +564,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="created_in"                data-endpoint="POSTapi-register"
-               value="2023-09-28T12:45:15"
+               value="2023-09-28T13:01:16"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2023-09-28T12:45:15</code></p>
+<p>Must be a valid date. Example: <code>2023-09-28T13:01:16</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>address</code></b>&nbsp;&nbsp;
@@ -575,10 +575,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="address"                data-endpoint="POSTapi-register"
-               value="fugit"
+               value="deleniti"
                data-component="body">
     <br>
-<p>Example: <code>fugit</code></p>
+<p>Example: <code>deleniti</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>city</code></b>&nbsp;&nbsp;
@@ -586,10 +586,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="city"                data-endpoint="POSTapi-register"
-               value="soluta"
+               value="hic"
                data-component="body">
     <br>
-<p>Example: <code>soluta</code></p>
+<p>Example: <code>hic</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password_confirmation</code></b>&nbsp;&nbsp;
@@ -2297,11 +2297,11 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/trender?q=culpa" \
+    --get "http://localhost:8000/api/trender?q=vitae" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"q\": \"eius\"
+    \"q\": \"qui\"
 }"
 </code></pre></div>
 
@@ -2312,7 +2312,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const params = {
-    "q": "culpa",
+    "q": "vitae",
 };
 Object.keys(params)
     .forEach(key =&gt; url.searchParams.append(key, params[key]));
@@ -2323,7 +2323,7 @@ const headers = {
 };
 
 let body = {
-    "q": "eius"
+    "q": "qui"
 };
 
 fetch(url, {
@@ -2351,12 +2351,140 @@ access-control-allow-origin: *
 
 <code class="language-json" style="max-height: 300px;">[
     {
+        &quot;id&quot;: 1,
+        &quot;title&quot;: &quot;Facilis ducimus et sunt fugit.&quot;,
+        &quot;description&quot;: &quot;Et tempora iste provident totam soluta vitae. Id nihil perspiciatis nemo perferendis culpa veniam. Explicabo velit quaerat hic quia numquam nemo consequatur.&quot;,
+        &quot;ended_at&quot;: null,
+        &quot;institution_id&quot;: 6,
+        &quot;institution_name&quot;: &quot;Domenica Altenwerth&quot;
+    },
+    {
+        &quot;id&quot;: 3,
+        &quot;title&quot;: &quot;Quo alias corrupti illo.&quot;,
+        &quot;description&quot;: &quot;Laudantium autem maxime est iure. Inventore quo fuga aliquid vel rerum. Voluptates et et dolores praesentium cumque sed tempore.&quot;,
+        &quot;ended_at&quot;: null,
+        &quot;institution_id&quot;: 8,
+        &quot;institution_name&quot;: &quot;Dejah Homenick&quot;
+    },
+    {
+        &quot;id&quot;: 4,
+        &quot;title&quot;: &quot;Suscipit quae et et.&quot;,
+        &quot;description&quot;: &quot;Et dolores deserunt non perspiciatis labore ad. Consequuntur sint quod aut rem. Eum commodi ad sequi ipsam molestiae corporis quia.&quot;,
+        &quot;ended_at&quot;: null,
+        &quot;institution_id&quot;: 9,
+        &quot;institution_name&quot;: &quot;Verna Cartwright&quot;
+    },
+    {
+        &quot;id&quot;: 5,
+        &quot;title&quot;: &quot;Repellat asperiores illo architecto quas amet.&quot;,
+        &quot;description&quot;: &quot;Quis beatae voluptas qui voluptatibus est. Perspiciatis asperiores voluptas corporis ut. Enim et saepe dolores vitae sint molestiae. At officiis laborum sint tempora et laboriosam earum.&quot;,
+        &quot;ended_at&quot;: null,
+        &quot;institution_id&quot;: 10,
+        &quot;institution_name&quot;: &quot;Bulah Hansen&quot;
+    },
+    {
+        &quot;id&quot;: 6,
+        &quot;title&quot;: &quot;Unde ut vitae consequuntur doloribus.&quot;,
+        &quot;description&quot;: &quot;Et ut consequatur autem qui velit ut adipisci. Laborum adipisci sed qui iste a consequuntur. Ut et repudiandae deleniti non officiis repudiandae. Quo tempora vero eligendi autem error.&quot;,
+        &quot;ended_at&quot;: null,
+        &quot;institution_id&quot;: 11,
+        &quot;institution_name&quot;: &quot;Rosalia Graham IV&quot;
+    },
+    {
+        &quot;id&quot;: 7,
+        &quot;title&quot;: &quot;Libero inventore in qui accusantium.&quot;,
+        &quot;description&quot;: &quot;Et amet reprehenderit atque et ipsa. Autem sunt quod perspiciatis. Vero quia quis nesciunt qui aliquam.&quot;,
+        &quot;ended_at&quot;: null,
+        &quot;institution_id&quot;: 12,
+        &quot;institution_name&quot;: &quot;Kamille Stanton&quot;
+    },
+    {
         &quot;id&quot;: 8,
         &quot;title&quot;: &quot;Et aut voluptas id eius.&quot;,
         &quot;description&quot;: &quot;Porro quasi et quia eos rerum. Voluptatem nemo qui consequuntur consequatur architecto. Occaecati saepe et voluptatibus modi ut nihil veniam odio. Provident ea qui porro aut eum.&quot;,
         &quot;ended_at&quot;: null,
         &quot;institution_id&quot;: 13,
         &quot;institution_name&quot;: &quot;Mr. Joshuah Mills IV&quot;
+    },
+    {
+        &quot;id&quot;: 9,
+        &quot;title&quot;: &quot;Occaecati at quod qui.&quot;,
+        &quot;description&quot;: &quot;Culpa vel sed eos explicabo. Velit porro et aut fugit. Deleniti et modi sunt.&quot;,
+        &quot;ended_at&quot;: null,
+        &quot;institution_id&quot;: 14,
+        &quot;institution_name&quot;: &quot;Kitty Mante&quot;
+    },
+    {
+        &quot;id&quot;: 10,
+        &quot;title&quot;: &quot;Quod magnam recusandae autem id.&quot;,
+        &quot;description&quot;: &quot;Vel minus natus iste aperiam. Quia labore repellendus suscipit aliquam facere. Aspernatur doloribus tenetur voluptatum repellat illum deserunt. Nesciunt hic cumque incidunt est.&quot;,
+        &quot;ended_at&quot;: null,
+        &quot;institution_id&quot;: 15,
+        &quot;institution_name&quot;: &quot;Karson Kovacek&quot;
+    },
+    {
+        &quot;id&quot;: 11,
+        &quot;title&quot;: &quot;Doloremque velit omnis sed.&quot;,
+        &quot;description&quot;: &quot;Quo labore delectus molestiae totam et. Rerum est sunt quibusdam repudiandae. Ut voluptatem voluptatem molestias laudantium in consequatur. Sed id natus autem cum qui nulla.&quot;,
+        &quot;ended_at&quot;: null,
+        &quot;institution_id&quot;: 16,
+        &quot;institution_name&quot;: &quot;Rubie Jast&quot;
+    },
+    {
+        &quot;id&quot;: 12,
+        &quot;title&quot;: &quot;Itaque magni recusandae vitae ut est.&quot;,
+        &quot;description&quot;: &quot;Sint dolorum at nobis aliquam libero delectus. Qui rerum nam sint ratione. Quisquam accusamus mollitia incidunt rem.&quot;,
+        &quot;ended_at&quot;: null,
+        &quot;institution_id&quot;: 17,
+        &quot;institution_name&quot;: &quot;Dr. Timmothy Lubowitz&quot;
+    },
+    {
+        &quot;id&quot;: 13,
+        &quot;title&quot;: &quot;Praesentium numquam eos velit consequatur qui.&quot;,
+        &quot;description&quot;: &quot;Nihil odit sit corrupti quo doloremque. Ut eligendi vel totam. Nisi itaque quo pariatur velit non dolor.&quot;,
+        &quot;ended_at&quot;: null,
+        &quot;institution_id&quot;: 18,
+        &quot;institution_name&quot;: &quot;Ben Leffler&quot;
+    },
+    {
+        &quot;id&quot;: 14,
+        &quot;title&quot;: &quot;Nemo eveniet quae blanditiis ullam.&quot;,
+        &quot;description&quot;: &quot;Ipsum nesciunt sed similique voluptas. Nobis magni sunt asperiores corporis quia in ut natus. Et ea ipsum voluptate ut impedit. Minus sed consequatur reiciendis provident minima modi.&quot;,
+        &quot;ended_at&quot;: null,
+        &quot;institution_id&quot;: 19,
+        &quot;institution_name&quot;: &quot;Chaim Schaefer&quot;
+    },
+    {
+        &quot;id&quot;: 15,
+        &quot;title&quot;: &quot;Natus fugit possimus libero aut.&quot;,
+        &quot;description&quot;: &quot;Eos sed sequi nam culpa. Aut magni amet excepturi sit alias. Et quo quasi autem non sed quo. Molestias laboriosam nihil cupiditate qui nostrum.&quot;,
+        &quot;ended_at&quot;: null,
+        &quot;institution_id&quot;: 20,
+        &quot;institution_name&quot;: &quot;Muhammad Rohan&quot;
+    },
+    {
+        &quot;id&quot;: 16,
+        &quot;title&quot;: &quot;Autem hic non dolores qui.&quot;,
+        &quot;description&quot;: &quot;Et reprehenderit non distinctio. Error debitis libero repellendus sit delectus et pariatur. Corporis id aliquam totam incidunt amet velit accusantium. Nobis voluptatibus saepe sit ex aut sunt.&quot;,
+        &quot;ended_at&quot;: null,
+        &quot;institution_id&quot;: 21,
+        &quot;institution_name&quot;: &quot;Cyrus Erdman&quot;
+    },
+    {
+        &quot;id&quot;: 17,
+        &quot;title&quot;: &quot;Alias perspiciatis placeat incidunt.&quot;,
+        &quot;description&quot;: &quot;Similique rerum ut nesciunt consequatur quia rem. Veniam commodi voluptas rerum voluptatem. Ullam corporis dicta eligendi tenetur atque vitae.&quot;,
+        &quot;ended_at&quot;: null,
+        &quot;institution_id&quot;: 22,
+        &quot;institution_name&quot;: &quot;Alex Davis&quot;
+    },
+    {
+        &quot;id&quot;: 18,
+        &quot;title&quot;: &quot;Consectetur et sit vitae at.&quot;,
+        &quot;description&quot;: &quot;Autem incidunt saepe eveniet. Tempore odio non veritatis possimus quia. Cum in quia dicta magni est ipsam facilis. A soluta alias id iusto voluptatum minima beatae quaerat.&quot;,
+        &quot;ended_at&quot;: null,
+        &quot;institution_id&quot;: 23,
+        &quot;institution_name&quot;: &quot;Hershel Osinski&quot;
     },
     {
         &quot;id&quot;: 19,
@@ -2367,12 +2495,44 @@ access-control-allow-origin: *
         &quot;institution_name&quot;: &quot;Mr. Gustave Kemmer&quot;
     },
     {
-        &quot;id&quot;: 22,
-        &quot;title&quot;: &quot;Animi consectetur quas error.&quot;,
-        &quot;description&quot;: &quot;Et rerum nesciunt dolore ab doloremque ut a. Laborum soluta a necessitatibus ullam voluptate. Eius odit aut consequatur non quam voluptatem. Dolor aperiam omnis dicta asperiores excepturi amet.&quot;,
+        &quot;id&quot;: 20,
+        &quot;title&quot;: &quot;Perferendis recusandae quidem.&quot;,
+        &quot;description&quot;: &quot;Adipisci sit magnam saepe aut. Voluptatem voluptas illo voluptatem voluptatum voluptas consequatur ut. Sapiente rerum placeat sit soluta omnis asperiores ea.&quot;,
         &quot;ended_at&quot;: null,
-        &quot;institution_id&quot;: 27,
-        &quot;institution_name&quot;: &quot;Jamison Schmitt&quot;
+        &quot;institution_id&quot;: 25,
+        &quot;institution_name&quot;: &quot;Serena Bruen&quot;
+    },
+    {
+        &quot;id&quot;: 21,
+        &quot;title&quot;: &quot;Dolore illum aut voluptatibus.&quot;,
+        &quot;description&quot;: &quot;Voluptate nisi incidunt ducimus culpa soluta eos autem. Voluptatum sit beatae voluptatibus quia magnam sit. Adipisci quia ratione necessitatibus eveniet consequuntur non ullam ut.&quot;,
+        &quot;ended_at&quot;: null,
+        &quot;institution_id&quot;: 26,
+        &quot;institution_name&quot;: &quot;Rahul Hayes&quot;
+    },
+    {
+        &quot;id&quot;: 23,
+        &quot;title&quot;: &quot;Officia vitae quibusdam dolor.&quot;,
+        &quot;description&quot;: &quot;Vel illum sunt suscipit molestiae. Ea nihil et quae praesentium. Et blanditiis mollitia cum ratione nisi inventore. Qui porro qui molestiae est sunt laborum. Commodi minus quis deleniti magni rerum.&quot;,
+        &quot;ended_at&quot;: null,
+        &quot;institution_id&quot;: 28,
+        &quot;institution_name&quot;: &quot;Kira Von&quot;
+    },
+    {
+        &quot;id&quot;: 24,
+        &quot;title&quot;: &quot;Nesciunt numquam illo.&quot;,
+        &quot;description&quot;: &quot;Qui amet nihil corporis provident ex sapiente. Voluptas omnis tempore sunt qui dicta similique maiores tenetur. Debitis laboriosam quae hic illo et.&quot;,
+        &quot;ended_at&quot;: null,
+        &quot;institution_id&quot;: 29,
+        &quot;institution_name&quot;: &quot;Anastacio Parisian PhD&quot;
+    },
+    {
+        &quot;id&quot;: 25,
+        &quot;title&quot;: &quot;Ut voluptates nesciunt nostrum temporibus.&quot;,
+        &quot;description&quot;: &quot;Magni velit quia sequi minus qui occaecati nihil. Consequatur consequatur soluta molestias rerum eligendi sequi error. Rerum in excepturi ab eum. Error laborum rerum mollitia rerum incidunt.&quot;,
+        &quot;ended_at&quot;: null,
+        &quot;institution_id&quot;: 30,
+        &quot;institution_name&quot;: &quot;Elta Crooks Jr.&quot;
     }
 ]</code>
  </pre>
@@ -2453,10 +2613,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="q"                data-endpoint="GETapi-trender"
-               value="culpa"
+               value="vitae"
                data-component="query">
     <br>
-<p>Example: <code>culpa</code></p>
+<p>Example: <code>vitae</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>category_ids</code></b>&nbsp;&nbsp;
@@ -2487,10 +2647,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="q"                data-endpoint="GETapi-trender"
-               value="eius"
+               value="qui"
                data-component="body">
     <br>
-<p>Example: <code>eius</code></p>
+<p>Example: <code>qui</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>category_ids</code></b>&nbsp;&nbsp;
@@ -2553,7 +2713,7 @@ fetch(url, {
 
 <span id="example-responses-GETapi-trender--id-">
             <blockquote>
-            <p>Example response (200):</p>
+            <p>Example response (500):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -2567,17 +2727,444 @@ access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;id&quot;: 1,
-    &quot;title&quot;: &quot;Facilis ducimus et sunt fugit.&quot;,
-    &quot;description&quot;: &quot;Et tempora iste provident totam soluta vitae. Id nihil perspiciatis nemo perferendis culpa veniam. Explicabo velit quaerat hic quia numquam nemo consequatur.&quot;,
-    &quot;image&quot;: null,
-    &quot;columns_number&quot;: 1,
-    &quot;created_at&quot;: &quot;2023-09-28T12:02:51.000000Z&quot;,
-    &quot;trender_details&quot;: [
+    &quot;message&quot;: &quot;Call to undefined method Illuminate\\Http\\Resources\\MissingValue::count()&quot;,
+    &quot;exception&quot;: &quot;Error&quot;,
+    &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/app/Http/Resources/TrenderResource.php&quot;,
+    &quot;line&quot;: 25,
+    &quot;trace&quot;: [
         {
-            &quot;id&quot;: 11,
-            &quot;name&quot;: &quot;id&quot;,
-            &quot;data&quot;: &quot;cum&quot;
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Http/Resources/Json/JsonResource.php&quot;,
+            &quot;line&quot;: 108,
+            &quot;function&quot;: &quot;toArray&quot;,
+            &quot;class&quot;: &quot;App\\Http\\Resources\\TrenderResource&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Http/Resources/Json/ResourceResponse.php&quot;,
+            &quot;line&quot;: 39,
+            &quot;function&quot;: &quot;resolve&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Http\\Resources\\Json\\JsonResource&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Http/Resources/Json/JsonResource.php&quot;,
+            &quot;line&quot;: 244,
+            &quot;function&quot;: &quot;toResponse&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Http\\Resources\\Json\\ResourceResponse&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Routing/Router.php&quot;,
+            &quot;line&quot;: 893,
+            &quot;function&quot;: &quot;toResponse&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Http\\Resources\\Json\\JsonResource&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Routing/Router.php&quot;,
+            &quot;line&quot;: 878,
+            &quot;function&quot;: &quot;toResponse&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
+            &quot;type&quot;: &quot;::&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Routing/Router.php&quot;,
+            &quot;line&quot;: 799,
+            &quot;function&quot;: &quot;prepareResponse&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 141,
+            &quot;function&quot;: &quot;Illuminate\\Routing\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php&quot;,
+            &quot;line&quot;: 50,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 180,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\SubstituteBindings&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php&quot;,
+            &quot;line&quot;: 159,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php&quot;,
+            &quot;line&quot;: 135,
+            &quot;function&quot;: &quot;handleRequest&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\ThrottleRequests&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php&quot;,
+            &quot;line&quot;: 87,
+            &quot;function&quot;: &quot;handleRequestUsingNamedLimiter&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\ThrottleRequests&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 180,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\ThrottleRequests&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 116,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Routing/Router.php&quot;,
+            &quot;line&quot;: 800,
+            &quot;function&quot;: &quot;then&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Routing/Router.php&quot;,
+            &quot;line&quot;: 777,
+            &quot;function&quot;: &quot;runRouteWithinStack&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Routing/Router.php&quot;,
+            &quot;line&quot;: 741,
+            &quot;function&quot;: &quot;runRoute&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Routing/Router.php&quot;,
+            &quot;line&quot;: 730,
+            &quot;function&quot;: &quot;dispatchToRoute&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php&quot;,
+            &quot;line&quot;: 200,
+            &quot;function&quot;: &quot;dispatch&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 141,
+            &quot;function&quot;: &quot;Illuminate\\Foundation\\Http\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Kernel&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php&quot;,
+            &quot;line&quot;: 21,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php&quot;,
+            &quot;line&quot;: 31,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 180,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php&quot;,
+            &quot;line&quot;: 21,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php&quot;,
+            &quot;line&quot;: 40,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 180,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\TrimStrings&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php&quot;,
+            &quot;line&quot;: 27,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 180,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php&quot;,
+            &quot;line&quot;: 86,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 180,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php&quot;,
+            &quot;line&quot;: 62,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 180,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Http\\Middleware\\HandleCors&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php&quot;,
+            &quot;line&quot;: 39,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 180,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Http\\Middleware\\TrustProxies&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 116,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php&quot;,
+            &quot;line&quot;: 175,
+            &quot;function&quot;: &quot;then&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php&quot;,
+            &quot;line&quot;: 144,
+            &quot;function&quot;: &quot;sendRequestThroughRouter&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Kernel&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php&quot;,
+            &quot;line&quot;: 299,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Kernel&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php&quot;,
+            &quot;line&quot;: 287,
+            &quot;function&quot;: &quot;callLaravelOrLumenRoute&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php&quot;,
+            &quot;line&quot;: 92,
+            &quot;function&quot;: &quot;makeApiCall&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php&quot;,
+            &quot;line&quot;: 45,
+            &quot;function&quot;: &quot;makeResponseCall&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php&quot;,
+            &quot;line&quot;: 35,
+            &quot;function&quot;: &quot;makeResponseCallIfConditionsPass&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php&quot;,
+            &quot;line&quot;: 209,
+            &quot;function&quot;: &quot;__invoke&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php&quot;,
+            &quot;line&quot;: 166,
+            &quot;function&quot;: &quot;iterateThroughStrategies&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Extractor&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php&quot;,
+            &quot;line&quot;: 95,
+            &quot;function&quot;: &quot;fetchResponses&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Extractor&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php&quot;,
+            &quot;line&quot;: 124,
+            &quot;function&quot;: &quot;processRoute&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Extractor&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php&quot;,
+            &quot;line&quot;: 71,
+            &quot;function&quot;: &quot;extractEndpointsInfoFromLaravelApp&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php&quot;,
+            &quot;line&quot;: 49,
+            &quot;function&quot;: &quot;extractEndpointsInfoAndWriteToDisk&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/knuckleswtf/scribe/src/Commands/GenerateDocumentation.php&quot;,
+            &quot;line&quot;: 51,
+            &quot;function&quot;: &quot;get&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php&quot;,
+            &quot;line&quot;: 36,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Commands\\GenerateDocumentation&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Container/Util.php&quot;,
+            &quot;line&quot;: 41,
+            &quot;function&quot;: &quot;Illuminate\\Container\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Container\\BoundMethod&quot;,
+            &quot;type&quot;: &quot;::&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php&quot;,
+            &quot;line&quot;: 93,
+            &quot;function&quot;: &quot;unwrapIfClosure&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Container\\Util&quot;,
+            &quot;type&quot;: &quot;::&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php&quot;,
+            &quot;line&quot;: 37,
+            &quot;function&quot;: &quot;callBoundMethod&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Container\\BoundMethod&quot;,
+            &quot;type&quot;: &quot;::&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Container/Container.php&quot;,
+            &quot;line&quot;: 662,
+            &quot;function&quot;: &quot;call&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Container\\BoundMethod&quot;,
+            &quot;type&quot;: &quot;::&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Console/Command.php&quot;,
+            &quot;line&quot;: 211,
+            &quot;function&quot;: &quot;call&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Container\\Container&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/symfony/console/Command/Command.php&quot;,
+            &quot;line&quot;: 326,
+            &quot;function&quot;: &quot;execute&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Console\\Command&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Console/Command.php&quot;,
+            &quot;line&quot;: 181,
+            &quot;function&quot;: &quot;run&quot;,
+            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Command\\Command&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/symfony/console/Application.php&quot;,
+            &quot;line&quot;: 1081,
+            &quot;function&quot;: &quot;run&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Console\\Command&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/symfony/console/Application.php&quot;,
+            &quot;line&quot;: 320,
+            &quot;function&quot;: &quot;doRunCommand&quot;,
+            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Application&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/symfony/console/Application.php&quot;,
+            &quot;line&quot;: 174,
+            &quot;function&quot;: &quot;doRun&quot;,
+            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Application&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php&quot;,
+            &quot;line&quot;: 201,
+            &quot;function&quot;: &quot;run&quot;,
+            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Application&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/artisan&quot;,
+            &quot;line&quot;: 37,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Console\\Kernel&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
         }
     ]
 }</code>
@@ -2957,10 +3544,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"title\": \"perferendis\",
-    \"description\": \"Nobis molestiae in quod quibusdam.\",
-    \"columns_number\": 5,
-    \"image\": \"quasi\",
+    \"title\": \"recusandae\",
+    \"description\": \"Totam reiciendis voluptatum non.\",
+    \"columns_number\": 8,
+    \"image\": \"consequatur\",
     \"details\": \"[\\n {\\n    \\\"name\\\": \\\"text\\\",\\n    \\\"data\\\": {\\n     \\\"validator\\\": {\\n \\\"required\\\": true,\\n\\\"error_message\\\": \\\"Invalid parameters\\\"\\n}\\n}\\n }\\n]\"
 }"
 </code></pre></div>
@@ -2977,10 +3564,10 @@ const headers = {
 };
 
 let body = {
-    "title": "perferendis",
-    "description": "Nobis molestiae in quod quibusdam.",
-    "columns_number": 5,
-    "image": "quasi",
+    "title": "recusandae",
+    "description": "Totam reiciendis voluptatum non.",
+    "columns_number": 8,
+    "image": "consequatur",
     "details": "[\n {\n    \"name\": \"text\",\n    \"data\": {\n     \"validator\": {\n \"required\": true,\n\"error_message\": \"Invalid parameters\"\n}\n}\n }\n]"
 };
 
@@ -3086,10 +3673,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="title"                data-endpoint="POSTapi-trender"
-               value="perferendis"
+               value="recusandae"
                data-component="body">
     <br>
-<p>Example: <code>perferendis</code></p>
+<p>Example: <code>recusandae</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>description</code></b>&nbsp;&nbsp;
@@ -3097,10 +3684,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="description"                data-endpoint="POSTapi-trender"
-               value="Nobis molestiae in quod quibusdam."
+               value="Totam reiciendis voluptatum non."
                data-component="body">
     <br>
-<p>Example: <code>Nobis molestiae in quod quibusdam.</code></p>
+<p>Example: <code>Totam reiciendis voluptatum non.</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>columns_number</code></b>&nbsp;&nbsp;
@@ -3108,10 +3695,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="columns_number"                data-endpoint="POSTapi-trender"
-               value="5"
+               value="8"
                data-component="body">
     <br>
-<p>Example: <code>5</code></p>
+<p>Example: <code>8</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>image</code></b>&nbsp;&nbsp;
@@ -3119,10 +3706,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="image"                data-endpoint="POSTapi-trender"
-               value="quasi"
+               value="consequatur"
                data-component="body">
     <br>
-<p>Example: <code>quasi</code></p>
+<p>Example: <code>consequatur</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>details</code></b>&nbsp;&nbsp;
@@ -3188,49 +3775,47 @@ fetch(url, {
         </blockquote>
                 <pre>
 
-<code class="language-json" style="max-height: 300px;">{
-    &quot;data&quot;: [
-        {
-            &quot;id&quot;: 25,
-            &quot;title&quot;: &quot;Eum officia eum.&quot;,
-            &quot;description&quot;: &quot;Porro doloremque molestiae culpa temporibus perferendis minima. Qui non nulla dolorem laudantium.&quot;,
-            &quot;created_at&quot;: &quot;2023-09-17T08:12:58.000000Z&quot;,
-            &quot;ended_at&quot;: null,
-            &quot;offers_count&quot;: 3,
-            &quot;best_offer_from&quot;: {
+<code class="language-json" style="max-height: 300px;">[
+    {
+        &quot;id&quot;: 25,
+        &quot;title&quot;: &quot;Eum officia eum.&quot;,
+        &quot;description&quot;: &quot;Porro doloremque molestiae culpa temporibus perferendis minima. Qui non nulla dolorem laudantium.&quot;,
+        &quot;created_at&quot;: &quot;2023-09-17T08:12:58.000000Z&quot;,
+        &quot;ended_at&quot;: null,
+        &quot;offers_count&quot;: 3,
+        &quot;best_offer_from&quot;: {
+            &quot;id&quot;: 11,
+            &quot;tender_id&quot;: 25,
+            &quot;company_id&quot;: 20,
+            &quot;is_draft&quot;: 0,
+            &quot;created_at&quot;: &quot;2023-09-17T09:17:03.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2023-09-17T09:17:03.000000Z&quot;
+        },
+        &quot;offers&quot;: [
+            {
                 &quot;id&quot;: 11,
-                &quot;tender_id&quot;: 25,
-                &quot;company_id&quot;: 20,
-                &quot;is_draft&quot;: 0,
-                &quot;created_at&quot;: &quot;2023-09-17T09:17:03.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2023-09-17T09:17:03.000000Z&quot;
+                &quot;trender_name&quot;: &quot;Eum officia eum.&quot;,
+                &quot;for&quot;: &quot;Dr. Delfina Lesch&quot;,
+                &quot;work_on_it&quot;: &quot;2023-09-17T09:17:03.000000Z&quot;,
+                &quot;work_ended_it&quot;: null
             },
-            &quot;offers&quot;: [
-                {
-                    &quot;id&quot;: 11,
-                    &quot;trender_name&quot;: &quot;Eum officia eum.&quot;,
-                    &quot;for&quot;: &quot;Dr. Delfina Lesch&quot;,
-                    &quot;work_on_it&quot;: &quot;2023-09-17T09:17:03.000000Z&quot;,
-                    &quot;work_ended_it&quot;: null
-                },
-                {
-                    &quot;id&quot;: 12,
-                    &quot;trender_name&quot;: &quot;Eum officia eum.&quot;,
-                    &quot;for&quot;: &quot;Dr. Delfina Lesch&quot;,
-                    &quot;work_on_it&quot;: &quot;2023-09-17T09:17:03.000000Z&quot;,
-                    &quot;work_ended_it&quot;: null
-                },
-                {
-                    &quot;id&quot;: 13,
-                    &quot;trender_name&quot;: &quot;Eum officia eum.&quot;,
-                    &quot;for&quot;: &quot;Dr. Delfina Lesch&quot;,
-                    &quot;work_on_it&quot;: &quot;2023-09-17T09:17:03.000000Z&quot;,
-                    &quot;work_ended_it&quot;: null
-                }
-            ]
-        }
-    ]
-}</code>
+            {
+                &quot;id&quot;: 12,
+                &quot;trender_name&quot;: &quot;Eum officia eum.&quot;,
+                &quot;for&quot;: &quot;Dr. Delfina Lesch&quot;,
+                &quot;work_on_it&quot;: &quot;2023-09-17T09:17:03.000000Z&quot;,
+                &quot;work_ended_it&quot;: null
+            },
+            {
+                &quot;id&quot;: 13,
+                &quot;trender_name&quot;: &quot;Eum officia eum.&quot;,
+                &quot;for&quot;: &quot;Dr. Delfina Lesch&quot;,
+                &quot;work_on_it&quot;: &quot;2023-09-17T09:17:03.000000Z&quot;,
+                &quot;work_ended_it&quot;: null
+            }
+        ]
+    }
+]</code>
  </pre>
     </span>
 <span id="execution-results-GETapi-mine-trender" hidden>

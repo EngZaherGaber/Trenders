@@ -60,6 +60,10 @@ class TenderController extends Controller
     public function store(StoreTenderRequest $request)
     {
         $data = $request->validated();
+        if ($request->hasFile('image')) {
+            $photoPath = $request->file('image')->store('public/ProfileImage');
+            $data['image'] = $photoPath; // Use update to set the image on the existing user
+        }
         $tender = auth()->user()->institution->tenders()->create($data);
 
         foreach ($data['details'] as $tenderDetails) {
@@ -97,8 +101,7 @@ class TenderController extends Controller
     }
 
     /**
-     * @response {
-    "data": [
+     * @response [
         {
             "id": 25,
             "title": "Eum officia eum.",
@@ -139,7 +142,7 @@ class TenderController extends Controller
             ]
         }
     ]
-}
+
      */
 
     public function myTrenders()

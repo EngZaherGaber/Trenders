@@ -15,7 +15,7 @@ return new class extends Migration
 
         Schema::create('tender_details', function (Blueprint $table) {
             $table->id();
-            $table->string('type');
+            $table->string('name');
             $table->string('data');
             $table->foreignId('tender_id')->constrained();
             $table->timestamps();

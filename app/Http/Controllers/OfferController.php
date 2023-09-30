@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\OfferIndexRequest;
+use App\Http\Requests\StoreOfferRequest;
 use App\Http\Resources\OfferResource;
 use App\Models\Offer;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 /**
  * 
@@ -39,10 +41,35 @@ class OfferController extends Controller
 
     /**
      * Store a newly created resource in storage.
+     * 
+     * @bodyParam details object. Example: [
+      {
+        "tender_detail_id": 1,
+        "answer": "dasdsad",
+      }
+     * ]
      */
-    public function store(Request $request)
+    public function store(StoreOfferRequest $request)
     {
-        //
+        $data = $request->validated();
+
+        $offer = auth()->user()->company->offers()->create($data);
+
+        foreach ($data['details'] as $offerDetails) {
+
+            if (is_array($offerDetails['data'])) {
+                $offerDetails['data'] = json_encode($offerDetails['data']);
+            }
+
+            $vaildator = Validator::make($offerDetails, [
+                'answer' => ['required'],
+                'tender_detail_id' => ['required', 'exists:tender_details,id'],
+            ]);
+
+            $offer->offerDetails()->create($vaildator->validated());
+        }
+
+        return $offer;
     }
 
     /**
@@ -74,10 +101,38 @@ class OfferController extends Controller
 
     /**
      * Update the specified resource in storage.
+     * 
+     * @bodyParam details object. Example: [
+            {
+              "tender_detail_id": 1,
+              "answer": "dasdsad",
+            }
+     * ]
      */
-    public function update(Request $request, Offer $offer)
+    public function update(StoreOfferRequest $request, Offer $offer)
     {
-        //
+        $data = $request->validated();
+
+        $offer->update($data);
+
+        $offer->offerDetails()->delete();
+
+        foreach ($data['details'] as $offerDetails) {
+
+            if (is_array($offerDetails['data'])) {
+                $offerDetails['data'] = json_encode($offerDetails['data']);
+            }
+
+            $vaildator = Validator::make($offerDetails, [
+                'answer' => ['required'],
+                'tender_detail_id' => ['required', 'exists:tender_details,id'],
+            ]);
+
+            $offer->offerDetails()->create($vaildator->validated());
+        }
+        $offer->refresh();
+
+        return $offer;
     }
 
     /**
@@ -85,6 +140,8 @@ class OfferController extends Controller
      */
     public function destroy(Offer $offer)
     {
-        //
+        $offer->delete();
+
+        return response()->noContent();
     }
 }

@@ -62,7 +62,7 @@ class TenderController extends Controller
         $data = $request->validated();
         if ($request->hasFile('image')) {
             $photoPath = $request->file('image')->store('public/ProfileImage');
-            $data['image'] = $photoPath; // Use update to set the image on the existing user
+            $data['image'] = $photoPath;
         }
         $tender = auth()->user()->institution->tenders()->create($data);
 

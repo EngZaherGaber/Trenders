@@ -98,6 +98,19 @@
                             </li>
                                                                         </ul>
                             </ul>
+                    <ul id="tocify-header-endpoints" class="tocify-header">
+                <li class="tocify-item level-1" data-unique="endpoints">
+                    <a href="#endpoints">Endpoints</a>
+                </li>
+                                    <ul id="tocify-subheader-endpoints" class="tocify-subheader">
+                                                    <li class="tocify-item level-2" data-unique="endpoints-GETapi-institution--id-">
+                                <a href="#endpoints-GETapi-institution--id-">Display the specified resource.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-company--id-">
+                                <a href="#endpoints-GETapi-company--id-">Display the specified resource.</a>
+                            </li>
+                                                                        </ul>
+                            </ul>
                     <ul id="tocify-header-offer" class="tocify-header">
                 <li class="tocify-item level-1" data-unique="offer">
                     <a href="#offer">Offer</a>
@@ -157,7 +170,7 @@
     </ul>
 
     <ul class="toc-footer" id="last-updated">
-        <li>Last updated: September 28, 2023</li>
+        <li>Last updated: September 30, 2023</li>
     </ul>
 </div>
 
@@ -238,12 +251,12 @@ fetch(url, {
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 54
+x-ratelimit-remaining: 52
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;token&quot;: &quot;18|IqB94Yf53GT7apxXjHeKruL2a4Mr3pJuyyv2wKt4&quot;,
+    &quot;token&quot;: &quot;22|usEJH9hUTPReKF7fb5uCFIddXwd6p6BeaI6yCjZL&quot;,
     &quot;is_company&quot;: true
 }</code>
  </pre>
@@ -358,16 +371,16 @@ You can check the Dev Tools console for debugging information.</code></pre>
     "http://localhost:8000/api/register" \
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
-    --form "name=sed"\
-    --form "email=pauline11@example.com"\
+    --form "name=adipisci"\
+    --form "email=rocio21@example.net"\
     --form "password=password"\
-    --form "type=instute"\
+    --form "type=company"\
     --form "category_ids[]=1"\
-    --form "created_in=2023-09-28T13:01:16"\
-    --form "address=deleniti"\
-    --form "city=hic"\
+    --form "created_in=2023-09-30T10:07:32"\
+    --form "address=et"\
+    --form "city=quia"\
     --form "password_confirmation=password"\
-    --form "image=@/tmp/phprBq4Hy" </code></pre></div>
+    --form "image=@/tmp/php7pOY6v" </code></pre></div>
 
 
 <div class="javascript-example">
@@ -381,14 +394,14 @@ const headers = {
 };
 
 const body = new FormData();
-body.append('name', 'sed');
-body.append('email', 'pauline11@example.com');
+body.append('name', 'adipisci');
+body.append('email', 'rocio21@example.net');
 body.append('password', 'password');
-body.append('type', 'instute');
+body.append('type', 'company');
 body.append('category_ids[]', '1');
-body.append('created_in', '2023-09-28T13:01:16');
-body.append('address', 'deleniti');
-body.append('city', 'hic');
+body.append('created_in', '2023-09-30T10:07:32');
+body.append('address', 'et');
+body.append('city', 'quia');
 body.append('password_confirmation', 'password');
 body.append('image', document.querySelector('input[name="image"]').files[0]);
 
@@ -411,12 +424,12 @@ fetch(url, {
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 53
+x-ratelimit-remaining: 51
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;token&quot;: &quot;19|x1gMBSLOv3RR35tn9QrKEqq3dAxSB8wNJzL5bWRx&quot;
+    &quot;token&quot;: &quot;23|4cgwrSKrYNGumPTUfvOTWeijYPpsEilpi0ktacwE&quot;
 }</code>
  </pre>
     </span>
@@ -496,10 +509,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="name"                data-endpoint="POSTapi-register"
-               value="sed"
+               value="adipisci"
                data-component="body">
     <br>
-<p>Example: <code>sed</code></p>
+<p>Example: <code>adipisci</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>image</code></b>&nbsp;&nbsp;
@@ -510,7 +523,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value=""
                data-component="body">
     <br>
-<p>Must be an image. Example: <code>/tmp/phprBq4Hy</code></p>
+<p>Must be an image. Example: <code>/tmp/php7pOY6v</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -518,10 +531,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="POSTapi-register"
-               value="pauline11@example.com"
+               value="rocio21@example.net"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>pauline11@example.com</code></p>
+<p>Must be a valid email address. Example: <code>rocio21@example.net</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -540,10 +553,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="type"                data-endpoint="POSTapi-register"
-               value="instute"
+               value="company"
                data-component="body">
     <br>
-<p>Must be one of <code>instute</code> or <code>company</code>. Example: <code>instute</code></p>
+<p>Must be one of <code>instute</code> or <code>company</code>. Example: <code>company</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>category_ids</code></b>&nbsp;&nbsp;
@@ -564,10 +577,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="created_in"                data-endpoint="POSTapi-register"
-               value="2023-09-28T13:01:16"
+               value="2023-09-30T10:07:32"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2023-09-28T13:01:16</code></p>
+<p>Must be a valid date. Example: <code>2023-09-30T10:07:32</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>address</code></b>&nbsp;&nbsp;
@@ -575,10 +588,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="address"                data-endpoint="POSTapi-register"
-               value="deleniti"
+               value="et"
                data-component="body">
     <br>
-<p>Example: <code>deleniti</code></p>
+<p>Example: <code>et</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>city</code></b>&nbsp;&nbsp;
@@ -586,10 +599,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="city"                data-endpoint="POSTapi-register"
-               value="hic"
+               value="quia"
                data-component="body">
     <br>
-<p>Example: <code>hic</code></p>
+<p>Example: <code>quia</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password_confirmation</code></b>&nbsp;&nbsp;
@@ -1585,6 +1598,311 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                         </form>
 
+                <h1 id="endpoints">Endpoints</h1>
+
+    
+
+                                <h2 id="endpoints-GETapi-institution--id-">Display the specified resource.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-institution--id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/institution/1" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/institution/1"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-institution--id-">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 58
+access-control-allow-origin: *
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;id&quot;: 1,
+    &quot;address&quot;: &quot;saepe&quot;,
+    &quot;city&quot;: &quot;voluptatem&quot;,
+    &quot;user_id&quot;: 7,
+    &quot;created_in&quot;: &quot;2023-09-28T00:00:00.000000Z&quot;,
+    &quot;user&quot;: {
+        &quot;id&quot;: 7,
+        &quot;name&quot;: &quot;Axel Cremin&quot;,
+        &quot;image&quot;: &quot;http://localhost:8000/images/https://via.placeholder.com/640x480.png/008855?text=et&quot;,
+        &quot;email&quot;: &quot;chester.douglas@example.net&quot;,
+        &quot;email_verified_at&quot;: &quot;2023-09-28T12:02:50.000000Z&quot;,
+        &quot;created_at&quot;: &quot;2023-09-28T12:02:50.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2023-09-28T12:02:50.000000Z&quot;
+    }
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-institution--id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-institution--id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-institution--id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-institution--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-institution--id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-institution--id-" data-method="GET"
+      data-path="api/institution/{id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-institution--id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-institution--id-"
+                    onclick="tryItOut('GETapi-institution--id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-institution--id-"
+                    onclick="cancelTryOut('GETapi-institution--id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-institution--id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/institution/{id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-institution--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-institution--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="id"                data-endpoint="GETapi-institution--id-"
+               value="1"
+               data-component="url">
+    <br>
+<p>The ID of the institution. Example: <code>1</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="endpoints-GETapi-company--id-">Display the specified resource.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-company--id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/company/1" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/company/1"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-company--id-">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 57
+access-control-allow-origin: *
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;id&quot;: 1,
+    &quot;address&quot;: &quot;iusto&quot;,
+    &quot;user_id&quot;: 1,
+    &quot;created_in&quot;: &quot;2023-09-28T00:00:00.000000Z&quot;,
+    &quot;user&quot;: {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;Prof. Maddison Beahan PhD&quot;,
+        &quot;image&quot;: &quot;http://localhost:8000/images/https://via.placeholder.com/640x480.png/0099aa?text=facilis&quot;,
+        &quot;email&quot;: &quot;test@test.com&quot;,
+        &quot;email_verified_at&quot;: &quot;2023-09-28T12:02:50.000000Z&quot;,
+        &quot;created_at&quot;: &quot;2023-09-28T12:02:50.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2023-09-28T12:02:50.000000Z&quot;
+    }
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-company--id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-company--id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-company--id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-company--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-company--id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-company--id-" data-method="GET"
+      data-path="api/company/{id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-company--id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-company--id-"
+                    onclick="tryItOut('GETapi-company--id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-company--id-"
+                    onclick="cancelTryOut('GETapi-company--id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-company--id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/company/{id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-company--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-company--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="id"                data-endpoint="GETapi-company--id-"
+               value="1"
+               data-component="url">
+    <br>
+<p>The ID of the company. Example: <code>1</code></p>
+            </div>
+                    </form>
+
                 <h1 id="offer">Offer</h1>
 
     
@@ -1606,7 +1924,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"type\": \"ended\"
+    \"type\": \"draft\"
 }"
 </code></pre></div>
 
@@ -1622,7 +1940,7 @@ const headers = {
 };
 
 let body = {
-    "type": "ended"
+    "type": "draft"
 };
 
 fetch(url, {
@@ -1728,10 +2046,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="type"                data-endpoint="GETapi-offer"
-               value="ended"
+               value="draft"
                data-component="body">
     <br>
-<p>Must be one of <code>ended</code> or <code>draft</code>. Example: <code>ended</code></p>
+<p>Must be one of <code>ended</code> or <code>draft</code>. Example: <code>draft</code></p>
         </div>
         </form>
 
@@ -1750,7 +2068,12 @@ You can check the Dev Tools console for debugging information.</code></pre>
     <pre><code class="language-bash">curl --request POST \
     "http://localhost:8000/api/offer" \
     --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
+    --header "Accept: application/json" \
+    --data "{
+    \"tender_id\": 5,
+    \"details\": \"[\\n{\\n\\\"tender_detail_id\\\": 1,\\n\\\"answer\\\": \\\"dasdsad\\\",\\n}\\n]\"
+}"
+</code></pre></div>
 
 
 <div class="javascript-example">
@@ -1763,29 +2086,42 @@ const headers = {
     "Accept": "application/json",
 };
 
+let body = {
+    "tender_id": 5,
+    "details": "[\n{\n\"tender_detail_id\": 1,\n\"answer\": \"dasdsad\",\n}\n]"
+};
+
 fetch(url, {
     method: "POST",
     headers,
+    body: JSON.stringify(body),
 }).then(response =&gt; response.json());</code></pre></div>
 
 </span>
 
 <span id="example-responses-POSTapi-offer">
             <blockquote>
-            <p>Example response (200):</p>
+            <p>Example response (422):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
                 <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
             </summary>
-            <pre><code class="language-http">content-type: text/html; charset=UTF-8
-cache-control: no-cache, private
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
 x-ratelimit-limit: 60
 x-ratelimit-remaining: 58
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
-<code class="language-json" style="max-height: 300px;"></code>
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;The details field must be an array.&quot;,
+    &quot;errors&quot;: {
+        &quot;details&quot;: [
+            &quot;The details field must be an array.&quot;
+        ]
+    }
+}</code>
  </pre>
     </span>
 <span id="execution-results-POSTapi-offer" hidden>
@@ -1857,7 +2193,35 @@ You can check the Dev Tools console for debugging information.</code></pre>
     <br>
 <p>Example: <code>application/json</code></p>
             </div>
-                        </form>
+                                <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>tender_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="tender_id"                data-endpoint="POSTapi-offer"
+               value="5"
+               data-component="body">
+    <br>
+<p>Example: <code>5</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>details</code></b>&nbsp;&nbsp;
+<small>object.</small>&nbsp;
+<i>optional</i> &nbsp;
+                <input type="text" style="display: none"
+                              name="details"                data-endpoint="POSTapi-offer"
+               value="[
+{
+"tender_detail_id": 1,
+"answer": "dasdsad",
+}
+]"
+               data-component="body">
+    <br>
+<p>Example: <code>[ { "tender_detail_id": 1, "answer": "dasdsad", } ]</code></p>
+        </div>
+        </form>
 
                     <h2 id="offer-GETapi-offer--id-">GET api/offer/{id}</h2>
 
@@ -2019,7 +2383,12 @@ You can check the Dev Tools console for debugging information.</code></pre>
     <pre><code class="language-bash">curl --request PUT \
     "http://localhost:8000/api/offer/1" \
     --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
+    --header "Accept: application/json" \
+    --data "{
+    \"tender_id\": 18,
+    \"details\": \"[\\n{\\n\\\"tender_detail_id\\\": 1,\\n\\\"answer\\\": \\\"dasdsad\\\",\\n}\\n]\"
+}"
+</code></pre></div>
 
 
 <div class="javascript-example">
@@ -2032,29 +2401,42 @@ const headers = {
     "Accept": "application/json",
 };
 
+let body = {
+    "tender_id": 18,
+    "details": "[\n{\n\"tender_detail_id\": 1,\n\"answer\": \"dasdsad\",\n}\n]"
+};
+
 fetch(url, {
     method: "PUT",
     headers,
+    body: JSON.stringify(body),
 }).then(response =&gt; response.json());</code></pre></div>
 
 </span>
 
 <span id="example-responses-PUTapi-offer--id-">
             <blockquote>
-            <p>Example response (200):</p>
+            <p>Example response (422):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
                 <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
             </summary>
-            <pre><code class="language-http">content-type: text/html; charset=UTF-8
-cache-control: no-cache, private
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
 x-ratelimit-limit: 60
 x-ratelimit-remaining: 57
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
-<code class="language-json" style="max-height: 300px;"></code>
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;The details field must be an array.&quot;,
+    &quot;errors&quot;: {
+        &quot;details&quot;: [
+            &quot;The details field must be an array.&quot;
+        ]
+    }
+}</code>
  </pre>
     </span>
 <span id="execution-results-PUTapi-offer--id-" hidden>
@@ -2142,7 +2524,35 @@ You can check the Dev Tools console for debugging information.</code></pre>
     <br>
 <p>The ID of the offer. Example: <code>1</code></p>
             </div>
-                    </form>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>tender_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="tender_id"                data-endpoint="PUTapi-offer--id-"
+               value="18"
+               data-component="body">
+    <br>
+<p>Example: <code>18</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>details</code></b>&nbsp;&nbsp;
+<small>object.</small>&nbsp;
+<i>optional</i> &nbsp;
+                <input type="text" style="display: none"
+                              name="details"                data-endpoint="PUTapi-offer--id-"
+               value="[
+{
+"tender_detail_id": 1,
+"answer": "dasdsad",
+}
+]"
+               data-component="body">
+    <br>
+<p>Example: <code>[ { "tender_detail_id": 1, "answer": "dasdsad", } ]</code></p>
+        </div>
+        </form>
 
                     <h2 id="offer-DELETEapi-offer--id-">Remove the specified resource from storage.</h2>
 
@@ -2181,20 +2591,18 @@ fetch(url, {
 
 <span id="example-responses-DELETEapi-offer--id-">
             <blockquote>
-            <p>Example response (200):</p>
+            <p>Example response (204):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
                 <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
             </summary>
-            <pre><code class="language-http">content-type: text/html; charset=UTF-8
-cache-control: no-cache, private
+            <pre><code class="language-http">cache-control: no-cache, private
 x-ratelimit-limit: 60
 x-ratelimit-remaining: 56
 access-control-allow-origin: *
  </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;"></code>
+<code>Empty response</code>
  </pre>
     </span>
 <span id="execution-results-DELETEapi-offer--id-" hidden>
@@ -2297,11 +2705,11 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/trender?q=vitae" \
+    --get "http://localhost:8000/api/trender?q=dignissimos" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"q\": \"qui\"
+    \"q\": \"enim\"
 }"
 </code></pre></div>
 
@@ -2312,7 +2720,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const params = {
-    "q": "vitae",
+    "q": "dignissimos",
 };
 Object.keys(params)
     .forEach(key =&gt; url.searchParams.append(key, params[key]));
@@ -2323,7 +2731,7 @@ const headers = {
 };
 
 let body = {
-    "q": "qui"
+    "q": "enim"
 };
 
 fetch(url, {
@@ -2345,194 +2753,28 @@ fetch(url, {
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 58
+x-ratelimit-remaining: 56
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">[
     {
-        &quot;id&quot;: 1,
-        &quot;title&quot;: &quot;Facilis ducimus et sunt fugit.&quot;,
-        &quot;description&quot;: &quot;Et tempora iste provident totam soluta vitae. Id nihil perspiciatis nemo perferendis culpa veniam. Explicabo velit quaerat hic quia numquam nemo consequatur.&quot;,
+        &quot;id&quot;: 2,
+        &quot;title&quot;: &quot;Exercitationem mollitia ullam aut et labore.&quot;,
+        &quot;description&quot;: &quot;Officiis voluptas quam voluptatibus repellendus quo dolorum. Aut ab sit enim consequatur. Error quo maiores sed vero.&quot;,
+        &quot;created_at&quot;: &quot;2023-09-28T12:02:51.000000Z&quot;,
         &quot;ended_at&quot;: null,
-        &quot;institution_id&quot;: 6,
-        &quot;institution_name&quot;: &quot;Domenica Altenwerth&quot;
-    },
-    {
-        &quot;id&quot;: 3,
-        &quot;title&quot;: &quot;Quo alias corrupti illo.&quot;,
-        &quot;description&quot;: &quot;Laudantium autem maxime est iure. Inventore quo fuga aliquid vel rerum. Voluptates et et dolores praesentium cumque sed tempore.&quot;,
-        &quot;ended_at&quot;: null,
-        &quot;institution_id&quot;: 8,
-        &quot;institution_name&quot;: &quot;Dejah Homenick&quot;
-    },
-    {
-        &quot;id&quot;: 4,
-        &quot;title&quot;: &quot;Suscipit quae et et.&quot;,
-        &quot;description&quot;: &quot;Et dolores deserunt non perspiciatis labore ad. Consequuntur sint quod aut rem. Eum commodi ad sequi ipsam molestiae corporis quia.&quot;,
-        &quot;ended_at&quot;: null,
-        &quot;institution_id&quot;: 9,
-        &quot;institution_name&quot;: &quot;Verna Cartwright&quot;
+        &quot;institution_id&quot;: 7,
+        &quot;institution_name&quot;: &quot;Monserrat Kirlin&quot;
     },
     {
         &quot;id&quot;: 5,
         &quot;title&quot;: &quot;Repellat asperiores illo architecto quas amet.&quot;,
         &quot;description&quot;: &quot;Quis beatae voluptas qui voluptatibus est. Perspiciatis asperiores voluptas corporis ut. Enim et saepe dolores vitae sint molestiae. At officiis laborum sint tempora et laboriosam earum.&quot;,
+        &quot;created_at&quot;: &quot;2023-09-28T12:02:51.000000Z&quot;,
         &quot;ended_at&quot;: null,
         &quot;institution_id&quot;: 10,
         &quot;institution_name&quot;: &quot;Bulah Hansen&quot;
-    },
-    {
-        &quot;id&quot;: 6,
-        &quot;title&quot;: &quot;Unde ut vitae consequuntur doloribus.&quot;,
-        &quot;description&quot;: &quot;Et ut consequatur autem qui velit ut adipisci. Laborum adipisci sed qui iste a consequuntur. Ut et repudiandae deleniti non officiis repudiandae. Quo tempora vero eligendi autem error.&quot;,
-        &quot;ended_at&quot;: null,
-        &quot;institution_id&quot;: 11,
-        &quot;institution_name&quot;: &quot;Rosalia Graham IV&quot;
-    },
-    {
-        &quot;id&quot;: 7,
-        &quot;title&quot;: &quot;Libero inventore in qui accusantium.&quot;,
-        &quot;description&quot;: &quot;Et amet reprehenderit atque et ipsa. Autem sunt quod perspiciatis. Vero quia quis nesciunt qui aliquam.&quot;,
-        &quot;ended_at&quot;: null,
-        &quot;institution_id&quot;: 12,
-        &quot;institution_name&quot;: &quot;Kamille Stanton&quot;
-    },
-    {
-        &quot;id&quot;: 8,
-        &quot;title&quot;: &quot;Et aut voluptas id eius.&quot;,
-        &quot;description&quot;: &quot;Porro quasi et quia eos rerum. Voluptatem nemo qui consequuntur consequatur architecto. Occaecati saepe et voluptatibus modi ut nihil veniam odio. Provident ea qui porro aut eum.&quot;,
-        &quot;ended_at&quot;: null,
-        &quot;institution_id&quot;: 13,
-        &quot;institution_name&quot;: &quot;Mr. Joshuah Mills IV&quot;
-    },
-    {
-        &quot;id&quot;: 9,
-        &quot;title&quot;: &quot;Occaecati at quod qui.&quot;,
-        &quot;description&quot;: &quot;Culpa vel sed eos explicabo. Velit porro et aut fugit. Deleniti et modi sunt.&quot;,
-        &quot;ended_at&quot;: null,
-        &quot;institution_id&quot;: 14,
-        &quot;institution_name&quot;: &quot;Kitty Mante&quot;
-    },
-    {
-        &quot;id&quot;: 10,
-        &quot;title&quot;: &quot;Quod magnam recusandae autem id.&quot;,
-        &quot;description&quot;: &quot;Vel minus natus iste aperiam. Quia labore repellendus suscipit aliquam facere. Aspernatur doloribus tenetur voluptatum repellat illum deserunt. Nesciunt hic cumque incidunt est.&quot;,
-        &quot;ended_at&quot;: null,
-        &quot;institution_id&quot;: 15,
-        &quot;institution_name&quot;: &quot;Karson Kovacek&quot;
-    },
-    {
-        &quot;id&quot;: 11,
-        &quot;title&quot;: &quot;Doloremque velit omnis sed.&quot;,
-        &quot;description&quot;: &quot;Quo labore delectus molestiae totam et. Rerum est sunt quibusdam repudiandae. Ut voluptatem voluptatem molestias laudantium in consequatur. Sed id natus autem cum qui nulla.&quot;,
-        &quot;ended_at&quot;: null,
-        &quot;institution_id&quot;: 16,
-        &quot;institution_name&quot;: &quot;Rubie Jast&quot;
-    },
-    {
-        &quot;id&quot;: 12,
-        &quot;title&quot;: &quot;Itaque magni recusandae vitae ut est.&quot;,
-        &quot;description&quot;: &quot;Sint dolorum at nobis aliquam libero delectus. Qui rerum nam sint ratione. Quisquam accusamus mollitia incidunt rem.&quot;,
-        &quot;ended_at&quot;: null,
-        &quot;institution_id&quot;: 17,
-        &quot;institution_name&quot;: &quot;Dr. Timmothy Lubowitz&quot;
-    },
-    {
-        &quot;id&quot;: 13,
-        &quot;title&quot;: &quot;Praesentium numquam eos velit consequatur qui.&quot;,
-        &quot;description&quot;: &quot;Nihil odit sit corrupti quo doloremque. Ut eligendi vel totam. Nisi itaque quo pariatur velit non dolor.&quot;,
-        &quot;ended_at&quot;: null,
-        &quot;institution_id&quot;: 18,
-        &quot;institution_name&quot;: &quot;Ben Leffler&quot;
-    },
-    {
-        &quot;id&quot;: 14,
-        &quot;title&quot;: &quot;Nemo eveniet quae blanditiis ullam.&quot;,
-        &quot;description&quot;: &quot;Ipsum nesciunt sed similique voluptas. Nobis magni sunt asperiores corporis quia in ut natus. Et ea ipsum voluptate ut impedit. Minus sed consequatur reiciendis provident minima modi.&quot;,
-        &quot;ended_at&quot;: null,
-        &quot;institution_id&quot;: 19,
-        &quot;institution_name&quot;: &quot;Chaim Schaefer&quot;
-    },
-    {
-        &quot;id&quot;: 15,
-        &quot;title&quot;: &quot;Natus fugit possimus libero aut.&quot;,
-        &quot;description&quot;: &quot;Eos sed sequi nam culpa. Aut magni amet excepturi sit alias. Et quo quasi autem non sed quo. Molestias laboriosam nihil cupiditate qui nostrum.&quot;,
-        &quot;ended_at&quot;: null,
-        &quot;institution_id&quot;: 20,
-        &quot;institution_name&quot;: &quot;Muhammad Rohan&quot;
-    },
-    {
-        &quot;id&quot;: 16,
-        &quot;title&quot;: &quot;Autem hic non dolores qui.&quot;,
-        &quot;description&quot;: &quot;Et reprehenderit non distinctio. Error debitis libero repellendus sit delectus et pariatur. Corporis id aliquam totam incidunt amet velit accusantium. Nobis voluptatibus saepe sit ex aut sunt.&quot;,
-        &quot;ended_at&quot;: null,
-        &quot;institution_id&quot;: 21,
-        &quot;institution_name&quot;: &quot;Cyrus Erdman&quot;
-    },
-    {
-        &quot;id&quot;: 17,
-        &quot;title&quot;: &quot;Alias perspiciatis placeat incidunt.&quot;,
-        &quot;description&quot;: &quot;Similique rerum ut nesciunt consequatur quia rem. Veniam commodi voluptas rerum voluptatem. Ullam corporis dicta eligendi tenetur atque vitae.&quot;,
-        &quot;ended_at&quot;: null,
-        &quot;institution_id&quot;: 22,
-        &quot;institution_name&quot;: &quot;Alex Davis&quot;
-    },
-    {
-        &quot;id&quot;: 18,
-        &quot;title&quot;: &quot;Consectetur et sit vitae at.&quot;,
-        &quot;description&quot;: &quot;Autem incidunt saepe eveniet. Tempore odio non veritatis possimus quia. Cum in quia dicta magni est ipsam facilis. A soluta alias id iusto voluptatum minima beatae quaerat.&quot;,
-        &quot;ended_at&quot;: null,
-        &quot;institution_id&quot;: 23,
-        &quot;institution_name&quot;: &quot;Hershel Osinski&quot;
-    },
-    {
-        &quot;id&quot;: 19,
-        &quot;title&quot;: &quot;Aliquam eius et.&quot;,
-        &quot;description&quot;: &quot;Assumenda aut ex itaque neque et laborum quis officiis. Fugit minus architecto fugiat ex velit expedita corporis earum. Sed sunt sit amet molestiae eveniet sint.&quot;,
-        &quot;ended_at&quot;: null,
-        &quot;institution_id&quot;: 24,
-        &quot;institution_name&quot;: &quot;Mr. Gustave Kemmer&quot;
-    },
-    {
-        &quot;id&quot;: 20,
-        &quot;title&quot;: &quot;Perferendis recusandae quidem.&quot;,
-        &quot;description&quot;: &quot;Adipisci sit magnam saepe aut. Voluptatem voluptas illo voluptatem voluptatum voluptas consequatur ut. Sapiente rerum placeat sit soluta omnis asperiores ea.&quot;,
-        &quot;ended_at&quot;: null,
-        &quot;institution_id&quot;: 25,
-        &quot;institution_name&quot;: &quot;Serena Bruen&quot;
-    },
-    {
-        &quot;id&quot;: 21,
-        &quot;title&quot;: &quot;Dolore illum aut voluptatibus.&quot;,
-        &quot;description&quot;: &quot;Voluptate nisi incidunt ducimus culpa soluta eos autem. Voluptatum sit beatae voluptatibus quia magnam sit. Adipisci quia ratione necessitatibus eveniet consequuntur non ullam ut.&quot;,
-        &quot;ended_at&quot;: null,
-        &quot;institution_id&quot;: 26,
-        &quot;institution_name&quot;: &quot;Rahul Hayes&quot;
-    },
-    {
-        &quot;id&quot;: 23,
-        &quot;title&quot;: &quot;Officia vitae quibusdam dolor.&quot;,
-        &quot;description&quot;: &quot;Vel illum sunt suscipit molestiae. Ea nihil et quae praesentium. Et blanditiis mollitia cum ratione nisi inventore. Qui porro qui molestiae est sunt laborum. Commodi minus quis deleniti magni rerum.&quot;,
-        &quot;ended_at&quot;: null,
-        &quot;institution_id&quot;: 28,
-        &quot;institution_name&quot;: &quot;Kira Von&quot;
-    },
-    {
-        &quot;id&quot;: 24,
-        &quot;title&quot;: &quot;Nesciunt numquam illo.&quot;,
-        &quot;description&quot;: &quot;Qui amet nihil corporis provident ex sapiente. Voluptas omnis tempore sunt qui dicta similique maiores tenetur. Debitis laboriosam quae hic illo et.&quot;,
-        &quot;ended_at&quot;: null,
-        &quot;institution_id&quot;: 29,
-        &quot;institution_name&quot;: &quot;Anastacio Parisian PhD&quot;
-    },
-    {
-        &quot;id&quot;: 25,
-        &quot;title&quot;: &quot;Ut voluptates nesciunt nostrum temporibus.&quot;,
-        &quot;description&quot;: &quot;Magni velit quia sequi minus qui occaecati nihil. Consequatur consequatur soluta molestias rerum eligendi sequi error. Rerum in excepturi ab eum. Error laborum rerum mollitia rerum incidunt.&quot;,
-        &quot;ended_at&quot;: null,
-        &quot;institution_id&quot;: 30,
-        &quot;institution_name&quot;: &quot;Elta Crooks Jr.&quot;
     }
 ]</code>
  </pre>
@@ -2613,10 +2855,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="q"                data-endpoint="GETapi-trender"
-               value="vitae"
+               value="dignissimos"
                data-component="query">
     <br>
-<p>Example: <code>vitae</code></p>
+<p>Example: <code>dignissimos</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>category_ids</code></b>&nbsp;&nbsp;
@@ -2647,10 +2889,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="q"                data-endpoint="GETapi-trender"
-               value="qui"
+               value="enim"
                data-component="body">
     <br>
-<p>Example: <code>qui</code></p>
+<p>Example: <code>enim</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>category_ids</code></b>&nbsp;&nbsp;
@@ -2713,7 +2955,7 @@ fetch(url, {
 
 <span id="example-responses-GETapi-trender--id-">
             <blockquote>
-            <p>Example response (500):</p>
+            <p>Example response (200):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -2722,449 +2964,25 @@ fetch(url, {
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 57
+x-ratelimit-remaining: 55
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;Call to undefined method Illuminate\\Http\\Resources\\MissingValue::count()&quot;,
-    &quot;exception&quot;: &quot;Error&quot;,
-    &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/app/Http/Resources/TrenderResource.php&quot;,
-    &quot;line&quot;: 25,
-    &quot;trace&quot;: [
+    &quot;id&quot;: 1,
+    &quot;title&quot;: &quot;Facilis ducimus et sunt fugit.&quot;,
+    &quot;image&quot;: null,
+    &quot;description&quot;: &quot;Et tempora iste provident totam soluta vitae. Id nihil perspiciatis nemo perferendis culpa veniam. Explicabo velit quaerat hic quia numquam nemo consequatur.&quot;,
+    &quot;columns_number&quot;: 1,
+    &quot;created_at&quot;: &quot;2023-09-28T12:02:51.000000Z&quot;,
+    &quot;ended_at&quot;: null,
+    &quot;offers_count&quot;: 1,
+    &quot;best_offer_from&quot;: &quot;Prof. Jalen Hilpert&quot;,
+    &quot;trender_details&quot;: [
         {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Http/Resources/Json/JsonResource.php&quot;,
-            &quot;line&quot;: 108,
-            &quot;function&quot;: &quot;toArray&quot;,
-            &quot;class&quot;: &quot;App\\Http\\Resources\\TrenderResource&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Http/Resources/Json/ResourceResponse.php&quot;,
-            &quot;line&quot;: 39,
-            &quot;function&quot;: &quot;resolve&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Http\\Resources\\Json\\JsonResource&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Http/Resources/Json/JsonResource.php&quot;,
-            &quot;line&quot;: 244,
-            &quot;function&quot;: &quot;toResponse&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Http\\Resources\\Json\\ResourceResponse&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Routing/Router.php&quot;,
-            &quot;line&quot;: 893,
-            &quot;function&quot;: &quot;toResponse&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Http\\Resources\\Json\\JsonResource&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Routing/Router.php&quot;,
-            &quot;line&quot;: 878,
-            &quot;function&quot;: &quot;toResponse&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
-            &quot;type&quot;: &quot;::&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Routing/Router.php&quot;,
-            &quot;line&quot;: 799,
-            &quot;function&quot;: &quot;prepareResponse&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
-            &quot;line&quot;: 141,
-            &quot;function&quot;: &quot;Illuminate\\Routing\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php&quot;,
-            &quot;line&quot;: 50,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\SubstituteBindings&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php&quot;,
-            &quot;line&quot;: 159,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php&quot;,
-            &quot;line&quot;: 135,
-            &quot;function&quot;: &quot;handleRequest&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\ThrottleRequests&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php&quot;,
-            &quot;line&quot;: 87,
-            &quot;function&quot;: &quot;handleRequestUsingNamedLimiter&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\ThrottleRequests&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\ThrottleRequests&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
-            &quot;line&quot;: 116,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Routing/Router.php&quot;,
-            &quot;line&quot;: 800,
-            &quot;function&quot;: &quot;then&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Routing/Router.php&quot;,
-            &quot;line&quot;: 777,
-            &quot;function&quot;: &quot;runRouteWithinStack&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Routing/Router.php&quot;,
-            &quot;line&quot;: 741,
-            &quot;function&quot;: &quot;runRoute&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Routing/Router.php&quot;,
-            &quot;line&quot;: 730,
-            &quot;function&quot;: &quot;dispatchToRoute&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php&quot;,
-            &quot;line&quot;: 200,
-            &quot;function&quot;: &quot;dispatch&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
-            &quot;line&quot;: 141,
-            &quot;function&quot;: &quot;Illuminate\\Foundation\\Http\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Kernel&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php&quot;,
-            &quot;line&quot;: 21,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php&quot;,
-            &quot;line&quot;: 31,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php&quot;,
-            &quot;line&quot;: 21,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php&quot;,
-            &quot;line&quot;: 40,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\TrimStrings&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php&quot;,
-            &quot;line&quot;: 27,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php&quot;,
-            &quot;line&quot;: 86,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php&quot;,
-            &quot;line&quot;: 62,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Http\\Middleware\\HandleCors&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php&quot;,
-            &quot;line&quot;: 39,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Http\\Middleware\\TrustProxies&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
-            &quot;line&quot;: 116,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php&quot;,
-            &quot;line&quot;: 175,
-            &quot;function&quot;: &quot;then&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php&quot;,
-            &quot;line&quot;: 144,
-            &quot;function&quot;: &quot;sendRequestThroughRouter&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Kernel&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php&quot;,
-            &quot;line&quot;: 299,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Kernel&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php&quot;,
-            &quot;line&quot;: 287,
-            &quot;function&quot;: &quot;callLaravelOrLumenRoute&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php&quot;,
-            &quot;line&quot;: 92,
-            &quot;function&quot;: &quot;makeApiCall&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php&quot;,
-            &quot;line&quot;: 45,
-            &quot;function&quot;: &quot;makeResponseCall&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php&quot;,
-            &quot;line&quot;: 35,
-            &quot;function&quot;: &quot;makeResponseCallIfConditionsPass&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php&quot;,
-            &quot;line&quot;: 209,
-            &quot;function&quot;: &quot;__invoke&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php&quot;,
-            &quot;line&quot;: 166,
-            &quot;function&quot;: &quot;iterateThroughStrategies&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Extractor&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php&quot;,
-            &quot;line&quot;: 95,
-            &quot;function&quot;: &quot;fetchResponses&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Extractor&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php&quot;,
-            &quot;line&quot;: 124,
-            &quot;function&quot;: &quot;processRoute&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Extractor&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php&quot;,
-            &quot;line&quot;: 71,
-            &quot;function&quot;: &quot;extractEndpointsInfoFromLaravelApp&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php&quot;,
-            &quot;line&quot;: 49,
-            &quot;function&quot;: &quot;extractEndpointsInfoAndWriteToDisk&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/knuckleswtf/scribe/src/Commands/GenerateDocumentation.php&quot;,
-            &quot;line&quot;: 51,
-            &quot;function&quot;: &quot;get&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php&quot;,
-            &quot;line&quot;: 36,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Commands\\GenerateDocumentation&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Container/Util.php&quot;,
-            &quot;line&quot;: 41,
-            &quot;function&quot;: &quot;Illuminate\\Container\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Container\\BoundMethod&quot;,
-            &quot;type&quot;: &quot;::&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php&quot;,
-            &quot;line&quot;: 93,
-            &quot;function&quot;: &quot;unwrapIfClosure&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Container\\Util&quot;,
-            &quot;type&quot;: &quot;::&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php&quot;,
-            &quot;line&quot;: 37,
-            &quot;function&quot;: &quot;callBoundMethod&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Container\\BoundMethod&quot;,
-            &quot;type&quot;: &quot;::&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Container/Container.php&quot;,
-            &quot;line&quot;: 662,
-            &quot;function&quot;: &quot;call&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Container\\BoundMethod&quot;,
-            &quot;type&quot;: &quot;::&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Console/Command.php&quot;,
-            &quot;line&quot;: 211,
-            &quot;function&quot;: &quot;call&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Container\\Container&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/symfony/console/Command/Command.php&quot;,
-            &quot;line&quot;: 326,
-            &quot;function&quot;: &quot;execute&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Console\\Command&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Console/Command.php&quot;,
-            &quot;line&quot;: 181,
-            &quot;function&quot;: &quot;run&quot;,
-            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Command\\Command&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/symfony/console/Application.php&quot;,
-            &quot;line&quot;: 1081,
-            &quot;function&quot;: &quot;run&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Console\\Command&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/symfony/console/Application.php&quot;,
-            &quot;line&quot;: 320,
-            &quot;function&quot;: &quot;doRunCommand&quot;,
-            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Application&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/symfony/console/Application.php&quot;,
-            &quot;line&quot;: 174,
-            &quot;function&quot;: &quot;doRun&quot;,
-            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Application&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php&quot;,
-            &quot;line&quot;: 201,
-            &quot;function&quot;: &quot;run&quot;,
-            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Application&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/trenders/artisan&quot;,
-            &quot;line&quot;: 37,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Console\\Kernel&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
+            &quot;id&quot;: 11,
+            &quot;name&quot;: &quot;id&quot;,
+            &quot;data&quot;: &quot;cum&quot;
         }
     ]
 }</code>
@@ -3299,7 +3117,7 @@ fetch(url, {
             <pre><code class="language-http">content-type: text/html; charset=UTF-8
 cache-control: no-cache, private
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 56
+x-ratelimit-remaining: 54
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -3438,7 +3256,7 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 55
+x-ratelimit-remaining: 53
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 <code>Empty response</code>
@@ -3544,10 +3362,11 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"title\": \"recusandae\",
-    \"description\": \"Totam reiciendis voluptatum non.\",
-    \"columns_number\": 8,
-    \"image\": \"consequatur\",
+    \"title\": \"sunt\",
+    \"description\": \"Nobis nihil sunt officiis.\",
+    \"columns_number\": 18,
+    \"image\": \"iste\",
+    \"ended_at\": \"2023-09-30T10:07:32\",
     \"details\": \"[\\n {\\n    \\\"name\\\": \\\"text\\\",\\n    \\\"data\\\": {\\n     \\\"validator\\\": {\\n \\\"required\\\": true,\\n\\\"error_message\\\": \\\"Invalid parameters\\\"\\n}\\n}\\n }\\n]\"
 }"
 </code></pre></div>
@@ -3564,10 +3383,11 @@ const headers = {
 };
 
 let body = {
-    "title": "recusandae",
-    "description": "Totam reiciendis voluptatum non.",
-    "columns_number": 8,
-    "image": "consequatur",
+    "title": "sunt",
+    "description": "Nobis nihil sunt officiis.",
+    "columns_number": 18,
+    "image": "iste",
+    "ended_at": "2023-09-30T10:07:32",
     "details": "[\n {\n    \"name\": \"text\",\n    \"data\": {\n     \"validator\": {\n \"required\": true,\n\"error_message\": \"Invalid parameters\"\n}\n}\n }\n]"
 };
 
@@ -3673,10 +3493,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="title"                data-endpoint="POSTapi-trender"
-               value="recusandae"
+               value="sunt"
                data-component="body">
     <br>
-<p>Example: <code>recusandae</code></p>
+<p>Example: <code>sunt</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>description</code></b>&nbsp;&nbsp;
@@ -3684,10 +3504,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="description"                data-endpoint="POSTapi-trender"
-               value="Totam reiciendis voluptatum non."
+               value="Nobis nihil sunt officiis."
                data-component="body">
     <br>
-<p>Example: <code>Totam reiciendis voluptatum non.</code></p>
+<p>Example: <code>Nobis nihil sunt officiis.</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>columns_number</code></b>&nbsp;&nbsp;
@@ -3695,10 +3515,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="columns_number"                data-endpoint="POSTapi-trender"
-               value="8"
+               value="18"
                data-component="body">
     <br>
-<p>Example: <code>8</code></p>
+<p>Example: <code>18</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>image</code></b>&nbsp;&nbsp;
@@ -3706,10 +3526,21 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="image"                data-endpoint="POSTapi-trender"
-               value="consequatur"
+               value="iste"
                data-component="body">
     <br>
-<p>Example: <code>consequatur</code></p>
+<p>Example: <code>iste</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>ended_at</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+                <input type="text" style="display: none"
+                              name="ended_at"                data-endpoint="POSTapi-trender"
+               value="2023-09-30T10:07:32"
+               data-component="body">
+    <br>
+<p>Must be a valid date. Example: <code>2023-09-30T10:07:32</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>details</code></b>&nbsp;&nbsp;

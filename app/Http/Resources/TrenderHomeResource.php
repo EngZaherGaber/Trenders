@@ -18,6 +18,7 @@ class TrenderHomeResource extends JsonResource
             "id" => $this->id,
             "title" => $this->title,
             "description" => $this->description,
+            "created_at" => $this->created_at,
             "ended_at" => $this->ended_at,
             "institution_id" => $this->institution_id,
             "institution_name" => $this->institution->user->name,

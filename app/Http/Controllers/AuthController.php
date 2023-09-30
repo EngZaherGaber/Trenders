@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ChangePasswordRequest;
 use App\Http\Requests\LoginRequest;
 use App\Http\Requests\RegisterRequest;
 use App\Models\User;
@@ -93,7 +94,9 @@ class AuthController extends Controller
      */
     public function companyProfile()
     {
-        return auth()->user()->company;
+        $company = auth()->user()->company;
+        $company->load('categories');
+        return $company;
     }
 
     /**
@@ -109,23 +112,27 @@ class AuthController extends Controller
      */
     public function institutionProfile()
     {
-        return auth()->user()->institution;
+        $institution = auth()->user()->institution;
+        $institution->load('categories');
+        return $institution;
     }
 
     /**
-     * @response {
-    "id": 30,
-    "address": "nemo",
-    "city": "reiciendis",
-    "user_id": 46,
-    "created_in": "2023-09-28T00:00:00.000000Z"
-}
-     * 
      * @authenticated
      */
     public function logout()
     {
         auth()->user()->currentAccessToken()->delete();
+
+        return response()->noContent();
+    }
+
+    /**
+     * @authenticated
+     */
+    public function changePassword(ChangePasswordRequest $request)
+    {
+        auth()->user()->update($request->validated());
 
         return response()->noContent();
     }

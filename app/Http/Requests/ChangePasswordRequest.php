@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class StoreTenderRequest extends FormRequest
+class ChangePasswordRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -22,12 +22,7 @@ class StoreTenderRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'title' => ['required', 'string'],
-            'description' => ['required', 'string'],
-            'columns_number' => ['required', 'integer'],
-            'image' => ['nullable', 'string'],
-            'ended_at' => ['nullable', 'date'],
-            'details' => ['required', 'array'],
+            'password' => ['required'],
         ];
     }
 }

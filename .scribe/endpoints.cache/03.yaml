@@ -45,7 +45,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"token":"34|l0vPGcm2j69fXcgiPOvtosVnGg4JbdEOPtyaRzBO","is_company":true}'
+        content: '{"token":"36|fK1B6DZAyyvBzuT1sItMjLWqcw9mYKNRiEI8N3oW","is_company":true}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -85,7 +85,7 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: dolor
+        example: voluptatem
         type: string
         custom: []
       image:
@@ -99,7 +99,7 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: carmen93@example.com
+        example: gregg.huel@example.com
         type: string
         custom: []
       password:
@@ -130,21 +130,21 @@ endpoints:
         name: created_in
         description: 'Must be a valid date.'
         required: true
-        example: '2023-10-01T06:31:44'
+        example: '2023-10-01T06:56:32'
         type: string
         custom: []
       address:
         name: address
         description: ''
         required: true
-        example: temporibus
+        example: quis
         type: string
         custom: []
       city:
         name: city
         description: ''
         required: true
-        example: nisi
+        example: corporis
         type: string
         custom: []
       password_confirmation:
@@ -155,24 +155,24 @@ endpoints:
         type: string
         custom: []
     cleanBodyParameters:
-      name: dolor
-      email: carmen93@example.com
+      name: voluptatem
+      email: gregg.huel@example.com
       password: password
       type: instute
       category_ids:
         - 1
         - 2
         - 3
-      created_in: '2023-10-01T06:31:44'
-      address: temporibus
-      city: nisi
+      created_in: '2023-10-01T06:56:32'
+      address: quis
+      city: corporis
       password_confirmation: password
     fileParameters:
       image: null
     responses:
       -
         status: 200
-        content: '{"token":"35|FZCCiyU2ZztU722gEVLjUD3otVogOVppVZmFwqBM"}'
+        content: '{"token":"37|zbhCH9L6DmzIfdxL6pcgNCgYNtBg4g1oeHzfioKG"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json

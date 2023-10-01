@@ -102,47 +102,28 @@ class TenderController extends Controller
 
     /**
      * @response [
-        {
-            "id": 25,
-            "title": "Eum officia eum.",
-            "description": "Porro doloremque molestiae culpa temporibus perferendis minima. Qui non nulla dolorem laudantium.",
-            "created_at": "2023-09-17T08:12:58.000000Z",
-            "ended_at": null,
-            "offers_count": 3,
-            "best_offer_from": {
+    {
+        "id": 25,
+        "title": "Ut voluptates nesciunt nostrum temporibus.",
+        "image": null,
+        "description": "Magni velit quia sequi minus qui occaecati nihil. Consequatur consequatur soluta molestias rerum eligendi sequi error. Rerum in excepturi ab eum. Error laborum rerum mollitia rerum incidunt.",
+        "columns_number": 1,
+        "created_at": "2023-09-28T12:02:54.000000Z",
+        "ended_at": null,
+        "offers_count": 1,
+        "best_offer_from": "Shawn Bechtelar PhD",
+        "offers": [
+            {
                 "id": 11,
-                "tender_id": 25,
-                "company_id": 20,
-                "is_draft": 0,
-                "created_at": "2023-09-17T09:17:03.000000Z",
-                "updated_at": "2023-09-17T09:17:03.000000Z"
-            },
-            "offers": [
-                {
-                    "id": 11,
-                    "trender_name": "Eum officia eum.",
-                    "for": "Dr. Delfina Lesch",
-                    "work_on_it": "2023-09-17T09:17:03.000000Z",
-                    "work_ended_it": null
-                },
-                {
-                    "id": 12,
-                    "trender_name": "Eum officia eum.",
-                    "for": "Dr. Delfina Lesch",
-                    "work_on_it": "2023-09-17T09:17:03.000000Z",
-                    "work_ended_it": null
-                },
-                {
-                    "id": 13,
-                    "trender_name": "Eum officia eum.",
-                    "for": "Dr. Delfina Lesch",
-                    "work_on_it": "2023-09-17T09:17:03.000000Z",
-                    "work_ended_it": null
-                }
-            ]
-        }
-    ]
-
+                "trender_name": "Ut voluptates nesciunt nostrum temporibus.",
+                "for": "Elta Crooks Jr.",
+                "work_on_it": "2023-10-01T06:31:20.000000Z",
+                "work_ended_it": null,
+                "company_name": "Shawn Bechtelar PhD"
+            }
+        ]
+    }
+]
      */
 
     public function myTrenders()

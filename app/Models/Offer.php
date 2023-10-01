@@ -31,6 +31,7 @@ class Offer extends Model
         'id' => 'integer',
         'tender_id' => 'integer',
         'company_id' => 'integer',
+        'is_draft' => 'boolean',
     ];
 
     public function offerDetails(): HasMany

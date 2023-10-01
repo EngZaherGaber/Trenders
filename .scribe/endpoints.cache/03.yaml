@@ -45,7 +45,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"token":"22|usEJH9hUTPReKF7fb5uCFIddXwd6p6BeaI6yCjZL","is_company":true}'
+        content: '{"token":"34|l0vPGcm2j69fXcgiPOvtosVnGg4JbdEOPtyaRzBO","is_company":true}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -85,7 +85,7 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: adipisci
+        example: dolor
         type: string
         custom: []
       image:
@@ -99,7 +99,7 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: rocio21@example.net
+        example: carmen93@example.com
         type: string
         custom: []
       password:
@@ -113,7 +113,7 @@ endpoints:
         name: type
         description: 'Must be one of <code>instute</code> or <code>company</code>.'
         required: true
-        example: company
+        example: instute
         type: string
         custom: []
       category_ids:
@@ -130,21 +130,21 @@ endpoints:
         name: created_in
         description: 'Must be a valid date.'
         required: true
-        example: '2023-09-30T10:07:32'
+        example: '2023-10-01T06:31:44'
         type: string
         custom: []
       address:
         name: address
         description: ''
         required: true
-        example: et
+        example: temporibus
         type: string
         custom: []
       city:
         name: city
         description: ''
         required: true
-        example: quia
+        example: nisi
         type: string
         custom: []
       password_confirmation:
@@ -155,24 +155,24 @@ endpoints:
         type: string
         custom: []
     cleanBodyParameters:
-      name: adipisci
-      email: rocio21@example.net
+      name: dolor
+      email: carmen93@example.com
       password: password
-      type: company
+      type: instute
       category_ids:
         - 1
         - 2
         - 3
-      created_in: '2023-09-30T10:07:32'
-      address: et
-      city: quia
+      created_in: '2023-10-01T06:31:44'
+      address: temporibus
+      city: nisi
       password_confirmation: password
     fileParameters:
       image: null
     responses:
       -
         status: 200
-        content: '{"token":"23|4cgwrSKrYNGumPTUfvOTWeijYPpsEilpi0ktacwE"}'
+        content: '{"token":"35|FZCCiyU2ZztU722gEVLjUD3otVogOVppVZmFwqBM"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json

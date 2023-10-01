@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "Laravel",
-        "_postman_id": "5c0c94b8-f617-4ffe-9d61-e3a699e4b2aa",
+        "_postman_id": "811cf720-59d9-4e70-8a0a-62df341bdf89",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -73,7 +73,7 @@
                                 }
                             ],
                             "code": 200,
-                            "body": "{\"token\":\"22|usEJH9hUTPReKF7fb5uCFIddXwd6p6BeaI6yCjZL\",\"is_company\":true}",
+                            "body": "{\"token\":\"34|l0vPGcm2j69fXcgiPOvtosVnGg4JbdEOPtyaRzBO\",\"is_company\":true}",
                             "name": ""
                         }
                     ]
@@ -103,13 +103,13 @@
                             "formdata": [
                                 {
                                     "key": "name",
-                                    "value": "adipisci",
+                                    "value": "dolor",
                                     "type": "text",
                                     "description": ""
                                 },
                                 {
                                     "key": "email",
-                                    "value": "rocio21@example.net",
+                                    "value": "carmen93@example.com",
                                     "type": "text",
                                     "description": "Must be a valid email address."
                                 },
@@ -121,7 +121,7 @@
                                 },
                                 {
                                     "key": "type",
-                                    "value": "company",
+                                    "value": "instute",
                                     "type": "text",
                                     "description": "Must be one of <code>instute<\/code> or <code>company<\/code>."
                                 },
@@ -145,19 +145,19 @@
                                 },
                                 {
                                     "key": "created_in",
-                                    "value": "2023-09-30T10:07:32",
+                                    "value": "2023-10-01T06:31:44",
                                     "type": "text",
                                     "description": "Must be a valid date."
                                 },
                                 {
                                     "key": "address",
-                                    "value": "et",
+                                    "value": "temporibus",
                                     "type": "text",
                                     "description": ""
                                 },
                                 {
                                     "key": "city",
-                                    "value": "quia",
+                                    "value": "nisi",
                                     "type": "text",
                                     "description": ""
                                 },
@@ -204,7 +204,7 @@
                                 }
                             ],
                             "code": 200,
-                            "body": "{\"token\":\"23|4cgwrSKrYNGumPTUfvOTWeijYPpsEilpi0ktacwE\"}",
+                            "body": "{\"token\":\"35|FZCCiyU2ZztU722gEVLjUD3otVogOVppVZmFwqBM\"}",
                             "name": ""
                         }
                     ]
@@ -534,8 +534,15 @@
                         "url": {
                             "host": "{{baseUrl}}",
                             "path": "api\/offer",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/api\/offer"
+                            "query": [
+                                {
+                                    "key": "type",
+                                    "value": "qui",
+                                    "description": "",
+                                    "disabled": false
+                                }
+                            ],
+                            "raw": "{{baseUrl}}\/api\/offer?type=qui"
                         },
                         "method": "GET",
                         "header": [
@@ -588,7 +595,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"tender_id\":5,\"details\":\"[\\n{\\n\\\"tender_detail_id\\\": 1,\\n\\\"answer\\\": \\\"dasdsad\\\",\\n}\\n]\"}"
+                            "raw": "{\"tender_id\":17,\"is_draft\":false,\"details\":\"[\\n{\\n\\\"tender_detail_id\\\": 1,\\n\\\"answer\\\": \\\"dasdsad\\\",\\n}\\n]\"}"
                         },
                         "description": "",
                         "auth": {
@@ -698,7 +705,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"tender_id\":18,\"details\":\"[\\n{\\n\\\"tender_detail_id\\\": 1,\\n\\\"answer\\\": \\\"dasdsad\\\",\\n}\\n]\"}"
+                            "raw": "{\"tender_id\":13,\"is_draft\":true,\"details\":\"[\\n{\\n\\\"tender_detail_id\\\": 1,\\n\\\"answer\\\": \\\"dasdsad\\\",\\n}\\n]\"}"
                         },
                         "description": "",
                         "auth": {
@@ -810,7 +817,7 @@
                             "query": [
                                 {
                                     "key": "q",
-                                    "value": "dignissimos",
+                                    "value": "dolore",
                                     "description": "",
                                     "disabled": false
                                 },
@@ -827,7 +834,7 @@
                                     "disabled": true
                                 }
                             ],
-                            "raw": "{{baseUrl}}\/api\/trender?q=dignissimos&category_ids[]=&cities[]="
+                            "raw": "{{baseUrl}}\/api\/trender?q=dolore&category_ids[]=&cities[]="
                         },
                         "method": "GET",
                         "header": [
@@ -842,7 +849,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"q\":\"enim\"}"
+                            "raw": "{\"q\":\"facilis\"}"
                         },
                         "description": "",
                         "auth": {
@@ -874,7 +881,7 @@
                                 }
                             ],
                             "code": 200,
-                            "body": "[{\"id\":2,\"title\":\"Exercitationem mollitia ullam aut et labore.\",\"description\":\"Officiis voluptas quam voluptatibus repellendus quo dolorum. Aut ab sit enim consequatur. Error quo maiores sed vero.\",\"created_at\":\"2023-09-28T12:02:51.000000Z\",\"ended_at\":null,\"institution_id\":7,\"institution_name\":\"Monserrat Kirlin\"},{\"id\":5,\"title\":\"Repellat asperiores illo architecto quas amet.\",\"description\":\"Quis beatae voluptas qui voluptatibus est. Perspiciatis asperiores voluptas corporis ut. Enim et saepe dolores vitae sint molestiae. At officiis laborum sint tempora et laboriosam earum.\",\"created_at\":\"2023-09-28T12:02:51.000000Z\",\"ended_at\":null,\"institution_id\":10,\"institution_name\":\"Bulah Hansen\"}]",
+                            "body": "[{\"id\":1,\"title\":\"Facilis ducimus et sunt fugit.\",\"description\":\"Et tempora iste provident totam soluta vitae. Id nihil perspiciatis nemo perferendis culpa veniam. Explicabo velit quaerat hic quia numquam nemo consequatur.\",\"created_at\":\"2023-09-28T12:02:51.000000Z\",\"ended_at\":null,\"institution_id\":6,\"institution_name\":\"Domenica Altenwerth\"},{\"id\":18,\"title\":\"Consectetur et sit vitae at.\",\"description\":\"Autem incidunt saepe eveniet. Tempore odio non veritatis possimus quia. Cum in quia dicta magni est ipsam facilis. A soluta alias id iusto voluptatum minima beatae quaerat.\",\"created_at\":\"2023-09-28T12:02:53.000000Z\",\"ended_at\":null,\"institution_id\":23,\"institution_name\":\"Hershel Osinski\"}]",
                             "name": ""
                         }
                     ]
@@ -1089,7 +1096,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"title\":\"sunt\",\"description\":\"Nobis nihil sunt officiis.\",\"columns_number\":18,\"image\":\"iste\",\"ended_at\":\"2023-09-30T10:07:32\",\"details\":\"[\\n {\\n    \\\"name\\\": \\\"text\\\",\\n    \\\"data\\\": {\\n     \\\"validator\\\": {\\n \\\"required\\\": true,\\n\\\"error_message\\\": \\\"Invalid parameters\\\"\\n}\\n}\\n }\\n]\"}"
+                            "raw": "{\"title\":\"quaerat\",\"description\":\"Occaecati sed saepe sed perspiciatis reprehenderit hic.\",\"columns_number\":4,\"image\":\"ut\",\"ended_at\":\"2023-10-01T06:31:44\",\"details\":\"[\\n {\\n    \\\"name\\\": \\\"text\\\",\\n    \\\"data\\\": {\\n     \\\"validator\\\": {\\n \\\"required\\\": true,\\n\\\"error_message\\\": \\\"Invalid parameters\\\"\\n}\\n}\\n }\\n]\"}"
                         },
                         "description": "",
                         "auth": {
@@ -1148,7 +1155,7 @@
                         {
                             "header": [],
                             "code": 200,
-                            "body": "[\n{\n\"id\": 25,\n\"title\": \"Eum officia eum.\",\n\"description\": \"Porro doloremque molestiae culpa temporibus perferendis minima. Qui non nulla dolorem laudantium.\",\n\"created_at\": \"2023-09-17T08:12:58.000000Z\",\n\"ended_at\": null,\n\"offers_count\": 3,\n\"best_offer_from\": {\n\"id\": 11,\n\"tender_id\": 25,\n\"company_id\": 20,\n\"is_draft\": 0,\n\"created_at\": \"2023-09-17T09:17:03.000000Z\",\n\"updated_at\": \"2023-09-17T09:17:03.000000Z\"\n},\n\"offers\": [\n{\n\"id\": 11,\n\"trender_name\": \"Eum officia eum.\",\n\"for\": \"Dr. Delfina Lesch\",\n\"work_on_it\": \"2023-09-17T09:17:03.000000Z\",\n\"work_ended_it\": null\n},\n{\n\"id\": 12,\n\"trender_name\": \"Eum officia eum.\",\n\"for\": \"Dr. Delfina Lesch\",\n\"work_on_it\": \"2023-09-17T09:17:03.000000Z\",\n\"work_ended_it\": null\n},\n{\n\"id\": 13,\n\"trender_name\": \"Eum officia eum.\",\n\"for\": \"Dr. Delfina Lesch\",\n\"work_on_it\": \"2023-09-17T09:17:03.000000Z\",\n\"work_ended_it\": null\n}\n]\n}\n]",
+                            "body": "[\n{\n\"id\": 25,\n\"title\": \"Ut voluptates nesciunt nostrum temporibus.\",\n\"image\": null,\n\"description\": \"Magni velit quia sequi minus qui occaecati nihil. Consequatur consequatur soluta molestias rerum eligendi sequi error. Rerum in excepturi ab eum. Error laborum rerum mollitia rerum incidunt.\",\n\"columns_number\": 1,\n\"created_at\": \"2023-09-28T12:02:54.000000Z\",\n\"ended_at\": null,\n\"offers_count\": 1,\n\"best_offer_from\": \"Shawn Bechtelar PhD\",\n\"offers\": [\n{\n\"id\": 11,\n\"trender_name\": \"Ut voluptates nesciunt nostrum temporibus.\",\n\"for\": \"Elta Crooks Jr.\",\n\"work_on_it\": \"2023-10-01T06:31:20.000000Z\",\n\"work_ended_it\": null,\n\"company_name\": \"Shawn Bechtelar PhD\"\n}\n]\n}\n]",
                             "name": ""
                         }
                     ]

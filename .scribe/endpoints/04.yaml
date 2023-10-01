@@ -19,8 +19,16 @@ endpoints:
       Accept: application/json
     urlParameters: []
     cleanUrlParameters: []
-    queryParameters: []
-    cleanQueryParameters: []
+    queryParameters:
+      type:
+        name: type
+        description: ''
+        required: true
+        example: qui
+        type: string
+        custom: []
+    cleanQueryParameters:
+      type: qui
     bodyParameters:
       type:
         name: type
@@ -81,8 +89,15 @@ endpoints:
         name: tender_id
         description: ''
         required: true
-        example: 5
+        example: 17
         type: integer
+        custom: []
+      is_draft:
+        name: is_draft
+        description: ''
+        required: true
+        example: false
+        type: boolean
         custom: []
       details:
         name: details
@@ -98,7 +113,8 @@ endpoints:
         type: object.
         custom: []
     cleanBodyParameters:
-      tender_id: 5
+      tender_id: 17
+      is_draft: false
       details: |-
         [
         {
@@ -222,8 +238,15 @@ endpoints:
         name: tender_id
         description: ''
         required: true
-        example: 18
+        example: 13
         type: integer
+        custom: []
+      is_draft:
+        name: is_draft
+        description: ''
+        required: true
+        example: true
+        type: boolean
         custom: []
       details:
         name: details
@@ -239,7 +262,8 @@ endpoints:
         type: object.
         custom: []
     cleanBodyParameters:
-      tender_id: 18
+      tender_id: 13
+      is_draft: true
       details: |-
         [
         {

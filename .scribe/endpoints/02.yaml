@@ -24,7 +24,7 @@ endpoints:
         name: q
         description: ''
         required: false
-        example: dignissimos
+        example: dolore
         type: string
         custom: []
       category_ids:
@@ -42,7 +42,7 @@ endpoints:
         type: object
         custom: []
     cleanQueryParameters:
-      q: dignissimos
+      q: dolore
       category_ids: []
       cities: []
     bodyParameters:
@@ -50,7 +50,7 @@ endpoints:
         name: q
         description: ''
         required: false
-        example: enim
+        example: facilis
         type: string
         custom: []
       category_ids:
@@ -68,12 +68,12 @@ endpoints:
         type: object
         custom: []
     cleanBodyParameters:
-      q: enim
+      q: facilis
     fileParameters: []
     responses:
       -
         status: 200
-        content: '[{"id":2,"title":"Exercitationem mollitia ullam aut et labore.","description":"Officiis voluptas quam voluptatibus repellendus quo dolorum. Aut ab sit enim consequatur. Error quo maiores sed vero.","created_at":"2023-09-28T12:02:51.000000Z","ended_at":null,"institution_id":7,"institution_name":"Monserrat Kirlin"},{"id":5,"title":"Repellat asperiores illo architecto quas amet.","description":"Quis beatae voluptas qui voluptatibus est. Perspiciatis asperiores voluptas corporis ut. Enim et saepe dolores vitae sint molestiae. At officiis laborum sint tempora et laboriosam earum.","created_at":"2023-09-28T12:02:51.000000Z","ended_at":null,"institution_id":10,"institution_name":"Bulah Hansen"}]'
+        content: '[{"id":1,"title":"Facilis ducimus et sunt fugit.","description":"Et tempora iste provident totam soluta vitae. Id nihil perspiciatis nemo perferendis culpa veniam. Explicabo velit quaerat hic quia numquam nemo consequatur.","created_at":"2023-09-28T12:02:51.000000Z","ended_at":null,"institution_id":6,"institution_name":"Domenica Altenwerth"},{"id":18,"title":"Consectetur et sit vitae at.","description":"Autem incidunt saepe eveniet. Tempore odio non veritatis possimus quia. Cum in quia dicta magni est ipsam facilis. A soluta alias id iusto voluptatum minima beatae quaerat.","created_at":"2023-09-28T12:02:53.000000Z","ended_at":null,"institution_id":23,"institution_name":"Hershel Osinski"}]'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -260,35 +260,35 @@ endpoints:
         name: title
         description: ''
         required: true
-        example: sunt
+        example: quaerat
         type: string
         custom: []
       description:
         name: description
         description: ''
         required: true
-        example: 'Nobis nihil sunt officiis.'
+        example: 'Occaecati sed saepe sed perspiciatis reprehenderit hic.'
         type: string
         custom: []
       columns_number:
         name: columns_number
         description: ''
         required: true
-        example: 18
+        example: 4
         type: integer
         custom: []
       image:
         name: image
         description: ''
         required: false
-        example: iste
+        example: ut
         type: string
         custom: []
       ended_at:
         name: ended_at
         description: 'Must be a valid date.'
         required: false
-        example: '2023-09-30T10:07:32'
+        example: '2023-10-01T06:31:44'
         type: string
         custom: []
       details:
@@ -310,11 +310,11 @@ endpoints:
         type: object.
         custom: []
     cleanBodyParameters:
-      title: sunt
-      description: 'Nobis nihil sunt officiis.'
-      columns_number: 18
-      image: iste
-      ended_at: '2023-09-30T10:07:32'
+      title: quaerat
+      description: 'Occaecati sed saepe sed perspiciatis reprehenderit hic.'
+      columns_number: 4
+      image: ut
+      ended_at: '2023-10-01T06:31:44'
       details: |-
         [
          {
@@ -374,40 +374,22 @@ endpoints:
           [
           {
           "id": 25,
-          "title": "Eum officia eum.",
-          "description": "Porro doloremque molestiae culpa temporibus perferendis minima. Qui non nulla dolorem laudantium.",
-          "created_at": "2023-09-17T08:12:58.000000Z",
+          "title": "Ut voluptates nesciunt nostrum temporibus.",
+          "image": null,
+          "description": "Magni velit quia sequi minus qui occaecati nihil. Consequatur consequatur soluta molestias rerum eligendi sequi error. Rerum in excepturi ab eum. Error laborum rerum mollitia rerum incidunt.",
+          "columns_number": 1,
+          "created_at": "2023-09-28T12:02:54.000000Z",
           "ended_at": null,
-          "offers_count": 3,
-          "best_offer_from": {
-          "id": 11,
-          "tender_id": 25,
-          "company_id": 20,
-          "is_draft": 0,
-          "created_at": "2023-09-17T09:17:03.000000Z",
-          "updated_at": "2023-09-17T09:17:03.000000Z"
-          },
+          "offers_count": 1,
+          "best_offer_from": "Shawn Bechtelar PhD",
           "offers": [
           {
           "id": 11,
-          "trender_name": "Eum officia eum.",
-          "for": "Dr. Delfina Lesch",
-          "work_on_it": "2023-09-17T09:17:03.000000Z",
-          "work_ended_it": null
-          },
-          {
-          "id": 12,
-          "trender_name": "Eum officia eum.",
-          "for": "Dr. Delfina Lesch",
-          "work_on_it": "2023-09-17T09:17:03.000000Z",
-          "work_ended_it": null
-          },
-          {
-          "id": 13,
-          "trender_name": "Eum officia eum.",
-          "for": "Dr. Delfina Lesch",
-          "work_on_it": "2023-09-17T09:17:03.000000Z",
-          "work_ended_it": null
+          "trender_name": "Ut voluptates nesciunt nostrum temporibus.",
+          "for": "Elta Crooks Jr.",
+          "work_on_it": "2023-10-01T06:31:20.000000Z",
+          "work_ended_it": null,
+          "company_name": "Shawn Bechtelar PhD"
           }
           ]
           }

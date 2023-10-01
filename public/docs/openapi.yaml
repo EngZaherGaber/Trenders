@@ -21,12 +21,12 @@ paths:
               schema:
                 type: object
                 example:
-                  token: 22|usEJH9hUTPReKF7fb5uCFIddXwd6p6BeaI6yCjZL
+                  token: 34|l0vPGcm2j69fXcgiPOvtosVnGg4JbdEOPtyaRzBO
                   is_company: true
                 properties:
                   token:
                     type: string
-                    example: 22|usEJH9hUTPReKF7fb5uCFIddXwd6p6BeaI6yCjZL
+                    example: 34|l0vPGcm2j69fXcgiPOvtosVnGg4JbdEOPtyaRzBO
                   is_company:
                     type: boolean
                     example: true
@@ -62,11 +62,11 @@ paths:
               schema:
                 type: object
                 example:
-                  token: 23|4cgwrSKrYNGumPTUfvOTWeijYPpsEilpi0ktacwE
+                  token: 35|FZCCiyU2ZztU722gEVLjUD3otVogOVppVZmFwqBM
                 properties:
                   token:
                     type: string
-                    example: 23|4cgwrSKrYNGumPTUfvOTWeijYPpsEilpi0ktacwE
+                    example: 35|FZCCiyU2ZztU722gEVLjUD3otVogOVppVZmFwqBM
       tags:
         - Authentication
       requestBody:
@@ -79,7 +79,7 @@ paths:
                 name:
                   type: string
                   description: ''
-                  example: adipisci
+                  example: dolor
                 image:
                   type: string
                   format: binary
@@ -87,7 +87,7 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: rocio21@example.net
+                  example: carmen93@example.com
                 password:
                   type: string
                   description: djasoijdsaio.
@@ -95,7 +95,7 @@ paths:
                 type:
                   type: string
                   description: 'Must be one of <code>instute</code> or <code>company</code>.'
-                  example: company
+                  example: instute
                 category_ids:
                   type: array
                   description: djasoijdsaio.
@@ -108,15 +108,15 @@ paths:
                 created_in:
                   type: string
                   description: 'Must be a valid date.'
-                  example: '2023-09-30T10:07:32'
+                  example: '2023-10-01T06:31:44'
                 address:
                   type: string
                   description: ''
-                  example: et
+                  example: temporibus
                 city:
                   type: string
                   description: ''
-                  example: quia
+                  example: nisi
                 password_confirmation:
                   type: string
                   description: djasoijdsaio.
@@ -784,7 +784,17 @@ paths:
       summary: ''
       operationId: getApiOffer
       description: ''
-      parameters: []
+      parameters:
+        -
+          in: query
+          name: type
+          description: ''
+          example: qui
+          required: true
+          schema:
+            type: string
+            description: ''
+            example: qui
       responses:
         200:
           description: ''
@@ -886,13 +896,18 @@ paths:
                 tender_id:
                   type: integer
                   description: ''
-                  example: 5
+                  example: 17
+                is_draft:
+                  type: boolean
+                  description: ''
+                  example: false
                 details:
                   type: object.
                   description: ''
                   example: "[\n{\n\"tender_detail_id\": 1,\n\"answer\": \"dasdsad\",\n}\n]"
               required:
                 - tender_id
+                - is_draft
       security: []
   '/api/offer/{id}':
     get:
@@ -1017,13 +1032,18 @@ paths:
                 tender_id:
                   type: integer
                   description: ''
-                  example: 18
+                  example: 13
+                is_draft:
+                  type: boolean
+                  description: ''
+                  example: true
                 details:
                   type: object.
                   description: ''
                   example: "[\n{\n\"tender_detail_id\": 1,\n\"answer\": \"dasdsad\",\n}\n]"
               required:
                 - tender_id
+                - is_draft
       security: []
     delete:
       summary: 'Remove the specified resource from storage.'
@@ -1055,12 +1075,12 @@ paths:
           in: query
           name: q
           description: ''
-          example: dignissimos
+          example: dolore
           required: false
           schema:
             type: string
             description: ''
-            example: dignissimos
+            example: dolore
         -
           in: query
           name: category_ids
@@ -1094,21 +1114,21 @@ paths:
                   type: object
                 example:
                   -
-                    id: 2
-                    title: 'Exercitationem mollitia ullam aut et labore.'
-                    description: 'Officiis voluptas quam voluptatibus repellendus quo dolorum. Aut ab sit enim consequatur. Error quo maiores sed vero.'
+                    id: 1
+                    title: 'Facilis ducimus et sunt fugit.'
+                    description: 'Et tempora iste provident totam soluta vitae. Id nihil perspiciatis nemo perferendis culpa veniam. Explicabo velit quaerat hic quia numquam nemo consequatur.'
                     created_at: '2023-09-28T12:02:51.000000Z'
                     ended_at: null
-                    institution_id: 7
-                    institution_name: 'Monserrat Kirlin'
+                    institution_id: 6
+                    institution_name: 'Domenica Altenwerth'
                   -
-                    id: 5
-                    title: 'Repellat asperiores illo architecto quas amet.'
-                    description: 'Quis beatae voluptas qui voluptatibus est. Perspiciatis asperiores voluptas corporis ut. Enim et saepe dolores vitae sint molestiae. At officiis laborum sint tempora et laboriosam earum.'
-                    created_at: '2023-09-28T12:02:51.000000Z'
+                    id: 18
+                    title: 'Consectetur et sit vitae at.'
+                    description: 'Autem incidunt saepe eveniet. Tempore odio non veritatis possimus quia. Cum in quia dicta magni est ipsam facilis. A soluta alias id iusto voluptatum minima beatae quaerat.'
+                    created_at: '2023-09-28T12:02:53.000000Z'
                     ended_at: null
-                    institution_id: 10
-                    institution_name: 'Bulah Hansen'
+                    institution_id: 23
+                    institution_name: 'Hershel Osinski'
       tags:
         - Trender
       requestBody:
@@ -1121,7 +1141,7 @@ paths:
                 q:
                   type: string
                   description: ''
-                  example: enim
+                  example: facilis
                 category_ids:
                   type: object
                   description: ''
@@ -1163,23 +1183,23 @@ paths:
                 title:
                   type: string
                   description: ''
-                  example: sunt
+                  example: quaerat
                 description:
                   type: string
                   description: ''
-                  example: 'Nobis nihil sunt officiis.'
+                  example: 'Occaecati sed saepe sed perspiciatis reprehenderit hic.'
                 columns_number:
                   type: integer
                   description: ''
-                  example: 18
+                  example: 4
                 image:
                   type: string
                   description: ''
-                  example: iste
+                  example: ut
                 ended_at:
                   type: string
                   description: 'Must be a valid date.'
-                  example: '2023-09-30T10:07:32'
+                  example: '2023-10-01T06:31:44'
                 details:
                   type: object.
                   description: ''
@@ -1321,37 +1341,22 @@ paths:
                 example:
                   -
                     id: 25
-                    title: 'Eum officia eum.'
-                    description: 'Porro doloremque molestiae culpa temporibus perferendis minima. Qui non nulla dolorem laudantium.'
-                    created_at: '2023-09-17T08:12:58.000000Z'
+                    title: 'Ut voluptates nesciunt nostrum temporibus.'
+                    image: null
+                    description: 'Magni velit quia sequi minus qui occaecati nihil. Consequatur consequatur soluta molestias rerum eligendi sequi error. Rerum in excepturi ab eum. Error laborum rerum mollitia rerum incidunt.'
+                    columns_number: 1
+                    created_at: '2023-09-28T12:02:54.000000Z'
                     ended_at: null
-                    offers_count: 3
-                    best_offer_from:
-                      id: 11
-                      tender_id: 25
-                      company_id: 20
-                      is_draft: 0
-                      created_at: '2023-09-17T09:17:03.000000Z'
-                      updated_at: '2023-09-17T09:17:03.000000Z'
+                    offers_count: 1
+                    best_offer_from: 'Shawn Bechtelar PhD'
                     offers:
                       -
                         id: 11
-                        trender_name: 'Eum officia eum.'
-                        for: 'Dr. Delfina Lesch'
-                        work_on_it: '2023-09-17T09:17:03.000000Z'
+                        trender_name: 'Ut voluptates nesciunt nostrum temporibus.'
+                        for: 'Elta Crooks Jr.'
+                        work_on_it: '2023-10-01T06:31:20.000000Z'
                         work_ended_it: null
-                      -
-                        id: 12
-                        trender_name: 'Eum officia eum.'
-                        for: 'Dr. Delfina Lesch'
-                        work_on_it: '2023-09-17T09:17:03.000000Z'
-                        work_ended_it: null
-                      -
-                        id: 13
-                        trender_name: 'Eum officia eum.'
-                        for: 'Dr. Delfina Lesch'
-                        work_on_it: '2023-09-17T09:17:03.000000Z'
-                        work_ended_it: null
+                        company_name: 'Shawn Bechtelar PhD'
       tags:
         - Trender
       security: []

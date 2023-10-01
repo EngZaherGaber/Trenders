@@ -23,6 +23,7 @@ class StoreOfferRequest extends FormRequest
     {
         return [
             'tender_id' => ['required', 'integer', 'exists:tenders,id'],
+            'is_draft' => ['required', 'boolean'],
             'details' => ['required', 'array'],
         ];
     }

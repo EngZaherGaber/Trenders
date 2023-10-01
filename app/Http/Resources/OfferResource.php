@@ -20,6 +20,7 @@ class OfferResource extends JsonResource
             'for' => $this->tender->institution->user->name,
             'work_on_it' => $this->created_at,
             'work_ended_it' => $this->tender->ended_at,
+            'company_name' => $this->company->user->name,
             'offer_details' => $this->whenLoaded('offerDetails'),
         ];
     }

@@ -21,6 +21,7 @@ class OfferResource extends JsonResource
             'work_on_it' => $this->created_at,
             'work_ended_it' => $this->tender->ended_at,
             'company_name' => $this->company->user->name,
+            'company_id' => $this->company_id,
             'offer_details' => $this->whenLoaded('offerDetails'),
         ];
     }

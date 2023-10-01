@@ -121,8 +121,8 @@ class OfferController extends Controller
 
         foreach ($data['details'] as $offerDetails) {
 
-            if (is_array($offerDetails['data'])) {
-                $offerDetails['data'] = json_encode($offerDetails['data']);
+            if (is_array($offerDetails['answer'])) {
+                $offerDetails['answer'] = json_encode($offerDetails['answer']);
             }
 
             $vaildator = Validator::make($offerDetails, [
@@ -135,6 +135,13 @@ class OfferController extends Controller
         $offer->refresh();
 
         return $offer;
+    }
+
+    public function accept(Offer $offer)
+    {
+        $offer->update(['accepted' => true]);
+
+        return response()->noContent();
     }
 
     /**

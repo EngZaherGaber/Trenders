@@ -15,3 +15,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::apiResource('institution', InstitutionController::class)->only('show');
+Route::middleware('auth:sanctum')->get('accepted-offers', [InstitutionController::class, 'acceptedOffers']);

@@ -20,6 +20,7 @@ class Offer extends Model
         'tender_id',
         'company_id',
         'is_draft',
+        'accepted',
     ];
 
     /**
@@ -32,6 +33,7 @@ class Offer extends Model
         'tender_id' => 'integer',
         'company_id' => 'integer',
         'is_draft' => 'boolean',
+        'accepted' => 'boolean',
     ];
 
     public function offerDetails(): HasMany

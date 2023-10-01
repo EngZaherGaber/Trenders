@@ -15,3 +15,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::middleware('auth:sanctum')->apiResource('/offer', OfferController::class);
+Route::post('/offer/{offer}/accept', [OfferController::class, 'accept']);

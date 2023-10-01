@@ -28,7 +28,7 @@ class CompanyController extends Controller
      */
     public function show(Company $company)
     {
-        $company->load('user');
+        $company->load(['user', 'offers']);
         return $company;
     }
 
